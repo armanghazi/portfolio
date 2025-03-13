@@ -214,7 +214,7 @@ h3 {
 
 .Education h1, .Additional-Training h1 {
     text-align: center;
-    color: white;
+    color: rgb(216, 196, 21);
     font-size: 4rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     margin: 1rem 0;
@@ -222,7 +222,7 @@ h3 {
 
 .Education h2, .Additional-Training h2 {
     font-size: 3rem;
-    color: #FFD700;
+    color: #e4e0e0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: 1rem 0;
 }
