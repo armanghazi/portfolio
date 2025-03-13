@@ -300,6 +300,11 @@ h3 {
     margin: 10px 0;
 }
 
+.project-image:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+
 /* Button Styles */
 button {
     background-color: var(--primary-color);
@@ -314,6 +319,7 @@ button {
 
 button:hover {
     background-color: var(--secondary-color);
+    transform: scale(1.1);
 }
 
 button i {
