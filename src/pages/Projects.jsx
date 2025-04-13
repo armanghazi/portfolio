@@ -98,7 +98,7 @@ const Projects = () => {
     {
       title: "Bootcamp challenge",
       description: "Custom Statistics Platform for Ekhilur Users: This project involved developing a website that enabled Ekhilur users to access customized statistics about their transactions. To achieve this, we implemented a web scraping technique that extracted information directly from users' accounts.",
-      image: "/img/ekhilur.svg",
+      image: "./img/ekhilur.svg",
       links: [
         { text: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/posts/julietareynosob_bbkbootcamps-talentodigital-ciberseguridad-activity-7294662135396098048-DPrd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA27lesBTPzbSHAxYtjZloFCoHLyDdPrtAU" }
       ]

@@ -28,10 +28,10 @@ const Home = () => {
             make data-driven decisions and solve real-world problems.
           </p>
           <div className="cv-buttons">
-            <a href="/img/english.pdf" className="cv-button" target="_blank" rel="noopener noreferrer">
+            <a href="./img/english.pdf" className="cv-button" target="_blank" rel="noopener noreferrer">
               English Curriculum
             </a>
-            <a href="/img/spanish.pdf" className="cv-button" target="_blank" rel="noopener noreferrer">
+            <a href="./img/spanish.pdf" className="cv-button" target="_blank" rel="noopener noreferrer">
               Spanish Curriculum
             </a>
           </div>
