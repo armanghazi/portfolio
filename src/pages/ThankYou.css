@@ -1,0 +1,48 @@
+.thank-you-section {
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.thank-you-title {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.thank-you-title i {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+.thank-you-message {
+  color: var(--text-color);
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.8;
+}
+
+.home-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--border-radius-small);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.home-button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.home-button i {
+  font-size: 1.2rem;
+} 
