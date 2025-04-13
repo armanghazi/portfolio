@@ -6,13 +6,13 @@ const Studies = () => {
       title: "Master's Degree in Geographic Information Systems and Remote Sensing",
       period: "2004",
       description: "Shahid Beheshti University, Tehran, Iran",
-      image: "/img/sbu.jpg"
+      image: "./img/sbu.jpg"
     },
     {
       title: "Bachelor of Engineering in Rangeland and Watershed Management",
       period: "2000",
       description: "Isfahan University of Technology, Iran",
-      image: "/img/iut.jpg"
+      image: "./img/iut.jpg"
     }
   ];
 

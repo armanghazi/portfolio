@@ -7,7 +7,7 @@ const Projects = () => {
     {
       title: "Personal Portfolio Website",
       description: "A project showcasing my HTML and CSS skills, created during a front-end web development course.",
-      image: "/img/portfolio.png",
+      image: "./img/portfolio.png",
       links: [
         { text: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/feed/update/urn:li:activity:7297306010694684672/" },
         { text: "Website", icon: "globe", url: "https://armanghazi.github.io/portfolio_first/index.html" }
@@ -16,7 +16,7 @@ const Projects = () => {
     {
       title: "Search for Favorite Movies (Spanish version)",
       description: "This project is a web application built using JavaScript, HTML, and CSS that enables users to search for movies using The Movie Database (TMDb) API. It includes advanced filtering options by release date, genre, rating, and certification, with support for searches based on the Spanish classification system. The entire web application is in Spanish.",
-      image: "/img/espaniol.png",
+      image: "./img/espaniol.png",
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Busqueda-de-peliculas-favoritas" },
         { text: "Website", icon: "globe", url: "https://armanghazi.github.io/Busqueda-de-peliculas-favoritas/" }
@@ -25,7 +25,7 @@ const Projects = () => {
     {
       title: "Search for Favorite Movies (English version)",
       description: "This web application, built using JavaScript, HTML, and CSS, enables users to search for movies using the TMDb API. It provides filters for release date, genre, rating, and certification, including searches tailored to the US classification system.",
-      image: "/img/usa.png",
+      image: "./img/usa.png",
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Search-for-Favorite-Movies" },
         { text: "Website", icon: "globe", url: "https://armanghazi.github.io/Search-for-Favorite-Movies/index.html" }
@@ -34,7 +34,7 @@ const Projects = () => {
     {
       title: "Simple Weather Map",
       description: "A simple web-based application that displays weather information for different locations in Bizkaia using OpenWeatherMap API and Leaflet.js for mapping.",
-      image: "/img/weather.png",
+      image: "./img/weather.png",
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Simple-Weather-Map" },
         { text: "Website", icon: "globe", url: "https://armanghazi.github.io/Simple-Weather-Map/index.html" }
@@ -43,7 +43,7 @@ const Projects = () => {
     {
       title: "Food Seeker (Buscador de Alimentos in spanish)",
       description: "A web application developed in React.js for searching and filtering food products using the OpenFoodFacts API. It implements dynamic themes with CSS variables and utilizes CSS Grid and Flexbox for a responsive design. It allows users to view the nutritional and environmental information of products and save them as favorites.",
-      image: "/img/food.png",
+      image: "./img/food.png",
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Buscador-deAlimentos" },
         { text: "Website", icon: "globe", url: "https://buscador-de-alimentos.vercel.app/" }
@@ -52,7 +52,7 @@ const Projects = () => {
     {
       title: "Weather in the Basque Country (El Tiempo en Euskadi in spanish)",
       description: "This weather forecast app was developed using JavaScript, React, and the powerful Vite build tool. These technologies allow us to offer a fast, modern, and efficient interface, specifically designed to provide the best user experience.",
-      image: "/img/forecast.png",
+      image: "./img/forecast.png",
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/tiempo-euskadi.git" },
         { text: "Website", icon: "globe", url: "https://tiempo-euskadi.vercel.app/" }
@@ -64,7 +64,7 @@ const Projects = () => {
     {
       title: "Sink the Fleet (Python Game Project)",
       description: "A python-based implementation of the classic Battleship game (Hundir la flota in Spanish).",
-      image: "/img/hundir.png",
+      image: "./img/hundir.png",
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/Hundir_la_flota/tree/master" }
       ]
@@ -72,7 +72,7 @@ const Projects = () => {
     {
       title: "EDA of University Rankings Analysis",
       description: "Performing Exploratory Data Analysis (EDA) on the CWUR (Center for World University Rankings) dataset to analyze multi-year trends in global university rankings.",
-      image: "/img/university.png",
+      image: "./img/university.png",
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/University-Rankings-Analysis" }
       ]
@@ -80,7 +80,7 @@ const Projects = () => {
     {
       title: "Machine Learning for Air Pollution in Iran",
       description: "Developed predictive models for air pollution trends in Iran using machine learning.",
-      image: "/img/air.png",
+      image: "./img/air.png",
       links: [
         { text: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/posts/arman-ghaziaskari_machinelearning-calidaddelaire-datascience-activity-7286430093579579392-JAQF/" },
         { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/air_pollution_iran" }
@@ -89,7 +89,7 @@ const Projects = () => {
     {
       title: "Prediction of Dessert",
       description: "Applied machine learning techniques to predict dessert based on input features (Postre in Spanish).",
-      image: "/img/desert.png",
+      image: "./img/desert.png",
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/Postre" },
         { text: "Website", icon: "globe", url: "https://postre2.streamlit.app/" }

@@ -5,7 +5,7 @@ const Home = () => {
     <section className="about-section">
       <article className="user-info">
         <div className="user-image">
-          <img src="/img/arman.jpg" alt="Arman Ghaziaskari Naeini" />
+          <img src="./img/arman.jpg" alt="Arman Ghaziaskari Naeini" />
         </div>
         <div className="user-text">
           <h1>About Me</h1>

@@ -8,7 +8,16 @@ import react from '@vitejs/plugin-react'
 // vite.config.js
 export default defineConfig({
   plugins: [react()],
-  base: '/portfolio/'
+  base: '/portfolio/',
+  build: {
+    assetsDir: 'assets',
+    outDir: 'dist',
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name][extname]'
+      }
+    }
+  }
 })
 
 
