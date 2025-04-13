@@ -36,7 +36,7 @@ const Contact = () => {
             className="contact-form"
           >
             <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_next" value="https://armanghazi.github.io/portfolio/thank-you.html" />
+            <input type="hidden" name="_next" value="https://armanghazi.github.io/portfolio/#/thank-you" />
             
             <div className="form-group">
               <label htmlFor="name" className="form-label">
