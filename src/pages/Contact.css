@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .contact-container {
@@ -18,19 +19,26 @@
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-form {
   padding: 3rem;
   background: linear-gradient(135deg, var(--white) 0%, #f8f9fa 100%);
+  box-sizing: border-box;
 }
 
 .form-group {
   margin-bottom: 1.8rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .form-label {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 0.8rem;
   color: var(--text-color);
   font-weight: 500;
@@ -46,6 +54,7 @@
   font-size: 1rem;
   transition: all 0.3s ease;
   background-color: var(--white);
+  box-sizing: border-box;
 }
 
 .form-textarea {
@@ -73,6 +82,10 @@
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .submit-button:hover {
@@ -87,6 +100,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .whatsapp-info {
@@ -94,6 +108,8 @@
   padding: 2rem;
   border-radius: 16px;
   backdrop-filter: blur(10px);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .whatsapp-title {
@@ -111,8 +127,43 @@
   margin-bottom: 2rem;
 }
 
+.contact-details {
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.email-copy {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.email-copy:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.copy-icon {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
 .whatsapp-button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 1rem;
   padding: 1.2rem 2rem;
@@ -124,6 +175,10 @@
   font-size: 1.1rem;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  justify-content: center;
 }
 
 .whatsapp-button:hover {
@@ -155,23 +210,28 @@
 @media (max-width: 768px) {
   .contact-section {
     padding: 2rem 1rem;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .contact-container {
     grid-template-columns: 1fr;
     gap: 0;
+    width: 100%;
     max-width: 500px;
     margin: 1.5rem auto 0;
+    border-radius: 16px;
   }
 
   .contact-form {
     padding: 2rem;
-    border-radius: 20px 20px 0 0;
+    border-radius: 16px 16px 0 0;
   }
 
   .whatsapp-section {
     padding: 2rem;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 16px 16px;
   }
 
   .form-group {
@@ -204,8 +264,6 @@
   }
 
   .whatsapp-button {
-    width: 100%;
-    justify-content: center;
     padding: 1rem;
     font-size: 1rem;
   }
@@ -215,6 +273,11 @@
 @media (max-width: 480px) {
   .contact-section {
     padding: 1.5rem 0.8rem;
+  }
+
+  .contact-container {
+    max-width: 100%;
+    margin: 1rem auto 0;
   }
 
   .contact-form,

@@ -3,28 +3,8 @@ import { FaEnvelope, FaUser, FaPaperPlane, FaPhone, FaWhatsapp, FaCopy, FaCheck 
 import './Contact.css';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
   const [copied, setCopied] = useState(false);
   const email = 'ghaziaskari@gmail.com';
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', formData);
-  };
 
   const handleCopyEmail = async () => {
     try {
@@ -43,97 +23,100 @@ const Contact = () => {
 
   return (
     <section className="contact-section">
-      <h1 className="section-title">
-        <FaEnvelope />
-        Contact Me
-      </h1>
-
-      <div className="container">
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label className="label">
-              <FaUser />
-              Name
-            </label>
-            <i className="input-icon">
-              <FaUser />
-            </i>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              className="input"
-              required
-            />
-          </div>
-
-          <div className="form-group">
-            <label className="label">
-              <FaEnvelope />
-              Email
-            </label>
-            <i className="input-icon">
-              <FaEnvelope />
-            </i>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              className="input"
-              required
-            />
-          </div>
-
-          <div className="form-group">
-            <label className="label">
-              <FaEnvelope />
-              Message
-            </label>
-            <i className="input-icon">
-              <FaEnvelope />
-            </i>
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              className="textarea"
-              required
-            />
-          </div>
-
-          <button type="submit" className="submit-button">
-            <FaPaperPlane />
-            Send Message
-          </button>
-        </form>
-
-        <div className="contact-info">
-          <h2>Get in Touch</h2>
-          <div className="contact-details">
-            <div className="contact-item">
-              <i className="fa fa-envelope"></i>
-              <span>Email: </span>
-              <button 
-                className="email-copy" 
-                onClick={handleCopyEmail}
-                title="Click to copy email"
-              >
-                {email}
-                {copied ? <FaCheck className="copy-icon" /> : <FaCopy className="copy-icon" />}
-              </button>
+      <div className="contact-container">
+        <div className="contact-form">
+          <h1 className="section-title">
+            <FaEnvelope />
+            Contact Me
+          </h1>
+          <form 
+            id="contact-form" 
+            action="https://formsubmit.co/02ad2d2441030f69f7107ce3699c230a" 
+            method="POST"
+            className="contact-form"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://armanghazi.github.io/portfolio/thank-you.html" />
+            
+            <div className="form-group">
+              <label htmlFor="name" className="form-label">
+                <FaUser />
+                Name:
+              </label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                className="form-input"
+                required 
+                placeholder="Write your name here."
+              />
             </div>
-
-          </div>
+            
+            <div className="form-group">
+              <label htmlFor="email" className="form-label">
+                <FaEnvelope />
+                Email:
+              </label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                className="form-input"
+                required 
+                placeholder="Write your Email here." 
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
+                title="Please enter a valid email address (e.g., name@example.com)" 
+                aria-label="Your Email"
+              />
+            </div>
+            
+            <div className="form-group">
+              <label htmlFor="message" className="form-label">
+                <FaEnvelope />
+                Your Message:
+              </label>
+              <textarea 
+                id="message" 
+                name="message" 
+                className="form-textarea"
+                required 
+                placeholder="Write your message here."
+              ></textarea>
+            </div>
+            
+            <button type="submit" className="submit-button">
+              <FaPaperPlane />
+              Send Message
+            </button>
+          </form>
         </div>
 
         <div className="whatsapp-section">
-          <h2>Chat on WhatsApp</h2>
-          <p>I would be delighted to connect you! Kindly click the button below to start a WhatsApp conversation with us.</p>
-          <button className="whatsapp-button" onClick={handleWhatsAppClick}>
-            <FaWhatsapp /> Start Chat
-          </button>
+          <div className="whatsapp-info">
+            <h2 className="whatsapp-title">Get in Touch</h2>
+            <div className="contact-details">
+              <div className="contact-item">
+                <i className="fa fa-envelope"></i>
+                <span>Email: </span>
+                <button 
+                  className="email-copy" 
+                  onClick={handleCopyEmail}
+                  title="Click to copy email"
+                >
+                  {email}
+                  {copied ? <FaCheck className="copy-icon" /> : <FaCopy className="copy-icon" />}
+                </button>
+              </div>
+            </div>
+            <p className="whatsapp-description">
+              You can also reach me directly through WhatsApp for a faster response.
+            </p>
+            <button className="whatsapp-button" onClick={handleWhatsAppClick}>
+              <FaWhatsapp />
+              Start Chat
+            </button>
+          </div>
         </div>
       </div>
     </section>
