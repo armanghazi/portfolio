@@ -7,6 +7,8 @@ import react from '@vitejs/plugin-react'
 // })
 // vite.config.js
 export default defineConfig({
-  base: '/armanghazi.github.io/',})
+  plugins: [react()],
+  base: '/portfolio/'
+})
 
 
