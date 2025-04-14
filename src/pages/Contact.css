@@ -229,17 +229,19 @@
   }
 
   .contact-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Single column on mobile */
     gap: 0;
     width: 100%;
     max-width: 500px;
     margin: 1.5rem auto 0;
     border-radius: 16px;
+    flex-direction: column; /* Ensure stacking (though grid should handle this) */
   }
 
   .contact-form {
     padding: 2rem;
     border-radius: 16px 16px 0 0;
+    margin-bottom: 2rem; /* Add vertical space */
   }
 
   .whatsapp-section {
