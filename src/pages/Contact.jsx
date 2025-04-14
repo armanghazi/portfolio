@@ -82,7 +82,7 @@ const Contact = () => {
   
         {/* Email Section */}
         <div className="email-section">
-          <h2 className="section-title">Email Me</h2>
+          <h2 className="section-title">Email me</h2>
           <div className="contact-details">
             <div className="contact-item">
               <FaEnvelope />
