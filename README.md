@@ -43,7 +43,7 @@ portfolio/
 
 ### Prerequisites
 - Node.js (v14 or higher)
-- npm or yarn
+- npm
 
 ### Installation
 1. Clone the repository:
