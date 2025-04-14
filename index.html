@@ -6,29 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Arman Ghaziaskari Naeini - Portfolio showcasing expertise in GIS, Data Science, and Web Development." />
     <title>Arman Ghaziaskari Naeini - Portfolio</title>
-    <script type="module" crossorigin src="/portfolio/assets/index-Bynb63Na.js"></script>
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    <div id="google_translate_element"></div>
-
-    <!-- Google Translate Script -->
     <script type="text/javascript">
       function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          {
-            pageLanguage: 'en',
-            includedLanguages: 'es,eu,fa,ar',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false
-          },
-          'google_translate_element'
-        );
+        new google.translate.TranslateElement({
+          pageLanguage: 'en',
+          includedLanguages: 'es,eu,fa,ar',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          autoDisplay: true
+        }, 'google_translate_element');
+
+        // Handle RTL for Persian and Arabic
+        const observer = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            if (mutation.target.tagName === 'HTML') {
+              const lang = mutation.target.getAttribute('lang');
+              if (lang === 'fa' || lang === 'ar') {
+                document.documentElement.dir = 'rtl';
+                document.body.dir = 'rtl';
+                document.body.style.textAlign = 'right';
+              } else {
+                document.documentElement.dir = 'ltr';
+                document.body.dir = 'ltr';
+                document.body.style.textAlign = 'left';
+              }
+            }
+          });
+        });
+
+        observer.observe(document.documentElement, {
+          attributes: true,
+          attributeFilter: ['lang']
+        });
       }
     </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <style>
       #google_translate_element {
         position: fixed;
@@ -54,7 +65,108 @@
         border: none !important;
         box-shadow: none !important;
       }
+      .VIpgJd-ZVi9od-l4eHX-hSRGPd {
+        display: none !important;
+      }
+
+      /* RTL Styles */
+      [dir="rtl"] {
+        direction: rtl !important;
+      }
+      
+      [dir="rtl"] * {
+        direction: inherit;
+      }
+      
+      [dir="rtl"] .navbar,
+      [dir="rtl"] .nav-links {
+        flex-direction: row-reverse !important;
+      }
+      
+      [dir="rtl"] .container,
+      [dir="rtl"] .section,
+      [dir="rtl"] .content {
+        direction: rtl !important;
+        text-align: right !important;
+      }
+      
+      [dir="rtl"] h1,
+      [dir="rtl"] h2,
+      [dir="rtl"] h3,
+      [dir="rtl"] h4,
+      [dir="rtl"] h5,
+      [dir="rtl"] h6,
+      [dir="rtl"] p,
+      [dir="rtl"] span,
+      [dir="rtl"] div {
+        text-align: right !important;
+      }
+      
+      [dir="rtl"] .form-group {
+        text-align: right !important;
+      }
+      
+      [dir="rtl"] input,
+      [dir="rtl"] textarea {
+        text-align: right !important;
+        direction: rtl !important;
+      }
+      
+      /* Fix margins and paddings for RTL */
+      [dir="rtl"] .ml-1, [dir="rtl"] .ml-2, [dir="rtl"] .ml-3, [dir="rtl"] .ml-4, [dir="rtl"] .ml-5 {
+        margin-left: 0 !important;
+        margin-right: inherit !important;
+      }
+      
+      [dir="rtl"] .mr-1, [dir="rtl"] .mr-2, [dir="rtl"] .mr-3, [dir="rtl"] .mr-4, [dir="rtl"] .mr-5 {
+        margin-right: 0 !important;
+        margin-left: inherit !important;
+      }
+      
+      [dir="rtl"] .pl-1, [dir="rtl"] .pl-2, [dir="rtl"] .pl-3, [dir="rtl"] .pl-4, [dir="rtl"] .pl-5 {
+        padding-left: 0 !important;
+        padding-right: inherit !important;
+      }
+      
+      [dir="rtl"] .pr-1, [dir="rtl"] .pr-2, [dir="rtl"] .pr-3, [dir="rtl"] .pr-4, [dir="rtl"] .pr-5 {
+        padding-right: 0 !important;
+        padding-left: inherit !important;
+      }
+
+      /* Additional RTL fixes for Google Translate */
+      .translated-rtl {
+        direction: rtl !important;
+        text-align: right !important;
+      }
+
+      .translated-rtl .navbar {
+        flex-direction: row-reverse !important;
+      }
+
+      .translated-rtl .nav-item {
+        margin-right: 0 !important;
+        margin-left: 1rem !important;
+      }
+
+      .translated-rtl .container {
+        direction: rtl !important;
+      }
+
+      /* Fix for RTL in Google Translate dropdown */
+      .goog-te-menu-value span:nth-child(3) {
+        display: none !important;
+      }
+      
+      .goog-te-menu-value span:nth-child(5) {
+        display: none !important;
+      }
     </style>
+    <script type="module" crossorigin src="/portfolio/assets/index-Ei5R9OTu.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index.css">
+  </head>
+  <body>
+    <div id="google_translate_element"></div>
+    <div id="root"></div>
   </body>
 </html>
 
