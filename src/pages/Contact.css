@@ -1,3 +1,14 @@
+/* Variables (You might have these elsewhere, but I'm including them for context) */
+:root {
+  --primary-color: #4a90e2; /* Example color */
+  --secondary-color: #63b3ed; /* Example color */
+  --primary-color-rgb: 74, 144, 226; /* RGB version for rgba */
+  --text-color: #333;
+  --border-color: #ccc;
+  --white: #fff;
+}
+
+/* Base Styles */
 .contact-section {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -23,6 +34,7 @@
   box-sizing: border-box;
 }
 
+/* Form Styles */
 .contact-form {
   padding: 3rem;
   background: linear-gradient(135deg, var(--white) 0%, #f8f9fa 100%);
@@ -93,6 +105,7 @@
   box-shadow: 0 5px 15px rgba(var(--primary-color-rgb), 0.3);
 }
 
+/* WhatsApp Section Styles */
 .whatsapp-section {
   padding: 3rem;
   background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
@@ -309,4 +322,4 @@
     font-size: 0.95rem;
     line-height: 1.6;
   }
-} 
+}
