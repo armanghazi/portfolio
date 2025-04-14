@@ -22,17 +22,18 @@
 }
 
 .contact-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column; 
+  gap: 2rem; 
   background: var(--white);
+  padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  width: 100%;
+  max-width: 800px;
+  margin: 0 auto; /* Center the container */
   box-sizing: border-box;
 }
+
 
 /* Form Styles */
 .contact-form {
