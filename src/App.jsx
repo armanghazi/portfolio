@@ -9,11 +9,11 @@ import Contact from './pages/Contact';
 import ThankYou from './pages/ThankYou';
 import ThemeToggle from './components/ThemeToggle';
 import './styles/global.css';
+import './styles/rtl.css';
 
 function App() {
   return (
     <Router>
-      
       <div className="app">
         <Navbar />
         <main>

@@ -1,0 +1,63 @@
+/* RTL Styles */
+[dir="rtl"] {
+  direction: rtl !important;
+}
+
+[dir="rtl"] * {
+  direction: inherit;
+}
+
+[dir="rtl"] .navbar,
+[dir="rtl"] .nav-links {
+  flex-direction: row-reverse !important;
+}
+
+[dir="rtl"] .container,
+[dir="rtl"] .section,
+[dir="rtl"] .content {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6,
+[dir="rtl"] p,
+[dir="rtl"] span,
+[dir="rtl"] div {
+  text-align: right !important;
+}
+
+[dir="rtl"] .form-group {
+  text-align: right !important;
+}
+
+[dir="rtl"] input,
+[dir="rtl"] textarea {
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+/* Fix margins and paddings for RTL */
+[dir="rtl"] .ml-1, [dir="rtl"] .ml-2, [dir="rtl"] .ml-3, [dir="rtl"] .ml-4, [dir="rtl"] .ml-5 {
+  margin-left: 0 !important;
+  margin-right: inherit !important;
+}
+
+[dir="rtl"] .mr-1, [dir="rtl"] .mr-2, [dir="rtl"] .mr-3, [dir="rtl"] .mr-4, [dir="rtl"] .mr-5 {
+  margin-right: 0 !important;
+  margin-left: inherit !important;
+}
+
+[dir="rtl"] .pl-1, [dir="rtl"] .pl-2, [dir="rtl"] .pl-3, [dir="rtl"] .pl-4, [dir="rtl"] .pl-5 {
+  padding-left: 0 !important;
+  padding-right: inherit !important;
+}
+
+[dir="rtl"] .pr-1, [dir="rtl"] .pr-2, [dir="rtl"] .pr-3, [dir="rtl"] .pr-4, [dir="rtl"] .pr-5 {
+  padding-right: 0 !important;
+  padding-left: inherit !important;
+} 
