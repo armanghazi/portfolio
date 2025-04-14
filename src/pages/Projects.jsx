@@ -1,58 +1,71 @@
 import React from 'react';
-import { FaCode, FaDatabase, FaMapMarkedAlt, FaGraduationCap, FaBook, FaTrophy } from 'react-icons/fa';
+import { FaCode, FaDatabase, FaMapMarkedAlt, FaGraduationCap, FaBook, FaTrophy, FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import './Projects.css';
+
+// Import images
+import portfolioImg from '../assets/img/portfolio.png';
+import weatherMapImg from '../assets/img/weather-map.png';
+import espaniolImg from '../assets/img/espaniol.png';
+import usaImg from '../assets/img/usa.png';
+import foodImg from '../assets/img/food.png';
+import forecastImg from '../assets/img/forecast.png';
+import hundirImg from '../assets/img/hundir.png';
+import universityImg from '../assets/img/university.png';
+import airImg from '../assets/img/air.png';
+import desertImg from '../assets/img/desert.png';
+import ekhilurImg from '../assets/img/ekhilur.svg';
 
 const Projects = () => {
   const frontendProjects = [
     {
-      title: "Personal Portfolio Website",
-      description: "A project showcasing my HTML and CSS skills, created during a front-end web development course.",
-      image: "./img/portfolio.png",
+      title: "Personal Portfolio Website (Initial Version)",
+      description: "My first portfolio website, built using only HTML and CSS during a front-end web development course. This initial project served as the foundation for my current, more developed portfolio.",
+      image: portfolioImg,
       links: [
-        { text: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/feed/update/urn:li:activity:7297306010694684672/" },
-        { text: "Website", icon: "globe", url: "https://armanghazi.github.io/portfolio_first/index.html" }
+        { text: "LinkedIn Post", icon: "linkedin", url: "https://www.linkedin.com/feed/update/urn:li:activity:7297306010694684672/" },
+        { text: "Website (Initial)", icon: "globe", url: "https://armanghazi.github.io/portfolio_first/index.html" }
       ]
     },
     {
-      title: "Search for Favorite Movies (Spanish version)",
-      description: "This project is a web application built using JavaScript, HTML, and CSS that enables users to search for movies using The Movie Database (TMDb) API. It includes advanced filtering options by release date, genre, rating, and certification, with support for searches based on the Spanish classification system. The entire web application is in Spanish.",
-      image: "./img/espaniol.png",
+      title: "Find Your Favorite Movies (Spanish)",
+      description: "A user-friendly web application built with JavaScript, HTML, and CSS that allows you to easily search for movies using the TMDb API. Discover films with advanced filters for release date, genre, rating, and Spanish film certification. Enjoy the entire experience in Spanish.",
+      image: espaniolImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Busqueda-de-peliculas-favoritas" },
         { text: "Website", icon: "globe", url: "https://armanghazi.github.io/Busqueda-de-peliculas-favoritas/" }
       ]
     },
     {
-      title: "Search for Favorite Movies (English version)",
-      description: "This web application, built using JavaScript, HTML, and CSS, enables users to search for movies using the TMDb API. It provides filters for release date, genre, rating, and certification, including searches tailored to the US classification system.",
-      image: "./img/usa.png",
+      title: "Find Your Favorite Movies (English)",
+      description: "Explore and search for movies effortlessly with this web application (JavaScript, HTML, CSS) powered by the TMDb API. Refine your search using filters for release date, genre, rating, and US film certification.",
+      image: usaImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Search-for-Favorite-Movies" },
         { text: "Website", icon: "globe", url: "https://armanghazi.github.io/Search-for-Favorite-Movies/index.html" }
       ]
     },
     {
-      title: "Simple Weather Map",
-      description: "A simple web-based application that displays weather information for different locations in Bizkaia using OpenWeatherMap API and Leaflet.js for mapping.",
-      image: "./img/weather.png",
+      title: "Weather Map of Bizkaia (OpenWeatherMap & Leaflet.js)",
+      description: "A web application visualizing real-time weather data for Bizkaia. Built with the OpenWeatherMap API for weather information and Leaflet.js for interactive map display.",
+      image: weatherMapImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Simple-Weather-Map" },
         { text: "Website", icon: "globe", url: "https://armanghazi.github.io/Simple-Weather-Map/index.html" }
       ]
     },
     {
-      title: "Food Seeker (Buscador de Alimentos in spanish)",
-      description: "A web application developed in React.js for searching and filtering food products using the OpenFoodFacts API. It implements dynamic themes with CSS variables and utilizes CSS Grid and Flexbox for a responsive design. It allows users to view the nutritional and environmental information of products and save them as favorites.",
-      image: "./img/food.png",
+      title: "Food Seeker: Explore Nutritional Information (Buscador de Alimentos)",
+      description: "Discover and filter food products with this React.js web application, utilizing the OpenFoodFacts API. Enjoy a visually adaptable experience with dynamic themes powered by CSS variables and a responsive design using CSS Grid and Flexbox. Features include viewing nutritional and environmental details and saving favorite items.",
+      image: foodImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Buscador-deAlimentos" },
         { text: "Website", icon: "globe", url: "https://buscador-de-alimentos.vercel.app/" }
       ]
     },
     {
-      title: "Weather in the Basque Country (El Tiempo en Euskadi in spanish)",
-      description: "This weather forecast app was developed using JavaScript, React, and the powerful Vite build tool. These technologies allow us to offer a fast, modern, and efficient interface, specifically designed to provide the best user experience.",
-      image: "./img/forecast.png",
+      title: "Basque Country Weather: A Front-End Bootcamp Finale (El Tiempo en Euskadi)",
+      description: "Developed as the final project for a front-end development bootcamp, this weather forecast application for the Basque Country and some important cities leverages JavaScript, React, and Vite. The result is a fast, modern, and user-friendly interface designed for optimal weather information access.",
+      image: forecastImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/tiempo-euskadi.git" },
         { text: "Website", icon: "globe", url: "https://tiempo-euskadi.vercel.app/" }
@@ -62,43 +75,43 @@ const Projects = () => {
 
   const dataScienceProjects = [
     {
-      title: "Sink the Fleet (Python Game Project)",
-      description: "A python-based implementation of the classic Battleship game (Hundir la flota in Spanish).",
-      image: "./img/hundir.png",
+      title: "Battleship Game in Python (Hundir la flota)",
+      description: "Developed a classic Battleship game using Python, demonstrating fundamental programming concepts and game logic implementation.",
+      image: hundirImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/Hundir_la_flota/tree/master" }
       ]
     },
     {
-      title: "EDA of University Rankings Analysis",
-      description: "Performing Exploratory Data Analysis (EDA) on the CWUR (Center for World University Rankings) dataset to analyze multi-year trends in global university rankings.",
-      image: "./img/university.png",
+      title: "Analyzing Global University Trends with Python EDA",
+      description: "Conducted Exploratory Data Analysis (EDA) on the CWUR dataset using Python to identify and analyze multi-year patterns and key insights in global university rankings.",
+      image: universityImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/University-Rankings-Analysis" }
       ]
     },
     {
-      title: "Machine Learning for Air Pollution in Iran",
-      description: "Developed predictive models for air pollution trends in Iran using machine learning.",
-      image: "./img/air.png",
+      title: "Machine Learning for Iranian Air Pollution Analysis",
+      description: "Utilized machine learning algorithms to develop predictive models for analyzing and forecasting air pollution trends in Iran.",
+      image: airImg,
       links: [
         { text: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/posts/arman-ghaziaskari_machinelearning-calidaddelaire-datascience-activity-7286430093579579392-JAQF/" },
         { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/air_pollution_iran" }
       ]
     },
     {
-      title: "Prediction of Dessert",
-      description: "Applied machine learning techniques to predict dessert based on input features (Postre in Spanish).",
-      image: "./img/desert.png",
+      title: "Dessert Prediction using Machine Learning (Postre)",
+      description: "Applied various machine learning techniques to build a model capable of predicting dessert types based on provided input features.",
+      image: desertImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/Postre" },
         { text: "Website", icon: "globe", url: "https://postre2.streamlit.app/" }
       ]
     },
     {
-      title: "Bootcamp challenge",
-      description: "Custom Statistics Platform for Ekhilur Users: This project involved developing a website that enabled Ekhilur users to access customized statistics about their transactions. To achieve this, we implemented a web scraping technique that extracted information directly from users' accounts.",
-      image: "./img/ekhilur.svg",
+      title: "Ekhilur Custom Statistics Platform (Web Scraping Challenge)",
+      description: "A bootcamp challenge involving the development of a website with a web scraping implementation to provide Ekhilur users with personalized transaction statistics extracted directly from their accounts.",
+      image: ekhilurImg,
       links: [
         { text: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/posts/julietareynosob_bbkbootcamps-talentodigital-ciberseguridad-activity-7294662135396098048-DPrd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA27lesBTPzbSHAxYtjZloFCoHLyDdPrtAU" }
       ]
@@ -106,60 +119,76 @@ const Projects = () => {
   ];
 
   const gisExperience = [
-    {
-      period: "As a Freelancer (2021- now)",
-      description: ["Utilized GIS and remote sensing tools for detailed spatial analyses and environmental monitoring."]
-    },
-    {
-      period: "As a GIS Expert and Manager, General Governor Office of Isfahan Province, National Divisions Group (2014-2021)",
-      description: [
-        "Prepared maps for crisis management and land management.",
-        "Conducted spatial data analysis to support regional planning initiatives."
-      ]
-    },
-    {
-      period: "As a GIS Expert, Isfahan Provincial Planning and Management Organization, Population Census and Statistics Department and Land Use Planning Group (2004-2014)",
-      description: [
-        "Prepared and updated census maps and land use planning maps.",
-        "Provided GIS support for urban and regional planning projects."
-      ]
-    },
-    {
-      period: "Part-time Contributor, S4 (Spatial Structures in the Social Sciences), Department of Sociology, Brown University, Providence, RI, USA (02-2013-08-2013)",
-      description: ["Digitized vintage census maps from 1890 to 1930 in major US cities."]
-    },
-    {
-      period: "As a Consultant in Spadana Geo Science and Technology Company (2004-2021)",
-      description: ["Urban GIS Planning and Implementation Consultant."]
-    }
-  ];
-
-  const teachingExperience = [
-    {
-      institution: "Municipalities Isfahan's University of Applied Sciences (2009-2021)",
-      courses: ["Urban Databases", "Computer applications in urban planning"]
-    },
-    {
-      institution: "Red Crescent University of Applied Sciences - Isfahan branch (2014-2021)",
-      courses: ["Management of natural disasters", "Disaster Information Management (DIS)"]
-    },
-    {
-      institution: "Meteorology and Atmospheric Sciences, University of Applied Science (2010-2013)",
-      courses: ["Satellite meteorology"]
-    },
-    {
-      institution: "DaneshPajoohan Institute of Higher Education (2010-2012)",
-      courses: ["GIS", "Digital mapping&AutoCAD (DIS)", "BSc thesis"]
-    },
-    {
-      institution: "Others Organizations",
-      courses: [
-        "Elementary course of GIS to technical experts of Isfahan province governorship in Isfahan municipality",
-        "GIS courses and ARCGIS software to municipalities personal and related organizations",
-        "GIS lessons and Remote Sensing(RS) in public session of geography group for educational teachers"
-      ]
-    }
-  ];
+    
+      {
+        period: "Freelance GIS & Remote Sensing Specialist (2021–Present)",
+        description: [
+          "Applied advanced GIS and remote sensing techniques for spatial analysis and environmental monitoring.",
+          "Delivered custom geospatial solutions to support sustainable development and land use management projects."
+        ]
+      },
+      {
+        period: "GIS Expert & Manager, General Governor's Office of Isfahan Province – National Divisions Group (2014–2021)",
+        description: [
+          "Led the development of crisis response and land management maps to support provincial decision-making.",
+          "Managed and analyzed geospatial datasets to inform regional planning and territorial development.",
+          "Coordinated GIS workflows and mentored junior staff on geospatial technologies and methodologies."
+        ]
+      },
+      {
+        period: "GIS Expert, Isfahan Provincial Planning & Management Organization – Population Census, Statistics, and Land Use Planning (2004–2014)",
+        description: [
+          "Designed and updated census cartography and land use maps in collaboration with national planning authorities.",
+          "Conducted spatial data integration and analysis to support urban and regional planning strategies.",
+          "Provided technical GIS support across departments to improve data-driven decision-making."
+        ]
+      },
+      {
+        period: "Part-time Contributor, S4 (Spatial Structures in the Social Sciences), Department of Sociology, Brown University, USA (Feb–Aug 2013)",
+        description: [
+          "Digitized and georeferenced historical census maps (1890–1930) of major US cities to enable spatio-temporal social science research."
+        ]
+      },
+      {
+        period: "GIS Consultant, Spadana Geo Science & Technology Company (2004–2021)",
+        description: [
+          "Advised on urban GIS planning and implementation projects for municipalities and private sector clients.",
+          "Contributed to smart city initiatives and geospatial database design for infrastructure planning."
+        ]
+      }
+    ];
+    
+    const teachingExperience = [
+      {
+        institution: "Municipalities Isfahan's University of Applied Sciences (2009 - 2021)",
+        description: "Taught undergraduate students in urban planning the fundamentals of urban databases and relevant computer applications.", // Added a brief description
+        courses: ["Urban Databases", "Computer Applications in Urban Planning"]
+      },
+      {
+        institution: "Red Crescent University of Applied Sciences - Isfahan branch (2014 - 2021)",
+        description: "Instructed students on the principles of natural disaster management and the crucial role of Disaster Information Management (DIM).", // Added a brief description
+        courses: ["Management of Natural Disasters", "Disaster Information Management (DIM)"]
+      },
+      {
+        institution: "Meteorology and Atmospheric Sciences, University of Applied Science (2010 - 2013)",
+        description: "Provided specialized instruction in Satellite Meteorology to students in atmospheric sciences.", // Added a brief description
+        courses: ["Satellite Meteorology"]
+      },
+      {
+        institution: "DaneshPajoohan Institute of Higher Education (2010 - 2012)",
+        description: "Guided students in GIS principles, digital mapping techniques using AutoCAD, and supervised BSc theses in related fields.", // Added a brief description
+        courses: ["GIS", "Digital Mapping & AutoCAD (DIM)", "BSc Thesis Supervision"]
+      },
+      {
+        institution: "Various Organizations",
+        description: "Conducted introductory and advanced GIS and Remote Sensing training for professionals and educators across different organizations.", // Added a broader description
+        courses: [
+          "Elementary GIS Course for Technical Experts (Isfahan Province Governorship & Municipality)",
+          "GIS and ArcGIS Software Training for Municipal Personnel and Affiliated Organizations",
+          "GIS and Remote Sensing (RS) Workshops for Geography Educators"
+        ]
+      }
+    ];
 
   const publications = {
     english: [
@@ -200,8 +229,14 @@ const Projects = () => {
   };
 
   const honors = [
-    "First Place in the Master's Entrance Exam among 800 applicants",
-    "Top Rank (1st Place) in the Department of Natural Resources, B.Sc. in Rangeland and Watershed Management, among 75 students, Isfahan University of Technology."
+    {
+      honor: "First Place in the Master's Entrance Exam",
+      details: "Ranked 1st among 800 applicants."
+    },
+    {
+      honor: "Top Rank (1st Place) in B.Sc. Program",
+      details: "Department of Natural Resources, Rangeland and Watershed Management, Isfahan University of Technology. Ranked 1st among 75 students."
+    }
   ];
 
   return (
@@ -219,7 +254,14 @@ const Projects = () => {
         <div className="projects-grid">
           {frontendProjects.map((project, index) => (
             <div key={index} className="project-card">
-              <img src={project.image} alt={project.title} className="project-image" />
+              <div className="project-image-container">
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="project-image"
+                  loading="lazy"
+                />
+              </div>
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-description">{project.description}</p>
@@ -251,7 +293,14 @@ const Projects = () => {
         <div className="projects-grid">
           {dataScienceProjects.map((project, index) => (
             <div key={index} className="project-card">
-              <img src={project.image} alt={project.title} className="project-image" />
+              <div className="project-image-container">
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="project-image"
+                  loading="lazy"
+                />
+              </div>
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-description">{project.description}</p>
@@ -303,6 +352,7 @@ const Projects = () => {
           {teachingExperience.map((exp, index) => (
             <div key={index} className="teaching-item">
               <h3>{exp.institution}</h3>
+              <p>{exp.description}</p>
               <ul>
                 {exp.courses.map((course, courseIndex) => (
                   <li key={courseIndex}>{course}</li>
@@ -352,7 +402,10 @@ const Projects = () => {
         </h2>
         <ul className="honors-list">
           {honors.map((honor, index) => (
-            <li key={index} className="honors-item">{honor}</li>
+            <li key={index} className="honors-item">
+              <h3>{honor.honor}</h3>
+              <p>{honor.details}</p>
+            </li>
           ))}
         </ul>
       </article>

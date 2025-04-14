@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaEnvelope, FaUser, FaPaperPlane, FaPhone, FaWhatsapp, FaCopy, FaCheck } from 'react-icons/fa';
 import './Contact.css';
+import LanguageSelector from '../components/LanguageSelector';
 
 const Contact = () => {
   const [copied, setCopied] = useState(false);
@@ -24,6 +25,7 @@ const Contact = () => {
   return (
     <section className="contact-section">
       <div className="contact-container">
+        < LanguageSelector />
         <div className="contact-form">
           <h1 className="section-title">
             <FaEnvelope />

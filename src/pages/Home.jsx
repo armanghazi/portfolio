@@ -8,25 +8,16 @@ const Home = () => {
           <img src="./img/arman.jpg" alt="Arman Ghaziaskari Naeini" />
         </div>
         <div className="user-text">
-          <h1>About Me</h1>
+        <h1>About Me</h1>
           <p>
-            I am a passionate professional with expertise in Geographic Information Systems (GIS),
-            Data Science, and Web Development. With a strong academic background and practical
-            experience, I have developed a diverse skill set that allows me to tackle complex
-            problems and create innovative solutions.
+          Hello! I'm a passionate technologist with a compelling blend of skills in Data Science,Geographic Information Systems (GIS), and Web Development. I thrive on the process of analyzing data to discover valuable patterns and insights, which I then translate into practical and innovative solutions.
           </p>
           <p>
-            My journey in technology began with my studies in GIS and Remote Sensing, which
-            provided me with a solid foundation in spatial data analysis and visualization.
-            This background, combined with my recent training in Data Science and Web Development,
-            enables me to bridge the gap between traditional GIS and modern web technologies.
+          My initial foray into data analysis began with GIS and Remote Sensing, where I learned to interpret and visualize spatial data. This foundational understanding has been significantly enhanced by my deep dive into Data Science, providing me with the tools and techniques to perform sophisticated analysis and build predictive models. My ability to combine these analytical skills with Web Development allows me to bring data-driven applications to life on the web.
           </p>
           <p>
-            I am particularly interested in developing web applications that integrate spatial
-            data analysis and visualization, making complex geographic information accessible
-            and interactive for users. My goal is to create tools that help organizations
-            make data-driven decisions and solve real-world problems.
-          </p>
+          What truly excites me is building interactive web applications that harness the power of data science to explore and present geographic information. I'm driven to create engaging tools that enable organizations to gain deeper understanding from their data,make evidence-based decisions, and solve real-world challenges effectively.
+            </p>
           <div className="cv-buttons">
             <a href="./pdfs/english.pdf" className="cv-button" target="_blank" rel="noopener noreferrer">
               English Curriculum

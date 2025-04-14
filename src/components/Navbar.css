@@ -1,56 +1,79 @@
 .nav {
-  background-color: var(--primary-color);
-  padding: var(--spacing-md);
+  background-color: var(--white);
+  padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .logo {
-  color: var(--white);
-  font-size: 1.5rem;
-  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 600;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: var(--secondary-color);
 }
 
 .nav-list {
   display: flex;
   list-style: none;
-  gap: 2.5rem; /* Increase spacing between menu items */
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item a {
-  font-size: 1.5rem; /* Make text larger */
-  padding: 1rem 1.5rem; /* Increase padding for better spacing */
-  border-radius: var(--border-radius-medium);
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .nav-item a:hover {
-  background-color: var(--secondary-color);
+  color: var(--secondary-color);
+  transform: translateY(-2px);
 }
 
 .nav-item a.active {
-  background-color: var(--secondary-color);
+  color: var(--secondary-color);
+  font-weight: 600;
 }
 
 .menu-button {
   display: none;
   background: none;
   border: none;
-  color: var(--white);
+  color: var(--primary-color);
   font-size: 1.5rem;
   cursor: pointer;
+  padding: 0.5rem;
 }
 
-@media (max-width: var(--tablet)) {
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0 1rem;
+  }
+
   .nav-list {
     display: none;
     flex-direction: column;
@@ -58,9 +81,11 @@
     top: 100%;
     left: 0;
     right: 0;
-    background-color: var(--primary-color);
-    padding: var(--spacing-md);
-    gap: var(--spacing-md);
+    background-color: var(--white);
+    padding: 1rem;
+    gap: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .nav-list.open {
@@ -69,5 +94,21 @@
 
   .menu-button {
     display: block;
+  }
+
+  .nav-item a {
+    display: block;
+    padding: 0.8rem 1rem;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .nav-item a {
+    font-size: 0.95rem;
   }
 } 
