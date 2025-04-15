@@ -109,7 +109,8 @@
 
 /* Email Section */
 .email-section {
-  background-color: rgb(200, 171, 226);
+  background-color: rgb(195, 138, 245);
+  box-shadow: #63ed8c;
   color: white;
   padding: 2rem;
   border-radius: 16px;
