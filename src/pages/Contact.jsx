@@ -26,8 +26,41 @@ const Contact = () => {
     <section className="contact-section">
       <div className="contact-container"> 
         
-        {/* Form Section */}
-        <div className="contact-form">
+        {/* WhatsApp Section */}
+        <div className="whatsapp-section">
+          <h2 className="section-title">Reach Me on WhatsApp</h2>
+          <p>You can send me a message directly through WhatsApp for quick communication.</p>
+          <button className="whatsapp-button" onClick={handleWhatsAppClick}>
+            <FaWhatsapp />
+            Start Chat
+          </button>
+        </div>
+        
+      </div>
+       
+  
+        {/* Email Section */}
+        <div className="email-section">
+          <h2 className="section-title">Email me</h2>
+          <div className="contact-details">
+            <div className="contact-item">
+              <FaEnvelope />
+              <button 
+                className="email-copy" 
+                onClick={handleCopyEmail}
+                title="Click to copy email"
+              >
+                {email}
+                {copied ? <FaCheck className="copy-icon" /> : <FaCopy className="copy-icon" />}
+              </button>
+            </div>
+          </div>
+          <p>You can also copy the email above and contact me directly!</p>
+        </div>
+  
+
+   {/* Form Section */}
+   <div className="contact-form">
           <h1 className="section-title">
             <FaEnvelope />
             Contact Me
@@ -79,37 +112,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-  
-        {/* Email Section */}
-        <div className="email-section">
-          <h2 className="section-title">Email me</h2>
-          <div className="contact-details">
-            <div className="contact-item">
-              <FaEnvelope />
-              <button 
-                className="email-copy" 
-                onClick={handleCopyEmail}
-                title="Click to copy email"
-              >
-                {email}
-                {copied ? <FaCheck className="copy-icon" /> : <FaCopy className="copy-icon" />}
-              </button>
-            </div>
-          </div>
-          <p>You can also copy the email above and contact me directly!</p>
-        </div>
-  
-        {/* WhatsApp Section */}
-        <div className="whatsapp-section">
-          <h2 className="section-title">Reach Me on WhatsApp</h2>
-          <p>You can send me a message directly through WhatsApp for quick communication.</p>
-          <button className="whatsapp-button" onClick={handleWhatsAppClick}>
-            <FaWhatsapp />
-            Start Chat
-          </button>
-        </div>
         
-      </div>
     </section>
   );
 };
