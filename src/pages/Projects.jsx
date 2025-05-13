@@ -121,10 +121,13 @@ const Projects = () => {
   const gisExperience = [
     
       {
-        period: "Freelance GIS & Remote Sensing Specialist (2021–Present)",
+        period: "Freelancer, GIS Consultant (2021–Present)",
         description: [
-          "Applied advanced GIS and remote sensing techniques for spatial analysis and environmental monitoring.",
-          "Delivered custom geospatial solutions to support sustainable development and land use management projects."
+          "Conducted spatial and environmental analysis using GIS, remote sensing, and Python-based tools.",
+          "Built dashboards (Power BI, Streamlit) to visualize geospatial and statistical insights.",
+          "Automated data workflows and implemented ETL processes for analysis and reporting.",
+          "Explored data science techniques in academic and personal projects.",
+          "Collaborated with clients to deliver geospatial solutions for various projects."
         ]
       },
       {
@@ -244,7 +247,7 @@ const Projects = () => {
       <div id="google_translate_element"></div>
 
       <h1 className="section-title">
-        <FaCode />
+        
         Projects
       </h1>
 
