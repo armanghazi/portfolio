@@ -158,6 +158,20 @@ const Projects = () => {
           "Advised on urban GIS planning and implementation projects for municipalities and private sector clients.",
           "Contributed to smart city initiatives and geospatial database design for infrastructure planning."
         ]
+      },
+          {
+        period: "GIS Consultant, Zistban Company, Isfahan Science and Technology Town (2002–2004)",
+        description: [
+          "Provided consultancy on GIS-related matters for various regional projects",
+          "Collaborated with the Isfahan Regional Water Authority on spatial planning and hydrological mapping projects."
+        ]
+      },
+          {
+        period: "GIS Project Collaborator, Isfahan University of Technology (2002–2003)",
+        description: [
+          "Assisted in the initiation of the Isfahan Province GIS project.",
+          "Contributed to the zero-phase feasibility studies under the supervision of the Isfahan Provincial Management and Planning Organization."
+        ]
       }
     ];
     
