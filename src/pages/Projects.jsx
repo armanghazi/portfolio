@@ -17,13 +17,31 @@ import ekhilurImg from '../assets/img/ekhilur.svg';
 
 const Projects = () => {
   const frontendProjects = [
-    {
-      title: "Personal Portfolio Website (Initial Version)",
-      description: "My first portfolio website, built using only HTML and CSS during a front-end web development course. This initial project served as the foundation for my current, more developed portfolio.",
-      image: portfolioImg,
+       {
+      title: "Endless Countries Questions",
+      description: "An interactive geography quiz application that tests your knowledge about countries around the world. Challenge yourself with endless questions about capitals, populations, regions, languages, and currencies!",
+      image: country.png,
       links: [
-        { text: "LinkedIn Post", icon: "linkedin", url: "https://www.linkedin.com/feed/update/urn:li:activity:7297306010694684672/" },
-        { text: "Website (Initial)", icon: "globe", url: "https://armanghazi.github.io/portfolio_first/index.html" }
+        { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Endless_Countries_Questions.git" },
+        { text: "Website", icon: "globe", url: "https://armanghazi.github.io/Endless_Countries_Questions/" }
+      ]
+    },
+        {
+      title: "Basque Country Weather: A Front-End Bootcamp Finale (El Tiempo en Euskadi)",
+      description: "Developed as the final project for a front-end development bootcamp, this weather forecast application for the Basque Country and some important cities leverages JavaScript, React, and Vite. The result is a fast, modern, and user-friendly interface designed for optimal weather information access.",
+      image: forecastImg,
+      links: [
+        { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/tiempo-euskadi.git" },
+        { text: "Website", icon: "globe", url: "https://tiempo-euskadi.vercel.app/" }
+      ]
+    },
+        {
+      title: "Food Seeker: Explore Nutritional Information (Buscador de Alimentos)",
+      description: "Discover and filter food products with this React.js web application, utilizing the OpenFoodFacts API. Enjoy a visually adaptable experience with dynamic themes powered by CSS variables and a responsive design using CSS Grid and Flexbox. Features include viewing nutritional and environmental details and saving favorite items.",
+      image: foodImg,
+      links: [
+        { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Buscador-deAlimentos" },
+        { text: "Website", icon: "globe", url: "https://buscador-de-alimentos.vercel.app/" }
       ]
     },
     {
@@ -53,22 +71,13 @@ const Projects = () => {
         { text: "Website", icon: "globe", url: "https://armanghazi.github.io/Simple-Weather-Map/index.html" }
       ]
     },
-    {
-      title: "Food Seeker: Explore Nutritional Information (Buscador de Alimentos)",
-      description: "Discover and filter food products with this React.js web application, utilizing the OpenFoodFacts API. Enjoy a visually adaptable experience with dynamic themes powered by CSS variables and a responsive design using CSS Grid and Flexbox. Features include viewing nutritional and environmental details and saving favorite items.",
-      image: foodImg,
+        {
+      title: "Personal Portfolio Website (Initial Version)",
+      description: "My first portfolio website, built using only HTML and CSS during a front-end web development course. This initial project served as the foundation for my current, more developed portfolio.",
+      image: portfolioImg,
       links: [
-        { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Buscador-deAlimentos" },
-        { text: "Website", icon: "globe", url: "https://buscador-de-alimentos.vercel.app/" }
-      ]
-    },
-    {
-      title: "Basque Country Weather: A Front-End Bootcamp Finale (El Tiempo en Euskadi)",
-      description: "Developed as the final project for a front-end development bootcamp, this weather forecast application for the Basque Country and some important cities leverages JavaScript, React, and Vite. The result is a fast, modern, and user-friendly interface designed for optimal weather information access.",
-      image: forecastImg,
-      links: [
-        { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/tiempo-euskadi.git" },
-        { text: "Website", icon: "globe", url: "https://tiempo-euskadi.vercel.app/" }
+        { text: "LinkedIn Post", icon: "linkedin", url: "https://www.linkedin.com/feed/update/urn:li:activity:7297306010694684672/" },
+        { text: "Website (Initial)", icon: "globe", url: "https://armanghazi.github.io/portfolio_first/index.html" }
       ]
     }
   ];
