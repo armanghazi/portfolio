@@ -14,15 +14,16 @@ import universityImg from '../assets/img/university.png';
 import airImg from '../assets/img/air.png';
 import desertImg from '../assets/img/desert.png';
 import ekhilurImg from '../assets/img/ekhilur.svg';
+import countryImg from '../assets/img/country.png';
 
 const Projects = () => {
   const frontendProjects = [
        {
       title: "Endless Countries Questions",
       description: "An interactive geography quiz application that tests your knowledge about countries around the world. Challenge yourself with endless questions about capitals, populations, regions, languages, and currencies!",
-      image: country.png,
+      image: countryImg,
       links: [
-        { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Endless_Countries_Questions.git" },
+        { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Endless_Countries_Questions.git"},
         { text: "Website", icon: "globe", url: "https://armanghazi.github.io/Endless_Countries_Questions/" }
       ]
     },
