@@ -24,6 +24,12 @@ const Studies = () => {
 
   const training = [
     {
+      title: "Artificial Intelligence Specialist",
+      period: "Jun 2025 - Oct 2025",
+      provider: "Lanbide, EDE Fundazioa",
+      details: "230 hours"
+    },
+    {
       title: "Web Development Bootcamp (Front-End)",
       period: "Feb 2025 - Apr 2025",
       provider: "The Bridge Digital Talent",
