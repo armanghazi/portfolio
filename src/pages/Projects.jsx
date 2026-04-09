@@ -131,42 +131,55 @@ const Projects = () => {
   const gisExperience = [
     
       {
-        period: "Freelancer, GIS Consultant (2021–Present)",
+        period: "Freelancer, GIS Consultant (2022–Present)",
         description: [
-          "Conducted spatial and environmental analysis using GIS, remote sensing, and Python-based tools.",
-          "Built dashboards (Power BI, Streamlit) to visualize geospatial and statistical insights.",
-          "Automated data workflows and implemented ETL processes for analysis and reporting.",
-          "Explored data science techniques in academic and personal projects.",
-          "Collaborated with clients to deliver geospatial solutions for various projects."
+        "Conducted spatial and environmental analysis using GIS, remote sensing, and Python‑based tools.",
+        "Built interactive dashboards (Power BI, Streamlit) to visualize geospatial and statistical insights.",
+        "Automated data workflows and implemented ETL processes to support analysis and reporting.",
+        "Applied and explored data science techniques in academic, personal, and practical geospatial projects.",
+        "Collaborated with clients to develop and deliver geospatial solutions tailored to project needs."
+
         ]
       },
       {
         period: "GIS Expert & Manager, General Governor's Office of Isfahan Province – National Divisions Group (2014–2021)",
         description: [
-          "Led the development of crisis response and land management maps to support provincial decision-making.",
-          "Managed and analyzed geospatial datasets to inform regional planning and territorial development.",
-          "Coordinated GIS workflows and mentored junior staff on geospatial technologies and methodologies."
+          "Led spatial data management and the development of crisis‑response and territorial planning solutions for provincial authorities.",
+          "Managed and analyzed large geospatial datasets to support regional planning, land management, and strategic decision‑making.",
+          "Prepared and structured technical proposals, including methodologies, timelines, and data specifications for high‑impact projects.",
+          "Reviewed RFP/RFQ documents to ensure full compliance with technical and administrative requirements.",
+          "Coordinated multidisciplinary teams and stakeholders to deliver competitive, client‑oriented geospatial proposals.",
+          "Oversaw documentation workflows and ensured timely submission of all deliverables across multiple concurrent projects.",
+          "Led GIS workflows, mentored junior staff, and introduced modern geospatial methodologies and technologies after 2018."
+
         ]
       },
       {
-        period: "GIS Expert, Isfahan Provincial Planning & Management Organization – Population Census, Statistics, and Land Use Planning (2004–2014)",
+        period: "GIS Expert at Spadana GeoSite, working on‑site at the Isfahan Provincial Planning & Management Organization (2004–2014).",
         description: [
-          "Designed and updated census cartography and land use maps in collaboration with national planning authorities.",
-          "Conducted spatial data integration and analysis to support urban and regional planning strategies.",
-          "Provided technical GIS support across departments to improve data-driven decision-making."
+          "Designed and updated census cartography and land‑use maps in coordination with provincial and national planning authorities.",
+          "Integrated, processed, and analyzed geospatial datasets to support urban, regional, and territorial planning strategies.",
+          "Provided technical GIS support across departments to enhance data‑driven decision‑making and spatial governance.",
+          "Managed GIS implementation projects for several municipalities across the province, ensuring successful deployment and operational adoption.",
+          "Coordinated project teams and collaborated with municipal stakeholders to deliver tailored geospatial solutions."
         ]
       },
       {
-        period: "Part-time Contributor, S4 (Spatial Structures in the Social Sciences), Department of Sociology, Brown University, USA (Feb–Aug 2013)",
+        period: "GIS Contributor, S4 (Spatial Structures in the Social Sciences), Department of Sociology, Brown University, USA (Feb–Aug 2013)",
         description: [
           "Digitized and georeferenced historical census maps (1890–1930) of major US cities to enable spatio-temporal social science research."
         ]
       },
       {
-        period: "GIS Consultant, Spadana Geo Science & Technology Company (2004–2021)",
+        period: "GIS Consultant and Project Manager at Spadana Geo Science & Technology Company (2004–2018).",
         description: [
-          "Advised on urban GIS planning and implementation projects for municipalities and private sector clients.",
-          "Contributed to smart city initiatives and geospatial database design for infrastructure planning."
+
+          "Managed and contributed to GIS projects for various clients, including municipalities, regional authorities, and private sector organizations.","Led and managed GIS implementation projects for municipalities, overseeing full project lifecycles from planning to delivery.",
+          "Advised municipalities and private sector clients on urban GIS planning, system design, and operational deployment.",
+          "Coordinated multidisciplinary teams, ensuring alignment between technical requirements, timelines, and stakeholder expectations.",
+          "Directed the development of geospatial databases and smart‑city solutions to support infrastructure and urban planning initiatives.",
+          "Supervised technical teams and ensured the successful execution of GIS workflows, quality standards, and project deliverables.",
+          "Collaborated with municipal leaders and technical departments to deliver scalable, data‑driven geospatial solutions."
         ]
       },
           {

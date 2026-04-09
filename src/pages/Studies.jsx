@@ -24,6 +24,24 @@ const Studies = () => {
 
   const training = [
     {
+      title: "Big Data Specialist",
+      period: "Jan 2026 - Mar 2026",
+      provider: "Lanbide, Alfa formación",
+      details: "230 hours"
+    },
+    {
+      title: "Introduction to comprehensive BIM project management",
+      period: "Feb 2026 - Mar 2026",
+      provider: "SEPE, Metodo Consultores",
+      details: "50 hours"
+    },
+    {
+      title: "Geographic information systems applied to agricultural management with free software",
+      period: "Dec 2025 - Feb 2026",
+      provider: "SEPE, Metodo Consultores",
+      details: "150 hours"
+    },
+    {
       title: "Artificial Intelligence Specialist",
       period: "Jun 2025 - Oct 2025",
       provider: "Lanbide, EDE Fundazioa",
