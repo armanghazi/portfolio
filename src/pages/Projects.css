@@ -193,6 +193,55 @@
   transform: translateY(0);
 }
 
+.gis-preview-size {
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.gis-hover-preview {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  transform: scale(0.98);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1500;
+  background: rgba(0, 0, 0, 0.82);
+  padding: 1.25rem;
+  overflow: auto;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.gis-gallery-media:hover .gis-hover-preview {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.gis-gallery-image-full {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(95vw, 1800px);
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .gis-hover-preview {
+    display: none;
+  }
+}
+
 .gis-gallery-caption {
   padding: 0.9rem 1rem;
   color: var(--primary-color);

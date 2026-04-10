@@ -45,21 +45,25 @@ const GISGalleryImage = ({ name }) => {
         }}
       />
       {imageSize && <span className="gis-image-size-badge">{imageSize}</span>}
+      <div className="gis-hover-preview" aria-hidden="true">
+        <img src={imageSrc} alt="" className="gis-gallery-image-full" />
+        {imageSize && <p className="gis-preview-size">{imageSize}</p>}
+      </div>
     </div>
   );
 };
 
 const Projects = () => {
   const GIS = [
-    "mapas generales",
-    "census1",
-    "census2",
-    "la industria y la minería",
-    "Mapa turístico",
-    "Territorio apto y no apto para el turismo",
-    "Territorio apto y no apto para la agricultura",
-    "Territorio apto y no apto para la industria y la minería de la provincia de Isfahán",
-    "Territorio apto y no apto para la población de la provincia de Isfahán"
+    "general maps for statistical yearbooks and territorial planning",
+    "census rural",
+    "census urban",
+    "The map of industry and mining",
+    "Tourist map",
+    "Territory suitable and unsuitable for tourism",
+    "Land suitable and unsuitable for agriculture",
+    "Territory suitable and unsuitable for industry and mining",
+    "Territory suitable and unsuitable for the population"
   ];
 
   const dataScienceProjects = [
