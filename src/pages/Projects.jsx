@@ -256,7 +256,7 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="gis-gallery-button"
           >
-            Open My Maps PDF
+            Open My Maps
           </a>
         </div>
       </article>

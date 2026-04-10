@@ -50,20 +50,20 @@ const Studies = () => {
     {
       title: "Web Development Bootcamp (Front-End)",
       period: "Feb 2025 - Apr 2025",
-      provider: "The Bridge Digital Talent",
+      provider: "The Bridge Digital Talent(BBK Bootcamps)",
       details: "200 hours"
     },
     {
       title: "Data Science Bootcamp",
       period: "Sep 2024 - Feb 2025",
-      provider: "The Bridge Digital Talent",
+      provider: "The Bridge Digital Talent(BBK Bootcamps)",
       details: "480 hours"
     },
     {
       title: "Microcomputer Systems Assembly and Maintenance (Level 1)",
       period: "May 2024 - Jul 2024",
       provider: "Lanbide, IFAP (Basauri)",
-      details: "370 hours total (290 hours theory + 80 hours practical)"
+      details: "370 hours"
     },
     {
       title: "Business Intelligence: Data Modeling and Visualization with Excel and Power BI",
