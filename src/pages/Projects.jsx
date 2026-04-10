@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCode, FaDatabase, FaBook, FaTrophy, FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaCode, FaDatabase, FaMapMarkedAlt, FaBook, FaTrophy, FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import './Projects.css';
 
 // Import images
@@ -16,7 +16,97 @@ import desertImg from '../assets/img/desert.png';
 import ekhilurImg from '../assets/img/ekhilur.svg';
 import countryImg from '../assets/img/country.png';
 
+const GISGalleryImage = ({ name }) => {
+  const extensions = ['png', 'jpg', 'jpeg', 'webp', 'svg'];
+  const [extIndex, setExtIndex] = React.useState(0);
+  const [imageSize, setImageSize] = React.useState(null);
+  const baseUrl = import.meta.env.BASE_URL || '/';
+
+  if (extIndex >= extensions.length) {
+    return <div className="gis-gallery-missing">Image not found</div>;
+  }
+
+  const imageSrc = `${baseUrl}img/${encodeURIComponent(name)}.${extensions[extIndex]}`;
+
+  return (
+    <div className="gis-gallery-media">
+      <img
+        src={imageSrc}
+        alt={name}
+        className="gis-gallery-image"
+        loading="lazy"
+        onLoad={(event) => {
+          const { naturalWidth, naturalHeight } = event.currentTarget;
+          setImageSize(`${naturalWidth} × ${naturalHeight}`);
+        }}
+        onError={() => {
+          setImageSize(null);
+          setExtIndex((current) => current + 1);
+        }}
+      />
+      {imageSize && <span className="gis-image-size-badge">{imageSize}</span>}
+    </div>
+  );
+};
+
 const Projects = () => {
+  const GIS = [
+    "mapas generales",
+    "census1",
+    "census2",
+    "la industria y la minería",
+    "Mapa turístico",
+    "Territorio apto y no apto para el turismo",
+    "Territorio apto y no apto para la agricultura",
+    "Territorio apto y no apto para la industria y la minería de la provincia de Isfahán",
+    "Territorio apto y no apto para la población de la provincia de Isfahán"
+  ];
+
+  const dataScienceProjects = [
+    {
+      title: "Battleship Game in Python (Hundir la flota)",
+      description: "Developed a classic Battleship game using Python, demonstrating fundamental programming concepts and game logic implementation.",
+      image: hundirImg,
+      links: [
+        { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/Hundir_la_flota/tree/master" }
+      ]
+    },
+    {
+      title: "Analyzing Global University Trends with Python EDA",
+      description: "Conducted Exploratory Data Analysis (EDA) on the CWUR dataset using Python to identify and analyze multi-year patterns and key insights in global university rankings.",
+      image: universityImg,
+      links: [
+        { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/University-Rankings-Analysis" }
+      ]
+    },
+    {
+      title: "Machine Learning for Iranian Air Pollution Analysis",
+      description: "Utilized machine learning algorithms to develop predictive models for analyzing and forecasting air pollution trends in Iran.",
+      image: airImg,
+      links: [
+        { text: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/posts/arman-ghaziaskari_machinelearning-calidaddelaire-datascience-activity-7286430093579579392-JAQF/" },
+        { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/air_pollution_iran" }
+      ]
+    },
+    {
+      title: "Dessert Prediction using Machine Learning (Postre)",
+      description: "Applied various machine learning techniques to build a model capable of predicting dessert types based on provided input features.",
+      image: desertImg,
+      links: [
+        { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/Postre" },
+        { text: "Website", icon: "globe", url: "https://postre2.streamlit.app/" }
+      ]
+    },
+    {
+      title: "Ekhilur Custom Statistics Platform (Web Scraping Challenge)",
+      description: "A bootcamp challenge involving the development of a website with a web scraping implementation to provide Ekhilur users with personalized transaction statistics extracted directly from their accounts.",
+      image: ekhilurImg,
+      links: [
+        { text: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/posts/julietareynosob_bbkbootcamps-talentodigital-ciberseguridad-activity-7294662135396098048-DPrd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA27lesBTPzbSHAxYtjZloFCoHLyDdPrtAU" }
+      ]
+    }
+  ];
+
   const frontendProjects = [
        {
       title: "Endless Countries Questions",
@@ -83,50 +173,6 @@ const Projects = () => {
     }
   ];
 
-  const dataScienceProjects = [
-    {
-      title: "Battleship Game in Python (Hundir la flota)",
-      description: "Developed a classic Battleship game using Python, demonstrating fundamental programming concepts and game logic implementation.",
-      image: hundirImg,
-      links: [
-        { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/Hundir_la_flota/tree/master" }
-      ]
-    },
-    {
-      title: "Analyzing Global University Trends with Python EDA",
-      description: "Conducted Exploratory Data Analysis (EDA) on the CWUR dataset using Python to identify and analyze multi-year patterns and key insights in global university rankings.",
-      image: universityImg,
-      links: [
-        { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/University-Rankings-Analysis" }
-      ]
-    },
-    {
-      title: "Machine Learning for Iranian Air Pollution Analysis",
-      description: "Utilized machine learning algorithms to develop predictive models for analyzing and forecasting air pollution trends in Iran.",
-      image: airImg,
-      links: [
-        { text: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/posts/arman-ghaziaskari_machinelearning-calidaddelaire-datascience-activity-7286430093579579392-JAQF/" },
-        { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/air_pollution_iran" }
-      ]
-    },
-    {
-      title: "Dessert Prediction using Machine Learning (Postre)",
-      description: "Applied various machine learning techniques to build a model capable of predicting dessert types based on provided input features.",
-      image: desertImg,
-      links: [
-        { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/Postre" },
-        { text: "Website", icon: "globe", url: "https://postre2.streamlit.app/" }
-      ]
-    },
-    {
-      title: "Ekhilur Custom Statistics Platform (Web Scraping Challenge)",
-      description: "A bootcamp challenge involving the development of a website with a web scraping implementation to provide Ekhilur users with personalized transaction statistics extracted directly from their accounts.",
-      image: ekhilurImg,
-      links: [
-        { text: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/posts/julietareynosob_bbkbootcamps-talentodigital-ciberseguridad-activity-7294662135396098048-DPrd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA27lesBTPzbSHAxYtjZloFCoHLyDdPrtAU" }
-      ]
-    }
-  ];
 
   const publications = {
     english: [
@@ -188,11 +234,36 @@ const Projects = () => {
 
       <article>
         <h2 className="category-title">
-          <FaCode />
-          Front-end and Related Projects
+          <FaMapMarkedAlt />
+          GIS Gallery
+        </h2>
+        <div className="gis-gallery-grid">
+          {GIS.map((name) => (
+            <figure key={name} className="gis-gallery-card">
+              <GISGalleryImage name={name} />
+              <figcaption className="gis-gallery-caption">{name}</figcaption>
+            </figure>
+          ))}
+        </div>
+        <div className="gis-gallery-actions">
+          <a
+            href={`${import.meta.env.BASE_URL || '/'}pdfs/mymaps.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="gis-gallery-button"
+          >
+            Open My Maps PDF
+          </a>
+        </div>
+      </article>
+
+      <article>
+        <h2 className="category-title">
+          <FaDatabase />
+          Data Science and Related Projects
         </h2>
         <div className="projects-grid">
-          {frontendProjects.map((project, index) => (
+          {dataScienceProjects.map((project, index) => (
             <div key={index} className="project-card">
               <div className="project-image-container">
                 <img 
@@ -227,11 +298,11 @@ const Projects = () => {
 
       <article>
         <h2 className="category-title">
-          <FaDatabase />
-          Data Science and Related Projects
+          <FaCode />
+          Front-end and Related Projects
         </h2>
         <div className="projects-grid">
-          {dataScienceProjects.map((project, index) => (
+          {frontendProjects.map((project, index) => (
             <div key={index} className="project-card">
               <div className="project-image-container">
                 <img 
