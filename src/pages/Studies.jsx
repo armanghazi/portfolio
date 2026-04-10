@@ -63,7 +63,7 @@ const Studies = () => {
       title: "Microcomputer Systems Assembly and Maintenance (Level 1)",
       period: "May 2024 - Jul 2024",
       provider: "Lanbide, IFAP (Basauri)",
-      details: "370 hours total (80 hours of internship remaining)"
+      details: "370 hours total (290 hours theory + 80 hours practical)"
     },
     {
       title: "Business Intelligence: Data Modeling and Visualization with Excel and Power BI",
