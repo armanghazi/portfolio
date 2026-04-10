@@ -34,10 +34,20 @@ const Experience = () => {
         "Delineated and digitized rural/urban census blocks; updated cartography using satellite imagery and field surveys; integrated with national statistical databases.",
         "Conducted spatial analysis, territorial diagnostics, and land‑use modeling for sustainable development planning.",
         "Developed thematic maps and suitability analysis for tourism (zoning, circuits), agriculture, industry, mining, water resources, and infrastructure.",
-        "Extracted urban maps from aerial imagery; created property‑level GIS layers (ownership, land use, renewal codes, building specs).",
-        "Developed thematic layers for residential, commercial, cultural, educational, religious, and administrative land uses.",
-        "Managed GIS implementation projects for multiple municipalities; contributed to WebGIS deployment for Isfahan Municipality and Governor’s Office.",
-        "Integrated, processed, and analyzed geospatial datasets to support urban, regional, and territorial planning strategies."
+        "Produced geospatial datasets and maps for regional planning, land management, and strategic decision‑making.",
+        "Prepared technical proposals (methodologies, timelines, data specs); reviewed RFPs/RFQs; coordinated multidisciplinary teams for competitive geospatial proposals."
+      ]
+    },
+        {
+      period: "GIS Consultant and Project Manager at Spadana Geo Science & Technology Company (2004–2018)",
+      description: [
+        "Managed and contributed to GIS projects for municipalities, regional authorities, and private sector organizations.",
+        "Led and managed GIS implementation projects for municipalities, overseeing full project lifecycles from planning to delivery.",
+        "Advised municipalities and private sector clients on urban GIS planning, system design, and operational deployment.",
+        "Coordinated multidisciplinary teams, ensuring alignment between technical requirements, timelines, and stakeholder expectations.",
+        "Directed the development of geospatial databases and smart‑city solutions to support infrastructure and urban planning initiatives.",
+        "Supervised technical teams and ensured the successful execution of GIS workflows, quality standards, and project deliverables.",
+        "Prepared technical proposals (methodologies, timelines, data specs); reviewed RFPs/RFQs; coordinated multidisciplinary teams for competitive geospatial proposals."
       ]
     },
     {
@@ -46,17 +56,7 @@ const Experience = () => {
         "Digitized and georeferenced historical census maps (1890–1930) of major US cities to enable spatio-temporal social science research."
       ]
     },
-    {
-      period: "GIS Consultant and Project Manager at Spadana Geo Science & Technology Company (2004–2018)",
-      description: [
-        "Managed and contributed to GIS projects for municipalities, regional authorities, and private sector organizations.",
-        "Led and managed GIS implementation projects for municipalities, overseeing full project lifecycles from planning to delivery.",
-        "Advised municipalities and private sector clients on urban GIS planning, system design, and operational deployment.",
-        "Coordinated multidisciplinary teams, ensuring alignment between technical requirements, timelines, and stakeholder expectations.",
-        "Directed the development of geospatial databases and smart‑city solutions to support infrastructure and urban planning initiatives.",
-        "Supervised technical teams and ensured the successful execution of GIS workflows, quality standards, and project deliverables."
-      ]
-    },
+
     {
       period: "GIS Consultant, Zistban Company, Isfahan Science and Technology Town (2002–2004)",
       description: [
