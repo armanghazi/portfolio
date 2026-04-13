@@ -1,120 +1,89 @@
-import React, { useState } from 'react';
-import { FaEnvelope, FaUser, FaPaperPlane, FaPhone, FaWhatsapp, FaCopy, FaCheck } from 'react-icons/fa';
+import { useState } from 'react';
+import { FaCheck, FaCopy, FaEnvelope, FaPaperPlane, FaWhatsapp } from 'react-icons/fa';
 import './Contact.css';
 
-
 const Contact = () => {
-  const [copied, setCopied] = useState(false);
   const email = 'ghaziaskari@gmail.com';
+  const whatsappNumber = '0034600977125';
+  const [copied, setCopied] = useState(false);
+
+  const handleWhatsAppClick = () => {
+    const message = encodeURIComponent('Hi Arman, I would like to discuss my project.');
+    const digits = String(whatsappNumber).replace(/\D/g, '');
+    window.open(`https://wa.me/${digits}?text=${message}`, '_blank', 'noopener,noreferrer');
+  };
 
   const handleCopyEmail = async () => {
     try {
       await navigator.clipboard.writeText(email);
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch (err) {
-      console.error('Failed to copy email:', err);
+      window.setTimeout(() => setCopied(false), 1500);
+    } catch (error) {
+      console.error('Failed to copy email:', error);
     }
-  };
-
-  const handleWhatsAppClick = () => {
-    const message = encodeURIComponent('Hello. I want to send you this message:');
-    window.open(`https://wa.me/+34600977125?text=${message}`, '_blank');
   };
 
   return (
     <section className="contact-section">
-      <div className="contact-container"> 
-        
-        {/* WhatsApp Section */}
-        <div className="whatsapp-section">
-          <h2 className="section-title">Reach Me on WhatsApp</h2>
-          <p>You can send me a message directly through WhatsApp for quick communication.</p>
-          <button className="whatsapp-button" onClick={handleWhatsAppClick}>
-            <FaWhatsapp />
-            Start Chat
-          </button>
+      <div className="contact-container">
+        {/* HERO CTA */}
+        <div className="cta-hero">
+          <h1>Looking for a GIS or Data Specialist?</h1>
+          <p>Let&apos;s discuss your project and turn your data into actionable insights.</p>
         </div>
-        
-      </div>
-       
-  
-        {/* Email Section */}
-        <div className="email-section">
-          <h2 className="section-title">Email me</h2>
-          <div className="contact-details">
+
+        {/* QUICK CONTACT */}
+        <div className="quick-contact">
+          {/* WhatsApp */}
+          <div className="whatsapp-section">
+            <h2>Fastest Way</h2>
+            <button type="button" className="whatsapp-button" onClick={handleWhatsAppClick}>
+              <FaWhatsapp />
+              Chat on WhatsApp
+            </button>
+            <p>Get a quick response and discuss your project.</p>
+          </div>
+
+          {/* Email */}
+          <div className="email-section">
+            <h2>Prefer Email?</h2>
+
             <div className="contact-item">
               <FaEnvelope />
-              <button 
-                className="email-copy" 
-                onClick={handleCopyEmail}
-                title="Click to copy email"
-              >
+              <button type="button" className="email-copy" onClick={handleCopyEmail}>
                 {email}
-                {copied ? <FaCheck className="copy-icon" /> : <FaCopy className="copy-icon" />}
+                {copied ? <FaCheck /> : <FaCopy />}
               </button>
             </div>
-          </div>
-          <p>You can also copy the email above and contact me directly!</p>
-        </div>
-  
 
-   {/* Form Section */}
-   <div className="contact-form">
-          <h1 className="section-title">
-            <FaEnvelope />
-            Contact Me
-          </h1>
-          <form 
-            id="contact-form" 
-            action="https://formsubmit.co/02ad2d2441030f69f7107ce3699c230a" 
-            method="POST"
-          >
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_next" value="https://armanghazi.github.io/portfolio/#/thank-you" />
-  
-            <div className="form-group">
-              <label htmlFor="name" className="form-label">
-                <FaUser />
-                Name:
-              </label>
-              <input type="text" id="name" name="name" className="form-input" required placeholder="Write your name here." />
-            </div>
-  
-            <div className="form-group">
-              <label htmlFor="email" className="form-label">
-                <FaEnvelope />
-                Email:
-              </label>
-              <input 
-                type="email" 
-                id="email" 
-                name="email" 
-                className="form-input"
-                required 
-                placeholder="Write your Email here." 
-                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
-                title="Please enter a valid email address (e.g., name@example.com)"
-              />
-            </div>
-  
-            <div className="form-group">
-              <label htmlFor="message" className="form-label">
-                <FaEnvelope />
-                Your Message:
-              </label>
-              <textarea id="message" name="message" className="form-textarea" required placeholder="Write your message here."></textarea>
-            </div>
-  
-            <button type="submit" className="submit-button">
-              <FaPaperPlane />
-              Send Message
-            </button>
-          </form>
+            <p className="response-time">I usually reply within a few hours.</p>
+          </div>
         </div>
-        
+      </div>
+
+      {/* FORM */}
+      <div className="contact-form">
+        <h2 className="section-title">
+          <FaEnvelope />
+          Tell Me About Your Project
+        </h2>
+
+        <form action="https://formsubmit.co/02ad2d2441030f69f7107ce3699c230a" method="POST">
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://armanghazi.github.io/portfolio/#/thank-you" />
+
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <textarea name="message" placeholder="Describe your project..." required />
+
+          <button type="submit" className="submit-button">
+            <FaPaperPlane />
+            Send Message
+          </button>
+        </form>
+      </div>
     </section>
   );
 };
 
-export default Contact; 
+export default Contact;
