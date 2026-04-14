@@ -60,10 +60,10 @@ const Projects = () => {
     "Urban Census Blocks Mapping",
     "Industrial & Mining Distribution Map",
     "Tourism Map & Points of Interest",
-    "Tourism Suitability Analysis (Suitable / Unsuitable Areas)",
-    "Agricultural Suitability Analysis (Suitable / Unsuitable Areas)",
-    "Industrial & Mining Suitability Analysis (Suitable / Unsuitable Areas)",
-    "Population Suitability & Settlement Potential Analysis (Suitable / Unsuitable Areas)",
+    "Tourism Suitability Analysis (Suitable  Unsuitable Areas)",
+    "Agricultural Suitability Analysis (Suitable  Unsuitable Areas)",
+    "Industrial & Mining Suitability Analysis (Suitable  Unsuitable Areas)",
+    "Population Suitability & Settlement Potential Analysis (Suitable  Unsuitable Areas)",
   ];
 
   const dataScienceProjects = [
