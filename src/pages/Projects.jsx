@@ -113,7 +113,7 @@ const Projects = () => {
 
   const frontendProjects = [
        {
-      title: "Endless Countries Questions — Interactive Geography Quiz",
+      title: "Endless Countries Questions - Interactive Geography Quiz",
       description: "Built an interactive geography quiz using a REST Countries API, generating endless randomized questions about capitals, populations, regions, languages, and currencies. After every 15 questions, the app displays correct/incorrect statistics and continues the game seamlessly.",
       image: countryImg,
       links: [
@@ -131,7 +131,7 @@ const Projects = () => {
       ]
     },
         {
-      title: "Food Seeker — Nutritional & Environmental Data Explorer (OpenFoodFacts API)",
+      title: "Food Seeker - Nutritional & Environmental Data Explorer (OpenFoodFacts API)",
       description: "Created a React.js application that allows users to search and filter supermarket food products using the OpenFoodFacts API. Includes nutritional and environmental impact details, dynamic themes via CSS variables, and a fully responsive layout using CSS Grid and Flexbox.",
       image: foodImg,
       links: [
@@ -140,7 +140,7 @@ const Projects = () => {
       ]
     },
     {
-      title: "Movie Finder (Spanish) — TMDb API Search & Filters",
+      title: "Movie Finder (Spanish) - TMDb API Search & Filters",
       description: "Developed a Spanish‑language movie search application using the TMDb API, featuring advanced filters for release date, genre, rating, and Spanish film certification. Includes posters, summaries, and a fully localized interface." ,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Busqueda-de-peliculas-favoritas" },
@@ -148,7 +148,7 @@ const Projects = () => {
       ]
     },
     {
-      title: "Movie Finder (English) — TMDb API Search & Filters",
+      title: "Movie Finder (English) - TMDb API Search & Filters",
       description: "Built an English‑language movie search tool powered by the TMDb API, offering filters for release date, genre, rating, and US film certification, along with posters and movie summaries.",
       image: usaImg,
       links: [
@@ -157,7 +157,7 @@ const Projects = () => {
       ]
     },
     {
-      title: "Bizkaia Weather Map — Real‑Time Weather Visualization",
+      title: "Bizkaia Weather Map - Real‑Time Weather Visualization",
       description: "Developed a simple interactive map using Leaflet.js and the OpenWeatherMap API to display real‑time weather conditions across Bizkaia.",
       image: weatherMapImg,
       links: [
@@ -166,7 +166,7 @@ const Projects = () => {
       ]
     },
         {
-      title: "Personal Portfolio Website — First Version (HTML & CSS)",
+      title: "Personal Portfolio Website - First Version (HTML & CSS)",
       description: "My first portfolio website, built entirely with HTML and CSS during a front‑end development course. This project laid the foundation for my current, more advanced portfolio.",
       image: portfolioImg,
       links: [
