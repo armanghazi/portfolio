@@ -55,37 +55,37 @@ const GISGalleryImage = ({ name }) => {
 
 const Projects = () => {
   const GIS = [
-    "general maps for statistical yearbooks and territorial planning",
-    "census rural",
-    "census urban",
-    "The map of industry and mining",
-    "Tourist map",
-    "Territory suitable and unsuitable for tourism",
-    "Land suitable and unsuitable for agriculture",
-    "Territory suitable and unsuitable for industry and mining",
-    "Territory suitable and unsuitable for the population"
+    "General Maps for Statistical Yearbooks & Territorial Planning",
+    "Rural Census Blocks Mapping",
+    "Urban Census Blocks Mapping",
+    "Industrial & Mining Distribution Map",
+    "Tourism Map & Points of Interest",
+    "Tourism Suitability Analysis (Suitable / Unsuitable Areas)",
+    "Agricultural Suitability Analysis (Suitable / Unsuitable Areas)",
+    "Industrial & Mining Suitability Analysis (Suitable / Unsuitable Areas)",
+    "Population Suitability & Settlement Potential Analysis (Suitable / Unsuitable Areas)",
   ];
 
   const dataScienceProjects = [
     {
-      title: "Battleship Game in Python (Hundir la flota)",
-      description: "Developed a classic Battleship game using Python, demonstrating fundamental programming concepts and game logic implementation.",
+      title: "Python Fundamentals Project — Battleship Game (Hundir la flota)",
+      description: "Developed a classic Battleship game as my first Python project, applying core programming concepts such as loops, conditionals, functions, and basic game logic.",
       image: hundirImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/Hundir_la_flota/tree/master" }
       ]
     },
     {
-      title: "Analyzing Global University Trends with Python EDA",
-      description: "Conducted Exploratory Data Analysis (EDA) on the CWUR dataset using Python to identify and analyze multi-year patterns and key insights in global university rankings.",
+      title: "Exploratory Data Analysis of Global University Rankings (CWUR Dataset)",
+      description: "Performed an in‑depth EDA on the CWUR dataset, analyzing multi‑year trends among the top 1000 universities worldwide and uncovering key patterns in academic performance indicators.",
       image: universityImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/University-Rankings-Analysis" }
       ]
     },
     {
-      title: "Machine Learning for Iranian Air Pollution Analysis",
-      description: "Utilized machine learning algorithms to develop predictive models for analyzing and forecasting air pollution trends in Iran.",
+      title: "Air Pollution Analysis & Prediction in Iran Using Machine Learning and Deep Learning.",
+      description: "Built predictive models using regression, classification, and deep learning techniques to analyze air pollution indicators, identify key contributing factors, and forecast pollution trends.",
       image: airImg,
       links: [
         { text: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/posts/arman-ghaziaskari_machinelearning-calidaddelaire-datascience-activity-7286430093579579392-JAQF/" },
@@ -93,8 +93,8 @@ const Projects = () => {
       ]
     },
     {
-      title: "Dessert Prediction using Machine Learning (Postre)",
-      description: "Applied various machine learning techniques to build a model capable of predicting dessert types based on provided input features.",
+      title: "Dessert Classification Model Using Machine Learning Techniques",
+      description: "Developed a machine learning model to predict dessert categories based on multiple input features, experimenting with various algorithms and evaluating model performance.",
       image: desertImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/Postre" },
@@ -102,8 +102,8 @@ const Projects = () => {
       ]
     },
     {
-      title: "Ekhilur Custom Statistics Platform (Web Scraping Challenge)",
-      description: "A bootcamp challenge involving the development of a website with a web scraping implementation to provide Ekhilur users with personalized transaction statistics extracted directly from their accounts.",
+      title: "Ekhilur Custom Statistics Platform — Web Scraping & Predictive Analytics Challenge",
+      description: "Collaborated with web security and development teams to complete the final challenge: performing large‑scale web scraping, data cleaning, exploratory analysis, and building predictive models to generate actionable business insights.",
       image: ekhilurImg,
       links: [
         { text: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/posts/julietareynosob_bbkbootcamps-talentodigital-ciberseguridad-activity-7294662135396098048-DPrd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA27lesBTPzbSHAxYtjZloFCoHLyDdPrtAU" }
@@ -256,7 +256,7 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="gis-gallery-button"
           >
-            Open My Maps
+            Selected GIS & Spatial Analysis Works
           </a>
         </div>
       </article>

@@ -4,7 +4,7 @@ import './Contact.css';
 
 const Contact = () => {
   const email = 'ghaziaskari@gmail.com';
-  const whatsappNumber = '+34600977125';
+  const whatsappNumber = '34600977125';
   const [copied, setCopied] = useState(false);
 
   const handleWhatsAppClick = () => {
