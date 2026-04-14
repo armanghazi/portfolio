@@ -171,7 +171,7 @@ const Projects = () => {
       image: portfolioImg,
       links: [
         { text: "LinkedIn Post", icon: "linkedin", url: "https://www.linkedin.com/feed/update/urn:li:activity:7297306010694684672/" },
-        { text: "Website (Initial)", icon: "globe", url: "https://armanghazi.github.io/portfolio_first/index.html" }
+        { text: "Website (Initial)", icon: "globe", url: "https://armanghazi.github.io/portfolio_first/index.html" } 
       ]
     }
   ];
