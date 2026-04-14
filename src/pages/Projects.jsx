@@ -113,8 +113,8 @@ const Projects = () => {
 
   const frontendProjects = [
        {
-      title: "Endless Countries Questions",
-      description: "An interactive geography quiz application that tests your knowledge about countries around the world. Challenge yourself with endless questions about capitals, populations, regions, languages, and currencies!",
+      title: "Endless Countries Questions — Interactive Geography Quiz",
+      description: "Built an interactive geography quiz using a REST Countries API, generating endless randomized questions about capitals, populations, regions, languages, and currencies. After every 15 questions, the app displays correct/incorrect statistics and continues the game seamlessly.",
       image: countryImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Endless_Countries_Questions.git"},
@@ -122,8 +122,8 @@ const Projects = () => {
       ]
     },
         {
-      title: "Basque Country Weather: A Front-End Bootcamp Finale (El Tiempo en Euskadi)",
-      description: "Developed as the final project for a front-end development bootcamp, this weather forecast application for the Basque Country and some important cities leverages JavaScript, React, and Vite. The result is a fast, modern, and user-friendly interface designed for optimal weather information access.",
+      title: "Basque Country Weather App (React, Vite, OpenWeatherMap)",
+      description: "Developed as the final project of a front‑end bootcamp, this weather application provides real‑time conditions for major cities in the Basque Country and selected global cities. Features include wind speed, humidity, visibility, air pollution levels, sunrise/sunset times, and a 15‑day forecast.",
       image: forecastImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/tiempo-euskadi.git" },
@@ -131,8 +131,8 @@ const Projects = () => {
       ]
     },
         {
-      title: "Food Seeker: Explore Nutritional Information (Buscador de Alimentos)",
-      description: "Discover and filter food products with this React.js web application, utilizing the OpenFoodFacts API. Enjoy a visually adaptable experience with dynamic themes powered by CSS variables and a responsive design using CSS Grid and Flexbox. Features include viewing nutritional and environmental details and saving favorite items.",
+      title: "Food Seeker — Nutritional & Environmental Data Explorer (OpenFoodFacts API)",
+      description: "Created a React.js application that allows users to search and filter supermarket food products using the OpenFoodFacts API. Includes nutritional and environmental impact details, dynamic themes via CSS variables, and a fully responsive layout using CSS Grid and Flexbox.",
       image: foodImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Buscador-deAlimentos" },
@@ -140,17 +140,16 @@ const Projects = () => {
       ]
     },
     {
-      title: "Find Your Favorite Movies (Spanish)",
-      description: "A user-friendly web application built with JavaScript, HTML, and CSS that allows you to easily search for movies using the TMDb API. Discover films with advanced filters for release date, genre, rating, and Spanish film certification. Enjoy the entire experience in Spanish.",
-      image: espaniolImg,
+      title: "Movie Finder (Spanish) — TMDb API Search & Filters",
+      description: "Developed a Spanish‑language movie search application using the TMDb API, featuring advanced filters for release date, genre, rating, and Spanish film certification. Includes posters, summaries, and a fully localized interface." ,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Busqueda-de-peliculas-favoritas" },
         { text: "Website", icon: "globe", url: "https://armanghazi.github.io/Busqueda-de-peliculas-favoritas/" }
       ]
     },
     {
-      title: "Find Your Favorite Movies (English)",
-      description: "Explore and search for movies effortlessly with this web application (JavaScript, HTML, CSS) powered by the TMDb API. Refine your search using filters for release date, genre, rating, and US film certification.",
+      title: "Movie Finder (English) — TMDb API Search & Filters",
+      description: "Built an English‑language movie search tool powered by the TMDb API, offering filters for release date, genre, rating, and US film certification, along with posters and movie summaries.",
       image: usaImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Search-for-Favorite-Movies" },
@@ -158,8 +157,8 @@ const Projects = () => {
       ]
     },
     {
-      title: "Weather Map of Bizkaia (OpenWeatherMap & Leaflet.js)",
-      description: "A web application visualizing real-time weather data for Bizkaia. Built with the OpenWeatherMap API for weather information and Leaflet.js for interactive map display.",
+      title: "Bizkaia Weather Map — Real‑Time Weather Visualization",
+      description: "Developed a simple interactive map using Leaflet.js and the OpenWeatherMap API to display real‑time weather conditions across Bizkaia.",
       image: weatherMapImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Simple-Weather-Map" },
@@ -167,8 +166,8 @@ const Projects = () => {
       ]
     },
         {
-      title: "Personal Portfolio Website (Initial Version)",
-      description: "My first portfolio website, built using only HTML and CSS during a front-end web development course. This initial project served as the foundation for my current, more developed portfolio.",
+      title: "Personal Portfolio Website — First Version (HTML & CSS)",
+      description: "My first portfolio website, built entirely with HTML and CSS during a front‑end development course. This project laid the foundation for my current, more advanced portfolio.",
       image: portfolioImg,
       links: [
         { text: "LinkedIn Post", icon: "linkedin", url: "https://www.linkedin.com/feed/update/urn:li:activity:7297306010694684672/" },
