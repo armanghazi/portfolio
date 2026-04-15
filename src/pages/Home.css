@@ -214,6 +214,28 @@
   color: #4b5563;
 }
 
+[data-theme="dark"] .user-text h2 {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .skills-section h2 {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .skill-card {
+  background: #243447;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .skill-card h3 {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .skill-card li {
+  color: #d1d5db;
+}
+
 /* ---------------------- */
 /*      RESPONSIVE        */
 /* ---------------------- */

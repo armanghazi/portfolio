@@ -109,6 +109,45 @@
   margin-top: 1px;
 }
 
+[data-theme="dark"] .experience-page-section {
+  background:
+    radial-gradient(circle at 10% 10%, rgba(52, 152, 219, 0.2), transparent 35%),
+    radial-gradient(circle at 90% 0%, rgba(46, 204, 113, 0.18), transparent 30%);
+}
+
+[data-theme="dark"] .experience-page-section .section-title,
+[data-theme="dark"] .experience-page-section .category-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .experience-page-section .category-title {
+  border-bottom-color: rgba(52, 152, 219, 0.55);
+}
+
+[data-theme="dark"] .experience-section,
+[data-theme="dark"] .teaching-section {
+  background: linear-gradient(145deg, rgba(36, 52, 71, 0.96), rgba(26, 34, 46, 0.94));
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .experience-item,
+[data-theme="dark"] .teaching-item {
+  background-color: rgba(30, 41, 59, 0.75);
+  border-left-color: #60a5fa;
+}
+
+[data-theme="dark"] .experience-item h3,
+[data-theme="dark"] .teaching-item h3 {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .experience-item li,
+[data-theme="dark"] .teaching-item li,
+[data-theme="dark"] .teaching-item p {
+  color: #e2e8f0;
+}
+
 @media (max-width: 768px) {
   .experience-page-section {
     padding: 3rem 1.5rem;
