@@ -1,11 +1,10 @@
 import React from 'react';
-import { FaCode, FaDatabase, FaMapMarkedAlt, FaBook, FaTrophy, FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaCode, FaDatabase, FaMapMarkedAlt, FaBook, FaTrophy } from 'react-icons/fa';
 import './Projects.css';
 
 // Import images
 import portfolioImg from '../assets/img/portfolio.png';
 import weatherMapImg from '../assets/img/weather-map.png';
-import espaniolImg from '../assets/img/espaniol.png';
 import usaImg from '../assets/img/usa.png';
 import foodImg from '../assets/img/food.png';
 import forecastImg from '../assets/img/forecast.png';
@@ -236,153 +235,163 @@ const Projects = () => {
       </h1>
 
       <article>
-        <h2 className="category-title">
-          <FaMapMarkedAlt />
-          GIS Gallery
-        </h2>
-        <div className="gis-gallery-grid">
-          {GIS.map((name) => (
-            <figure key={name} className="gis-gallery-card">
-              <GISGalleryImage name={name} />
-              <figcaption className="gis-gallery-caption">{name}</figcaption>
-            </figure>
-          ))}
-        </div>
-        <div className="gis-gallery-actions">
-          <a
-            href={`${import.meta.env.BASE_URL || '/'}pdfs/mymaps.pdf`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="gis-gallery-button"
-          >
-            Selected GIS & Spatial Analysis Works
-          </a>
-        </div>
+        <details className="section-accordion">
+          <summary className="category-title">
+            <FaMapMarkedAlt />
+            GIS Gallery
+          </summary>
+          <div className="gis-gallery-grid">
+            {GIS.map((name) => (
+              <figure key={name} className="gis-gallery-card">
+                <GISGalleryImage name={name} />
+                <figcaption className="gis-gallery-caption">{name}</figcaption>
+              </figure>
+            ))}
+          </div>
+          <div className="gis-gallery-actions">
+            <a
+              href={`${import.meta.env.BASE_URL || '/'}pdfs/mymaps.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="gis-gallery-button"
+            >
+              Selected GIS & Spatial Analysis Works
+            </a>
+          </div>
+        </details>
       </article>
 
       <article>
-        <h2 className="category-title">
-          <FaDatabase />
-          Data Science and Related Projects
-        </h2>
-        <div className="projects-grid">
-          {dataScienceProjects.map((project, index) => (
-            <div key={index} className="project-card">
-              <div className="project-image-container">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="project-image"
-                  loading="lazy"
-                />
-              </div>
-              <div className="project-content">
-                <h3 className="project-title">{project.title}</h3>
-                <p className="project-description">{project.description}</p>
-                <div className="project-links">
-                  {project.links.map((link, linkIndex) => (
-                    <a
-                      key={linkIndex}
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link"
-                    >
-                      <i className={`fab fa-${link.icon}`}></i>
-                      {link.text}
-                    </a>
-                  ))}
+        <details className="section-accordion">
+          <summary className="category-title">
+            <FaDatabase />
+            Data Science and Related Projects
+          </summary>
+          <div className="projects-grid">
+            {dataScienceProjects.map((project, index) => (
+              <div key={index} className="project-card">
+                <div className="project-image-container">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="project-image"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="project-content">
+                  <h3 className="project-title">{project.title}</h3>
+                  <p className="project-description">{project.description}</p>
+                  <div className="project-links">
+                    {project.links.map((link, linkIndex) => (
+                      <a
+                        key={linkIndex}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-link"
+                      >
+                        <i className={`fab fa-${link.icon}`}></i>
+                        {link.text}
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </details>
       </article>
 
       <article>
-        <h2 className="category-title">
-          <FaCode />
-          Front-end and Related Projects
-        </h2>
-        <div className="projects-grid">
-          {frontendProjects.map((project, index) => (
-            <div key={index} className="project-card">
-              <div className="project-image-container">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="project-image"
-                  loading="lazy"
-                />
-              </div>
-              <div className="project-content">
-                <h3 className="project-title">{project.title}</h3>
-                <p className="project-description">{project.description}</p>
-                <div className="project-links">
-                  {project.links.map((link, linkIndex) => (
-                    <a
-                      key={linkIndex}
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link"
-                    >
-                      <i className={`fab fa-${link.icon}`}></i>
-                      {link.text}
-                    </a>
-                  ))}
+        <details className="section-accordion">
+          <summary className="category-title">
+            <FaCode />
+            Front-end and Related Projects
+          </summary>
+          <div className="projects-grid">
+            {frontendProjects.map((project, index) => (
+              <div key={index} className="project-card">
+                <div className="project-image-container">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="project-image"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="project-content">
+                  <h3 className="project-title">{project.title}</h3>
+                  <p className="project-description">{project.description}</p>
+                  <div className="project-links">
+                    {project.links.map((link, linkIndex) => (
+                      <a
+                        key={linkIndex}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-link"
+                      >
+                        <i className={`fab fa-${link.icon}`}></i>
+                        {link.text}
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </details>
       </article>
 
       <article className="publications-section">
-        <h2 className="category-title">
-          <FaBook />
-          Publications
-        </h2>
-        <div className="publications-list">
-          <div className="publications-item">
-            <h3>English</h3>
-            <ul>
-              {publications.english.map((pub, index) => (
-                <li key={index}>
-                  <a href={pub.link} target="_blank" rel="noopener noreferrer">
-                    {pub.title}
-                  </a>
-                  , {pub.authors} <em>{pub.journal}</em>
-                </li>
-              ))}
-            </ul>
+        <details className="section-accordion">
+          <summary className="category-title">
+            <FaBook />
+            Publications
+          </summary>
+          <div className="publications-list">
+            <div className="publications-item">
+              <h3>English</h3>
+              <ul>
+                {publications.english.map((pub, index) => (
+                  <li key={index}>
+                    <a href={pub.link} target="_blank" rel="noopener noreferrer">
+                      {pub.title}
+                    </a>
+                    , {pub.authors} <em>{pub.journal}</em>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="publications-item">
+              <h3>Persian</h3>
+              <ul>
+                {publications.persian.map((pub, index) => (
+                  <li key={index}>
+                    {pub.title}, {pub.authors} <em>{pub.journal}</em>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div className="publications-item">
-            <h3>Persian</h3>
-            <ul>
-              {publications.persian.map((pub, index) => (
-                <li key={index}>
-                  {pub.title}, {pub.authors} <em>{pub.journal}</em>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        </details>
       </article>
 
       <article className="honors-section">
-        <h2 className="category-title">
-          <FaTrophy />
-          Honors and Awards
-        </h2>
-        <ul className="honors-list">
-          {honors.map((honor, index) => (
-            <li key={index} className="honors-item">
-              <h3>{honor.honor}</h3>
-              <p>{honor.details}</p>
-            </li>
-          ))}
-        </ul>
+        <details className="section-accordion">
+          <summary className="category-title">
+            <FaTrophy />
+            Honors and Awards
+          </summary>
+          <ul className="honors-list">
+            {honors.map((honor, index) => (
+              <li key={index} className="honors-item">
+                <h3>{honor.honor}</h3>
+                <p>{honor.details}</p>
+              </li>
+            ))}
+          </ul>
+        </details>
       </article>
     </section>
   );

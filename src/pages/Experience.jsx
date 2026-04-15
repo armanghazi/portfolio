@@ -117,12 +117,14 @@ const Experience = () => {
         <div className="experience-list">
           {gisExperience.map((exp, index) => (
             <div key={index} className="experience-item">
-              <h3>{exp.period}</h3>
-              <ul>
-                {exp.description.map((item, itemIndex) => (
-                  <li key={itemIndex}>{item}</li>
-                ))}
-              </ul>
+              <details className="accordion-item">
+                <summary>{exp.period}</summary>
+                <ul>
+                  {exp.description.map((item, itemIndex) => (
+                    <li key={itemIndex}>{item}</li>
+                  ))}
+                </ul>
+              </details>
             </div>
           ))}
         </div>
@@ -136,13 +138,15 @@ const Experience = () => {
         <div className="teaching-list">
           {teachingExperience.map((exp, index) => (
             <div key={index} className="teaching-item">
-              <h3>{exp.institution}</h3>
-              <p>{exp.description}</p>
-              <ul>
-                {exp.courses.map((course, courseIndex) => (
-                  <li key={courseIndex}>{course}</li>
-                ))}
-              </ul>
+              <details className="accordion-item">
+                <summary>{exp.institution}</summary>
+                <p>{exp.description}</p>
+                <ul>
+                  {exp.courses.map((course, courseIndex) => (
+                    <li key={courseIndex}>{course}</li>
+                  ))}
+                </ul>
+              </details>
             </div>
           ))}
         </div>

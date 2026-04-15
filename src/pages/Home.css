@@ -236,6 +236,41 @@
   color: #d1d5db;
 }
 
+[data-theme="dark"] .primary-btn {
+  background: #2563eb;
+  color: #f8fafc;
+  border: 1px solid rgba(147, 197, 253, 0.4);
+}
+
+[data-theme="dark"] .primary-btn:hover,
+[data-theme="dark"] .primary-btn:focus-visible {
+  background: #3b82f6;
+  color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.35);
+}
+
+[data-theme="dark"] .primary-btn:active {
+  background: #1d4ed8;
+}
+
+[data-theme="dark"] .secondary-btn {
+  border-color: #60a5fa;
+  color: #bfdbfe;
+  background: transparent;
+}
+
+[data-theme="dark"] .secondary-btn:hover,
+[data-theme="dark"] .secondary-btn:focus-visible {
+  background: #1e3a8a;
+  border-color: #93c5fd;
+  color: #eff6ff;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.3);
+}
+
+[data-theme="dark"] .secondary-btn:active {
+  background: #1e40af;
+}
+
 /* ---------------------- */
 /*      RESPONSIVE        */
 /* ---------------------- */
