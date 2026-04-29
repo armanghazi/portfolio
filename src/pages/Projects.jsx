@@ -256,7 +256,7 @@ const Projects = () => {
               rel="noopener noreferrer"
               className="gis-gallery-button"
             >
-              Selected GIS & Spatial Analysis Works
+              Selected GIS Works(In English)
             </a>
             <a
               href={`${import.meta.env.BASE_URL || '/'}pdfs/mismapas.pdf`}
@@ -264,7 +264,7 @@ const Projects = () => {
               rel="noopener noreferrer"
               className="gis-gallery-button"
             >
-              In Spanish
+              Selected GIS Works(In Spanish)
             </a>
           </div>
         </details>

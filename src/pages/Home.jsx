@@ -120,7 +120,7 @@ const Home = () => {
             <h3>Additional Knowledge</h3>
             <ul>
             <li>Big Data (Spark, Kafka, Hadoop – basic)</li>
-            <li>avaScript, Streamlit</li>
+            <li>JavaScript, Streamlit</li>
           
             </ul>
           </div>
