@@ -97,7 +97,8 @@ const Projects = () => {
       image: desertImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/Postre" },
-        { text: "Website", icon: "globe", url: "https://postre2.streamlit.app/" }
+        { text: "Website", icon: "globe", url: "https://postre2.streamlit.app/" },
+        { text: "huggingface", icon: "huggingface", url: "https://huggingface.co/spaces/ghaziaskari/Dessert" }
       ]
     },
     {

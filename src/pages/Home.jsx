@@ -30,31 +30,35 @@ const Home = () => {
         </div>
 
         <div className="user-text">
-          <h1>GIS & Data Science Specialist</h1>
-          <h2>20+ Years Transforming Spatial Data into Smart Decisions</h2>
+          <h1>GIS & Smart Cities Project Manager </h1>
+          <h2>20+ Years Delivering Geospatial & Data-Driven Solutions</h2>
 
           <p>
-            I am a GIS and Data Science specialist with 20+ years of experience in geospatial analysis and remote sensing.
+          I am a GIS & Data Specialist with over 20 years of experience delivering geospatial solutions for urban planning, territorial analysis, and decision-making.
+          </p>
+          <p>
+          Throughout my career, I have led and coordinated GIS projects end-to-end for public sector organizations, working closely with multidisciplinary teams and stakeholders.
           </p>
 
           <p>
-            I combine spatial thinking with Python-based data workflows to extract meaningful patterns and support real-world decision-making.
+          My expertise includes spatial analysis, geospatial data infrastructures, and data standardization, ensuring consistency and scalability across complex systems.
           </p>
 
           <p>
-            My expertise includes spatial analysis, ETL pipelines, and building interactive data applications.
+          I combine spatial thinking with Python-based data workflows, ETL automation, and interactive dashboards to deliver efficient, data-driven solutions.
           </p>
 
           <p>
-            Currently expanding expertise in Big Data and cloud technologies, supported by strong experience in project coordination, technical documentation, and cross-functional collaboration.
+          Currently expanding my expertise in Big Data and cloud technologies, with a strong focus on Smart Cities and project management.
           </p>
 
           {/* VALUE SECTION */}
           <div className="value-points">
-            <p>✔ 20+ years GIS experience</p>
-            <p>✔ Python & Data Science workflows</p>
-            <p>✔ ETL & Automation</p>
-            <p>✔ Decision-support systems</p>
+            <p>✔ 20+ years GIS & Project Experience </p>
+            <p>✔ End-to-End Project Management</p>
+            <p>✔ Data Standardization & Governance</p>
+            <p>✔ Smart City & Urban Planning Solutions</p>
+            <p>✔ Python, ETL & Data Workflows</p>
           </div>
 
           {/* CTA */}
@@ -76,9 +80,20 @@ const Home = () => {
             <h3>GIS & Geospatial</h3>
             <ul>
               <li>ArcGIS, QGIS, GEE</li>
-              <li>Remote Sensing</li>
-              <li>Spatial Analysis</li>
+              <li>Spatial Analysis & Remote Sensing</li>
+              <li>Geospatial Data Modeling</li>
               <li>GeoPandas</li>
+            </ul>
+          </div>
+
+          <div className="skill-card">
+            <h3>Project Management</h3>
+            <ul>
+              <li>Project Planning & Delivery</li>
+              <li>Stakeholder Management</li>
+              <li>Team Coordination</li>
+              <li>Requirements Analysis</li>
+              <li>Data Standardization</li>
             </ul>
           </div>
 
@@ -93,11 +108,20 @@ const Home = () => {
           </div>
 
           <div className="skill-card">
-            <h3>Development & Big Data</h3>
+            <h3>Tools & Technologies</h3>
             <ul>
-              <li>JavaScript, Streamlit</li>
-              <li>Spark, Kafka, Hadoop</li>
-              <li>Git, Docker</li>
+            <li>Git, Docker</li>
+            <li>Notion / Jira (familiarity)</li>
+          
+            </ul>
+          </div>
+
+          <div className="skill-card">
+            <h3>Additional Knowledge</h3>
+            <ul>
+            <li>Big Data (Spark, Kafka, Hadoop – basic)</li>
+            <li>avaScript, Streamlit</li>
+          
             </ul>
           </div>
 
