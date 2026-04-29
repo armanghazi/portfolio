@@ -257,6 +257,14 @@ const Projects = () => {
             >
               Selected GIS & Spatial Analysis Works
             </a>
+            <a
+              href={`${import.meta.env.BASE_URL || '/'}pdfs/mismapas.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="gis-gallery-button"
+            >
+              In Spanish
+            </a>
           </div>
         </details>
       </article>
