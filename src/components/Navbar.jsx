@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import LanguageSwitcher from './LanguageSwitcher';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -17,18 +18,18 @@ const Navbar = () => {
     { path: '/studies', label: 'Studies' },
     { path: '/experience', label: 'Experience' },
     { path: '/projects', label: 'Projects' },
-    { path: '/contact', label: 'Contact' }
+    { path: '/contact', label: 'Contact' },
   ];
 
   return (
     <nav className="nav">
       <div className="nav-container">
         <Link to="/" className="logo">Arman Ghaziaskari Naeini</Link>
-        <button className="menu-button" onClick={toggleMenu}>
+        <button className="menu-button" type="button" onClick={toggleMenu}>
           <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
         </button>
         <ul className={`nav-list ${isOpen ? 'open' : ''}`}>
-          {navItems.map(item => (
+          {navItems.map((item) => (
             <li key={item.path} className="nav-item">
               <Link
                 to={item.path}
@@ -40,9 +41,10 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <LanguageSwitcher />
       </div>
     </nav>
   );
 };
 
-export default Navbar; 
+export default Navbar;

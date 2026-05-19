@@ -70,7 +70,7 @@ const Contact = () => {
 
         <form action="https://formsubmit.co/02ad2d2441030f69f7107ce3699c230a" method="POST">
           <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="https://armanghazi.github.io/portfolio/#/thank-you" />
+          <input type="hidden" name="_next" value="https://armanghazi.github.io/portfolio/thank-you" />
 
           <input type="text" name="name" placeholder="Your name" required />
           <input type="email" name="email" placeholder="Your email" required />

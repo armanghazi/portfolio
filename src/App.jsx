@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -9,14 +9,13 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import ThankYou from './pages/ThankYou';
 import ThemeToggle from './components/ThemeToggle';
-import RoutePreserver from './components/RoutePreserver';
 import './styles/global.css';
 import './styles/rtl.css';
+import './styles/translate.css';
 
 function App() {
   return (
-    <Router>
-      <RoutePreserver />
+    <Router basename="/portfolio">
       <div className="app">
         <Navbar />
         <main>

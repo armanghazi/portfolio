@@ -14,230 +14,81 @@
     <meta property="og:type" content="website" />
     <link rel="canonical" href="https://armanghazi.github.io/portfolio/" />
     <title>Arman Ghaziaskari Naeini - Portfolio</title>
+    <!-- GitHub Pages SPA redirect (pairs with public/404.html) -->
     <script type="text/javascript">
-      (function () {
-        var ROUTE_KEY = 'portfolio_app_route';
-
-        function isAppHash(hash) {
-          return hash && hash.indexOf('#/') === 0 && hash.indexOf('googtrans') === -1;
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
         }
-
-        function saveFromHash() {
-          var hash = window.location.hash;
-          if (isAppHash(hash)) {
-            sessionStorage.setItem(ROUTE_KEY, hash.slice(1));
-          }
-        }
-
-        function restoreIfNeeded() {
-          var saved = sessionStorage.getItem(ROUTE_KEY);
-          if (!saved || saved === '/') return;
-
-          var hash = window.location.hash;
-          var needsRestore =
-            !hash || hash === '#' || hash === '#/' || hash.indexOf('googtrans') !== -1;
-
-          if (needsRestore) {
-            window.location.replace(
-              window.location.pathname + window.location.search + '#' + saved
-            );
-          }
-        }
-
-        saveFromHash();
-        restoreIfNeeded();
-
-        window.addEventListener('hashchange', function () {
-          if (window.location.hash.indexOf('googtrans') !== -1) {
-            restoreIfNeeded();
-            return;
-          }
-          saveFromHash();
-        });
-
-        document.addEventListener(
-          'click',
-          function (e) {
-            if (
-              e.target.closest &&
-              e.target.closest('.goog-te-combo, .goog-te-menu-value, .goog-te-menu2, .goog-te-menu2-item')
-            ) {
-              saveFromHash();
-            }
-          },
-          true
-        );
-
-        window.addEventListener('beforeunload', saveFromHash);
-      })();
+      })(window.location);
     </script>
     <script type="text/javascript">
       function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-          pageLanguage: 'en',
-          includedLanguages: 'es,eu,fa',
-          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: true
-        }, 'google_translate_element');
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: 'en',
+            includedLanguages: 'es,eu,fa',
+            autoDisplay: false,
+          },
+          'google_translate_element'
+        );
 
-        // Handle RTL for Persian and Arabic
-        const observer = new MutationObserver(function(mutations) {
-          mutations.forEach(function(mutation) {
-            if (mutation.target.tagName === 'HTML') {
-              const lang = mutation.target.getAttribute('lang');
-              if (lang === 'fa' || lang === 'ar') {
-                document.documentElement.dir = 'rtl';
-                document.body.dir = 'rtl';
-                document.body.style.textAlign = 'right';
-              } else {
-                document.documentElement.dir = 'ltr';
-                document.body.dir = 'ltr';
-                document.body.style.textAlign = 'left';
-              }
-            }
-          });
+        var observer = new MutationObserver(function () {
+          var lang = document.documentElement.getAttribute('lang');
+          if (lang === 'fa' || lang === 'ar') {
+            document.documentElement.dir = 'rtl';
+            document.body.dir = 'rtl';
+          } else if (lang) {
+            document.documentElement.dir = 'ltr';
+            document.body.dir = 'ltr';
+          }
         });
 
         observer.observe(document.documentElement, {
           attributes: true,
-          attributeFilter: ['lang']
+          attributeFilter: ['lang'],
         });
       }
     </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
     <style>
-      #google_translate_element {
-        position: fixed;
-        top: 10px;
-        left : 10px;
-        z-index: 9999;
-      }
-      .goog-te-banner-frame.skiptranslate,
-      .goog-te-gadget-icon {
+      #google_translate_element,
+      .goog-te-banner-frame,
+      iframe.skiptranslate,
+      body > .skiptranslate {
         display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        overflow: hidden !important;
       }
       body {
-        top: 0px !important;
-      }
-      .goog-tooltip {
-        display: none !important;
-      }
-      .goog-tooltip:hover {
-        display: none !important;
-      }
-      .goog-text-highlight {
-        background-color: transparent !important;
-        border: none !important;
-        box-shadow: none !important;
-      }
-      .VIpgJd-ZVi9od-l4eHX-hSRGPd {
-        display: none !important;
-      }
-
-      /* RTL Styles */
-      [dir="rtl"] {
-        direction: rtl !important;
-      }
-      
-      [dir="rtl"] * {
-        direction: inherit;
-      }
-      
-      [dir="rtl"] .navbar,
-      [dir="rtl"] .nav-links {
-        flex-direction: row-reverse !important;
-      }
-      
-      [dir="rtl"] .container,
-      [dir="rtl"] .section,
-      [dir="rtl"] .content {
-        direction: rtl !important;
-        text-align: right !important;
-      }
-      
-      [dir="rtl"] h1,
-      [dir="rtl"] h2,
-      [dir="rtl"] h3,
-      [dir="rtl"] h4,
-      [dir="rtl"] h5,
-      [dir="rtl"] h6,
-      [dir="rtl"] p,
-      [dir="rtl"] span,
-      [dir="rtl"] div {
-        text-align: right !important;
-      }
-      
-      [dir="rtl"] .form-group {
-        text-align: right !important;
-      }
-      
-      [dir="rtl"] input,
-      [dir="rtl"] textarea {
-        text-align: right !important;
-        direction: rtl !important;
-      }
-      
-      /* Fix margins and paddings for RTL */
-      [dir="rtl"] .ml-1, [dir="rtl"] .ml-2, [dir="rtl"] .ml-3, [dir="rtl"] .ml-4, [dir="rtl"] .ml-5 {
-        margin-left: 0 !important;
-        margin-right: inherit !important;
-      }
-      
-      [dir="rtl"] .mr-1, [dir="rtl"] .mr-2, [dir="rtl"] .mr-3, [dir="rtl"] .mr-4, [dir="rtl"] .mr-5 {
-        margin-right: 0 !important;
-        margin-left: inherit !important;
-      }
-      
-      [dir="rtl"] .pl-1, [dir="rtl"] .pl-2, [dir="rtl"] .pl-3, [dir="rtl"] .pl-4, [dir="rtl"] .pl-5 {
-        padding-left: 0 !important;
-        padding-right: inherit !important;
-      }
-      
-      [dir="rtl"] .pr-1, [dir="rtl"] .pr-2, [dir="rtl"] .pr-3, [dir="rtl"] .pr-4, [dir="rtl"] .pr-5 {
-        padding-right: 0 !important;
-        padding-left: inherit !important;
-      }
-
-      /* Additional RTL fixes for Google Translate */
-      .translated-rtl {
-        direction: rtl !important;
-        text-align: right !important;
-      }
-
-      .translated-rtl .navbar {
-        flex-direction: row-reverse !important;
-      }
-
-      .translated-rtl .nav-item {
-        margin-right: 0 !important;
-        margin-left: 1rem !important;
-      }
-
-      .translated-rtl .container {
-        direction: rtl !important;
-      }
-
-      /* Fix for RTL in Google Translate dropdown */
-      .goog-te-menu-value span:nth-child(3) {
-        display: none !important;
-      }
-      
-      .goog-te-menu-value span:nth-child(5) {
-        display: none !important;
+        top: 0 !important;
+        position: static !important;
       }
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQ9PQKD1D8"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-YQ9PQKD1D8');
-  </script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-YQ9PQKD1D8');
+    </script>
   </head>
   <body>
-    <div id="google_translate_element"></div>
+    <div id="google_translate_element" aria-hidden="true"></div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

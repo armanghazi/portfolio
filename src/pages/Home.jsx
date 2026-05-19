@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Home = () => {
@@ -63,8 +64,8 @@ const Home = () => {
 
           {/* CTA */}
           <div className="hero-cta">
-            <a href="#projects" className="primary-btn">View Projects</a>
-            <a href="#contact" className="secondary-btn">Contact Me</a>
+            <Link to="/projects" className="primary-btn">View Projects</Link>
+            <Link to="/contact" className="secondary-btn">Contact Me</Link>
           </div>
 
         </div>
@@ -82,6 +83,7 @@ const Home = () => {
               <li>ArcGIS, QGIS, GEE</li>
               <li>Spatial Analysis & Remote Sensing</li>
               <li>Geospatial Data Modeling</li>
+              <li>ArcGIS Enterprise, Web AppBuilder</li>
               <li>GeoPandas</li>
             </ul>
           </div>
