@@ -11,7 +11,7 @@ const Home = () => {
 
           <div className="cv-buttons-vertical">
             <a
-              href="./pdfs/english.pdf"
+              href="./pdfs/English_Arman Ghaziaskari naeini_May.pdf"
               className="cv-button-vertical"
               target="_blank"
               rel="noopener noreferrer"
@@ -19,7 +19,7 @@ const Home = () => {
               English CV
             </a>
             <a
-              href="./pdfs/spanish.pdf"
+              href="./pdfs/espanol_Arman Ghaziaskari naeini_Mayo.pdf"
               className="cv-button-vertical"
               target="_blank"
               rel="noopener noreferrer"
@@ -112,18 +112,12 @@ const Home = () => {
             <ul>
             <li>Git, Docker</li>
             <li>Notion / Jira (familiarity)</li>
-          
-            </ul>
-          </div>
-
-          <div className="skill-card">
-            <h3>Additional Knowledge</h3>
-            <ul>
             <li>Big Data (Spark, Kafka, Hadoop – basic)</li>
             <li>JavaScript, Streamlit</li>
           
             </ul>
           </div>
+
 
         </div>
       </section>

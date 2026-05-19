@@ -228,8 +228,6 @@ const Projects = () => {
 
   return (
     <section className="projects-section">
-      <div id="google_translate_element"></div>
-
       <h1 className="section-title">
         
         Projects

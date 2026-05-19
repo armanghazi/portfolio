@@ -24,6 +24,12 @@ const Studies = () => {
 
   const training = [
     {
+      title: "LABORLAN 2026: AI&Data Tech: Artificial Intelligence and Technological Project Management",
+      period: "Apr 2026 - Jul 2026",
+      provider: "GAIA, DEMA, C2B-Campus to Business",
+      details: "325 hours"
+    },
+    {
       title: "Big Data Specialist",
       period: "Jan 2026 - Mar 2026",
       provider: "Lanbide, Alfa formación",

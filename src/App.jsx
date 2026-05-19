@@ -9,12 +9,14 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import ThankYou from './pages/ThankYou';
 import ThemeToggle from './components/ThemeToggle';
+import RoutePreserver from './components/RoutePreserver';
 import './styles/global.css';
 import './styles/rtl.css';
 
 function App() {
   return (
     <Router>
+      <RoutePreserver />
       <div className="app">
         <Navbar />
         <main>

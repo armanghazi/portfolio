@@ -15,6 +15,63 @@
     <link rel="canonical" href="https://armanghazi.github.io/portfolio/" />
     <title>Arman Ghaziaskari Naeini - Portfolio</title>
     <script type="text/javascript">
+      (function () {
+        var ROUTE_KEY = 'portfolio_app_route';
+
+        function isAppHash(hash) {
+          return hash && hash.indexOf('#/') === 0 && hash.indexOf('googtrans') === -1;
+        }
+
+        function saveFromHash() {
+          var hash = window.location.hash;
+          if (isAppHash(hash)) {
+            sessionStorage.setItem(ROUTE_KEY, hash.slice(1));
+          }
+        }
+
+        function restoreIfNeeded() {
+          var saved = sessionStorage.getItem(ROUTE_KEY);
+          if (!saved || saved === '/') return;
+
+          var hash = window.location.hash;
+          var needsRestore =
+            !hash || hash === '#' || hash === '#/' || hash.indexOf('googtrans') !== -1;
+
+          if (needsRestore) {
+            window.location.replace(
+              window.location.pathname + window.location.search + '#' + saved
+            );
+          }
+        }
+
+        saveFromHash();
+        restoreIfNeeded();
+
+        window.addEventListener('hashchange', function () {
+          if (window.location.hash.indexOf('googtrans') !== -1) {
+            restoreIfNeeded();
+            return;
+          }
+          saveFromHash();
+        });
+
+        document.addEventListener(
+          'click',
+          function (e) {
+            if (
+              e.target.closest &&
+              e.target.closest('.goog-te-combo, .goog-te-menu-value, .goog-te-menu2, .goog-te-menu2-item')
+            ) {
+              saveFromHash();
+            }
+          },
+          true
+        );
+
+        window.addEventListener('beforeunload', saveFromHash);
+      })();
+    </script>
+    <script type="text/javascript">
       function googleTranslateElementInit() {
         new google.translate.TranslateElement({
           pageLanguage: 'en',
