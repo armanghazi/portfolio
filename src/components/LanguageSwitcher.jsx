@@ -36,7 +36,8 @@ const LanguageSwitcher = () => {
   }, []);
 
   return (
-    <div className="language-switcher" aria-label="Language selection">
+    <div className="language-switcher" role="group" aria-label="Language selection">
+      <span className="language-switcher-label">Language</span>
       {LANGUAGES.map(({ code, label }) => (
         <button
           key={code}
