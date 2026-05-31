@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCode, FaDatabase, FaMapMarkedAlt, FaBook, FaTrophy } from 'react-icons/fa';
+import { FaCode, FaDatabase, FaMapMarkedAlt, FaBook, FaTrophy, FaRobot } from 'react-icons/fa';
 import './Projects.css';
 
 // Import images
@@ -14,34 +14,34 @@ import airImg from '../assets/img/air.png';
 import desertImg from '../assets/img/desert.png';
 import ekhilurImg from '../assets/img/ekhilur.svg';
 import countryImg from '../assets/img/country.png';
+import armanDsLibraryBanner from '../assets/img/arman_ds_library_banner.svg';
+import n8nFlowchart from '../assets/img/n8n_flowchart.png';
 
-const GISGalleryImage = ({ name }) => {
-  const extensions = ['png', 'jpg', 'jpeg', 'webp', 'svg'];
-  const [extIndex, setExtIndex] = React.useState(0);
+const baseUrl = import.meta.env.BASE_URL || '/';
+
+const publicAssetUrl = (path) => `${baseUrl}${path.split('/').map(encodeURIComponent).join('/')}`;
+
+const GISGalleryImage = ({ file, alt }) => {
   const [imageSize, setImageSize] = React.useState(null);
-  const baseUrl = import.meta.env.BASE_URL || '/';
+  const [hasError, setHasError] = React.useState(false);
+  const imageSrc = publicAssetUrl(`img/${file}`);
 
-  if (extIndex >= extensions.length) {
+  if (hasError) {
     return <div className="gis-gallery-missing">Image not found</div>;
   }
-
-  const imageSrc = `${baseUrl}img/${encodeURIComponent(name)}.${extensions[extIndex]}`;
 
   return (
     <div className="gis-gallery-media">
       <img
         src={imageSrc}
-        alt={name}
+        alt={alt}
         className="gis-gallery-image"
         loading="lazy"
         onLoad={(event) => {
           const { naturalWidth, naturalHeight } = event.currentTarget;
           setImageSize(`${naturalWidth} × ${naturalHeight}`);
         }}
-        onError={() => {
-          setImageSize(null);
-          setExtIndex((current) => current + 1);
-        }}
+        onError={() => setHasError(true)}
       />
       {imageSize && <span className="gis-image-size-badge">{imageSize}</span>}
       <div className="gis-hover-preview" aria-hidden="true">
@@ -52,19 +52,108 @@ const GISGalleryImage = ({ name }) => {
   );
 };
 
+const ProjectGrid = ({ projects }) => (
+  <div className="projects-grid">
+    {projects.map((project, index) => (
+      <div key={index} className="project-card">
+        {project.image && (
+          <div className="project-image-container">
+            <img
+              src={project.image}
+              alt={project.title}
+              className="project-image"
+              loading="lazy"
+            />
+          </div>
+        )}
+        <div className="project-content">
+          <h3 className="project-title">{project.title}</h3>
+          <p className="project-description">{project.description}</p>
+          <div className="project-links">
+            {project.links.map((link, linkIndex) => (
+              <a
+                key={linkIndex}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                <i className={`fab fa-${link.icon}`}></i>
+                {link.text}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
 const Projects = () => {
   const GIS = [
-    "General Maps for Statistical Yearbooks & Territorial Planning",
-    "Rural Census Blocks Mapping",
-    "Urban Census Blocks Mapping",
-    "Industrial & Mining Distribution Map",
-    "Tourism Map & Points of Interest",
-    "Tourism Suitability Analysis (Suitable  Unsuitable Areas)",
-    "Agricultural Suitability Analysis (Suitable  Unsuitable Areas)",
-    "Industrial & Mining Suitability Analysis (Suitable  Unsuitable Areas)",
-    "Population Suitability & Settlement Potential Analysis (Suitable  Unsuitable Areas)",
+    {
+      title: 'General Maps for Statistical Yearbooks & Territorial Planning',
+      file: 'General Maps for Statistical Yearbooks & Territorial Planning.png',
+    },
+    {
+      title: 'Rural Census Blocks Mapping',
+      file: 'Rural Census Blocks Mapping.png',
+    },
+    {
+      title: 'Urban Census Blocks Mapping',
+      file: 'Urban Census Blocks Mapping.png',
+    },
+    {
+      title: 'Industrial & Mining Distribution Map',
+      file: 'Industrial & Mining Distribution Map.png',
+    },
+    {
+      title: 'Tourism Map & Points of Interest',
+      file: 'Tourism Map & Points of Interest.png',
+    },
+    {
+      title: 'Tourism Suitability Analysis (Suitable  Unsuitable Areas)',
+      file: 'Tourism Suitability Analysis (Suitable  Unsuitable Areas).png',
+    },
+    {
+      title: 'Agricultural Suitability Analysis (Suitable  Unsuitable Areas)',
+      file: 'Agricultural Suitability Analysis (Suitable  Unsuitable Areas).png',
+    },
+    {
+      title: 'Industrial & Mining Suitability Analysis (Suitable  Unsuitable Areas)',
+      file: 'Industrial & Mining Suitability Analysis (Suitable  Unsuitable Areas).png',
+    },
+    {
+      title: 'Population Suitability & Settlement Potential Analysis (Suitable  Unsuitable Areas)',
+      file: 'Population Suitability & Settlement Potential Analysis (Suitable  Unsuitable Areas).png',
+    },
   ];
 
+  const ArtificialIntelligenceAutomationProjects = [
+    {
+      title: 'AI & Automation Workflow for Rental Property Discovery',
+      description:
+        'Created an end-to-end automated workflow during the Artificial Intelligence Specialist training program. Using n8n and Telegram, the system identifies rental properties published within the last six hours in Bilbao and instantly delivers curated alerts to subscribers. This project showcases expertise in AI-driven automation, chatbot development, and process orchestration.',
+      image: n8nFlowchart,
+      links: [
+        {
+          text: 'GitHub',
+          icon: 'github',
+          url: 'https://github.com/armanghazi/Idealista_Multi_User_Monitoring_Bot',
+        },
+        {
+          text: 'Details (Spanish)',
+          icon: 'file-pdf',
+          url: publicAssetUrl('pdfs/Idealista con n8n_es.pdf'),
+        },
+        {
+          text: 'Details (English)',
+          icon: 'file-pdf',
+          url: publicAssetUrl('pdfs/Idealista con n8n_en.pdf'),
+        },
+      ],
+    },
+  ];
   const dataScienceProjects = [
     {
       title: "Python Fundamentals Project, Battleship Game (Hundir la flota)",
@@ -72,6 +161,14 @@ const Projects = () => {
       image: hundirImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/Hundir_la_flota/tree/master" }
+      ]
+    },
+    {
+      title: "ArmanDS — Python Library for Data Science",
+      description: " A modular, pip-installable Python library that streamlines the full data science workflow — from exploratory analysis and visualization to preprocessing and model evaluation. Includes 15+ ready-to-use tools covering null analysis, outlier removal, feature engineering, hyperparameter optimization, and model versioning.",
+      image: armanDsLibraryBanner,
+      links: [
+        { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/ArmanDS" }
       ]
     },
     {
@@ -240,16 +337,16 @@ const Projects = () => {
             GIS Gallery
           </summary>
           <div className="gis-gallery-grid">
-            {GIS.map((name) => (
-              <figure key={name} className="gis-gallery-card">
-                <GISGalleryImage name={name} />
-                <figcaption className="gis-gallery-caption">{name}</figcaption>
+            {GIS.map(({ title, file }) => (
+              <figure key={title} className="gis-gallery-card">
+                <GISGalleryImage file={file} alt={title} />
+                <figcaption className="gis-gallery-caption">{title}</figcaption>
               </figure>
             ))}
           </div>
           <div className="gis-gallery-actions">
             <a
-              href={`${import.meta.env.BASE_URL || '/'}pdfs/mymaps.pdf`}
+              href={publicAssetUrl('pdfs/mymaps.pdf')}
               target="_blank"
               rel="noopener noreferrer"
               className="gis-gallery-button"
@@ -257,7 +354,7 @@ const Projects = () => {
               Selected GIS Works(In English)
             </a>
             <a
-              href={`${import.meta.env.BASE_URL || '/'}pdfs/mismapas.pdf`}
+              href={publicAssetUrl('pdfs/mismapas.pdf')}
               target="_blank"
               rel="noopener noreferrer"
               className="gis-gallery-button"
@@ -271,41 +368,20 @@ const Projects = () => {
       <article>
         <details className="section-accordion">
           <summary className="category-title">
+            <FaRobot />
+            AI & Automation Projects
+          </summary>
+          <ProjectGrid projects={ArtificialIntelligenceAutomationProjects} />
+        </details>
+      </article>
+
+      <article>
+        <details className="section-accordion">
+          <summary className="category-title">
             <FaDatabase />
             Data Science and Related Projects
           </summary>
-          <div className="projects-grid">
-            {dataScienceProjects.map((project, index) => (
-              <div key={index} className="project-card">
-                <div className="project-image-container">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="project-image"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="project-content">
-                  <h3 className="project-title">{project.title}</h3>
-                  <p className="project-description">{project.description}</p>
-                  <div className="project-links">
-                    {project.links.map((link, linkIndex) => (
-                      <a
-                        key={linkIndex}
-                        href={link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-link"
-                      >
-                        <i className={`fab fa-${link.icon}`}></i>
-                        {link.text}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <ProjectGrid projects={dataScienceProjects} />
         </details>
       </article>
 
@@ -315,38 +391,7 @@ const Projects = () => {
             <FaCode />
             Front-end and Related Projects
           </summary>
-          <div className="projects-grid">
-            {frontendProjects.map((project, index) => (
-              <div key={index} className="project-card">
-                <div className="project-image-container">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="project-image"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="project-content">
-                  <h3 className="project-title">{project.title}</h3>
-                  <p className="project-description">{project.description}</p>
-                  <div className="project-links">
-                    {project.links.map((link, linkIndex) => (
-                      <a
-                        key={linkIndex}
-                        href={link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-link"
-                      >
-                        <i className={`fab fa-${link.icon}`}></i>
-                        {link.text}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <ProjectGrid projects={frontendProjects} />
         </details>
       </article>
 
