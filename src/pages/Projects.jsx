@@ -141,6 +141,7 @@ const Projects = () => {
           icon: 'github',
           url: 'https://github.com/armanghazi/Idealista_Multi_User_Monitoring_Bot',
         },
+        { text: 'Check it in Telegram', icon: 'telegram', url: 'https://t.me/Idealista_alquiler_bot' },
         {
           text: 'Details (Spanish)',
           icon: 'file-pdf',
