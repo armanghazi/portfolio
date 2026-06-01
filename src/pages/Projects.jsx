@@ -364,6 +364,16 @@ const Projects = () => {
       <article>
         <details className="section-accordion">
           <summary className="category-title">
+            <FaCity />
+            GeoAI & Smart City Projects
+          </summary>
+          <ProjectGrid projects={geoAiSmartCityProjects} />
+        </details>
+      </article>
+
+      <article>
+        <details className="section-accordion">
+          <summary className="category-title">
             <FaMapMarkedAlt />
             GIS Gallery
           </summary>
@@ -393,16 +403,6 @@ const Projects = () => {
               Selected GIS Works(In Spanish)
             </a>
           </div>
-        </details>
-      </article>
-
-      <article>
-        <details className="section-accordion">
-          <summary className="category-title">
-            <FaCity />
-            GeoAI & Smart City Projects
-          </summary>
-          <ProjectGrid projects={geoAiSmartCityProjects} />
         </details>
       </article>
 
