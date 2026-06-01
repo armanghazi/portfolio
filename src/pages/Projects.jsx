@@ -113,7 +113,7 @@ const geoAiSmartCityProjects = [
       {
         text: 'Geospatial Dashboard',
         icon: 'chart-line',
-        url: 'https://rwcz4hl2jkwgscsd3dj2nm.streamlit.app/',
+        url: 'https://geoai-dashboard.streamlit.app/',
       },
     ],
   },
