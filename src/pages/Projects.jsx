@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCode, FaDatabase, FaMapMarkedAlt, FaBook, FaTrophy, FaRobot } from 'react-icons/fa';
+import { FaCode, FaDatabase, FaMapMarkedAlt, FaBook, FaTrophy, FaRobot, FaCity } from 'react-icons/fa';
 import './Projects.css';
 
 // Import images
@@ -20,6 +20,14 @@ import n8nFlowchart from '../assets/img/n8n_flowchart.png';
 const baseUrl = import.meta.env.BASE_URL || '/';
 
 const publicAssetUrl = (path) => `${baseUrl}${path.split('/').map(encodeURIComponent).join('/')}`;
+
+const SOLID_ICONS = new Set(['file-pdf', 'file-alt', 'chart-line', 'map-marked-alt', 'external-link-alt']);
+
+const getLinkIconClass = (link) => {
+  if (link.iconClass) return link.iconClass;
+  const icon = link.icon || 'link';
+  return SOLID_ICONS.has(icon) ? `fas fa-${icon}` : `fab fa-${icon}`;
+};
 
 const GISGalleryImage = ({ file, alt }) => {
   const [imageSize, setImageSize] = React.useState(null);
@@ -78,7 +86,7 @@ const ProjectGrid = ({ projects }) => (
                 rel="noopener noreferrer"
                 className="project-link"
               >
-                <i className={`fab fa-${link.icon}`}></i>
+                <i className={getLinkIconClass(link)} aria-hidden="true"></i>
                 {link.text}
               </a>
             ))}
@@ -88,6 +96,28 @@ const ProjectGrid = ({ projects }) => (
     ))}
   </div>
 );
+
+const geoAiSmartCityProjects = [
+  {
+    title:
+      'GeoAI Smart City Platform for Air Quality Monitoring and Forecasting in Greater Bilbao (Under Development)',
+    description:
+      'Spatial Data Science and GeoAI project for air quality monitoring and forecasting in Greater Bilbao, combining GIS, Python, Machine Learning, interactive dashboards, and Smart City decision-support tools.',
+    image: publicAssetUrl('img/bilbao.jpg'),
+    links: [
+      {
+        text: 'GitHub',
+        icon: 'github',
+        url: 'https://github.com/armanghazi/AI-Based-Smart-City-Air-Quality-Monitoring-and-Forecasting-System-for-Greater-Bilbao',
+      },
+      {
+        text: 'Geospatial Dashboard',
+        icon: 'chart-line',
+        url: 'https://rwcz4hl2jkwgscsd3dj2nm.streamlit.app/',
+      },
+    ],
+  },
+];
 
 const Projects = () => {
   const GIS = [
@@ -363,6 +393,16 @@ const Projects = () => {
               Selected GIS Works(In Spanish)
             </a>
           </div>
+        </details>
+      </article>
+
+      <article>
+        <details className="section-accordion">
+          <summary className="category-title">
+            <FaCity />
+            GeoAI & Smart City Projects
+          </summary>
+          <ProjectGrid projects={geoAiSmartCityProjects} />
         </details>
       </article>
 
