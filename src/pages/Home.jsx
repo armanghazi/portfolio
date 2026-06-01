@@ -12,7 +12,7 @@ const Home = () => {
 
           <div className="cv-buttons-vertical">
             <a
-              href="./pdfs/English_Arman Ghaziaskari naeini_May.pdf"
+              href="./pdfs/English_Arman Ghaziaskari naeini_june.pdf"
               className="cv-button-vertical"
               target="_blank"
               rel="noopener noreferrer"
@@ -20,7 +20,7 @@ const Home = () => {
               English CV
             </a>
             <a
-              href="./pdfs/espanol_Arman Ghaziaskari naeini_Mayo.pdf"
+              href="./pdfs/espanol_Arman Ghaziaskari naeini_junio.pdf"
               className="cv-button-vertical"
               target="_blank"
               rel="noopener noreferrer"
