@@ -111,7 +111,7 @@ const geoAiSmartCityProjects = [
         url: 'https://github.com/armanghazi/AI-Based-Smart-City-Air-Quality-Monitoring-and-Forecasting-System-for-Greater-Bilbao',
       },
       {
-        text: 'Geospatial Dashboard',
+        text: 'Live Dashboard',
         icon: 'chart-line',
         url: 'https://geoai-dashboard.streamlit.app/',
       },
@@ -225,8 +225,8 @@ const Projects = () => {
       image: desertImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/ghaziaskari/Postre" },
-        { text: "Website", icon: "globe", url: "https://postre2.streamlit.app/" },
-        { text: "huggingface", icon: "huggingface", url: "https://huggingface.co/spaces/ghaziaskari/Dessert" }
+        { text: "live Demo in Streamlit", icon: "globe", url: "https://postre2.streamlit.app/" },
+        { text: "Live Demo in Hugging Face", icon: "huggingface", url: "https://huggingface.co/spaces/ghaziaskari/Dessert" }
       ]
     },
     {
@@ -246,7 +246,7 @@ const Projects = () => {
       image: countryImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Endless_Countries_Questions.git"},
-        { text: "Website", icon: "globe", url: "https://armanghazi.github.io/Endless_Countries_Questions/" }
+        { text: "Live Demo", icon: "globe", url: "https://armanghazi.github.io/Endless_Countries_Questions/" }
       ]
     },
         {
@@ -255,7 +255,7 @@ const Projects = () => {
       image: forecastImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/tiempo-euskadi.git" },
-        { text: "Website", icon: "globe", url: "https://tiempo-euskadi.vercel.app/" }
+        { text: "Live Demo ", icon: "globe", url: "https://tiempo-euskadi.vercel.app/" }
       ]
     },
         {
@@ -264,7 +264,7 @@ const Projects = () => {
       image: foodImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Buscador-deAlimentos" },
-        { text: "Website", icon: "globe", url: "https://buscador-de-alimentos.vercel.app/" }
+        { text: "Live Demo ", icon: "globe", url: "https://buscador-de-alimentos.vercel.app/" }
       ]
     },
     {
@@ -272,7 +272,7 @@ const Projects = () => {
       description: "Developed a Spanish‑language movie search application using the TMDb API, featuring advanced filters for release date, genre, rating, and Spanish film certification. Includes posters, summaries, and a fully localized interface." ,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Busqueda-de-peliculas-favoritas" },
-        { text: "Website", icon: "globe", url: "https://armanghazi.github.io/Busqueda-de-peliculas-favoritas/" }
+        { text: "Live Demo", icon: "globe", url: "https://armanghazi.github.io/Busqueda-de-peliculas-favoritas/" }
       ]
     },
     {
@@ -281,7 +281,7 @@ const Projects = () => {
       image: usaImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Search-for-Favorite-Movies" },
-        { text: "Website", icon: "globe", url: "https://armanghazi.github.io/Search-for-Favorite-Movies/index.html" }
+        { text: "Live Demo", icon: "globe", url: "https://armanghazi.github.io/Search-for-Favorite-Movies/index.html" }
       ]
     },
     {
@@ -290,7 +290,7 @@ const Projects = () => {
       image: weatherMapImg,
       links: [
         { text: "GitHub", icon: "github", url: "https://github.com/armanghazi/Simple-Weather-Map" },
-        { text: "Website", icon: "globe", url: "https://armanghazi.github.io/Simple-Weather-Map/index.html" }
+        { text: "Live Demo", icon: "globe", url: "https://armanghazi.github.io/Simple-Weather-Map/index.html" }
       ]
     },
         {
@@ -299,7 +299,7 @@ const Projects = () => {
       image: portfolioImg,
       links: [
         { text: "LinkedIn Post", icon: "linkedin", url: "https://www.linkedin.com/feed/update/urn:li:activity:7297306010694684672/" },
-        { text: "Website (Initial)", icon: "globe", url: "https://armanghazi.github.io/portfolio_first/index.html" } 
+        { text: "Live Demo (Initial)", icon: "globe", url: "https://armanghazi.github.io/portfolio_first/index.html" } 
       ]
     }
   ];
