@@ -138,7 +138,8 @@
 }
 
 .project-link {
-  flex: 1 1 auto;
+  flex: 1 1 140px;
+  min-width: 0;
   padding: 0.8rem;
   text-align: center;
   background-color: var(--primary-color);
