@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaMapMarkedAlt, FaGraduationCap } from 'react-icons/fa';
 import './Experience.css';
 

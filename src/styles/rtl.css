@@ -7,8 +7,8 @@
   direction: inherit;
 }
 
-[dir="rtl"] .navbar,
-[dir="rtl"] .nav-links {
+[dir="rtl"] .nav-container,
+[dir="rtl"] .nav-list {
   flex-direction: row-reverse !important;
 }
 

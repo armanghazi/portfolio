@@ -1,10 +1,9 @@
-:root {
+/* Scoped variables — only override colors inside the contact section */
+.contact-section {
   --primary-color: #4a90e2;
   --secondary-color: #63b3ed;
   --primary-color-rgb: 74, 144, 226;
-  --text-color: #333;
   --border-color: #ddd;
-  --white: #fff;
 }
 
 /* ---------------------- */

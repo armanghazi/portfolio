@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import './Home.css';
 
+const base = import.meta.env.BASE_URL;
+
 const Home = () => {
   return (
     <section className="about-section">
@@ -8,11 +10,11 @@ const Home = () => {
       {/* Introduction + Image + CV Buttons */}
       <article className="user-info">
         <div className="user-image">
-          <img src="./img/arman.jpg" alt="Arman Ghaziaskari Naeini" />
+          <img src={`${base}img/arman.jpg`} alt="Arman Ghaziaskari Naeini" />
 
           <div className="cv-buttons-vertical">
             <a
-              href="./pdfs/English_Arman Ghaziaskari naeini_june.pdf"
+              href={`${base}pdfs/English_Arman Ghaziaskari naeini_june.pdf`}
               className="cv-button-vertical"
               target="_blank"
               rel="noopener noreferrer"
@@ -20,7 +22,7 @@ const Home = () => {
               English CV
             </a>
             <a
-              href="./pdfs/espanol_Arman Ghaziaskari naeini_junio.pdf"
+              href={`${base}pdfs/espanol_Arman Ghaziaskari naeini_junio.pdf`}
               className="cv-button-vertical"
               target="_blank"
               rel="noopener noreferrer"

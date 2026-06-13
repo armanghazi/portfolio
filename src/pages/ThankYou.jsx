@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaHome, FaCheckCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './ThankYou.css';
