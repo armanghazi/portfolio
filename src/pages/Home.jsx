@@ -1,9 +1,19 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './Home.css';
 
 const base = import.meta.env.BASE_URL;
 
 const Home = () => {
+  const { t } = useTranslation('home');
+
+  const skillCards = [
+    { key: 'skill_gis' },
+    { key: 'skill_pm' },
+    { key: 'skill_data' },
+    { key: 'skill_tools' },
+  ];
+
   return (
     <section className="about-section">
 
@@ -19,7 +29,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              English CV
+              {t('cv_en')}
             </a>
             <a
               href={`${base}pdfs/espanol_Arman Ghaziaskari naeini_junio.pdf`}
@@ -27,102 +37,56 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Spanish CV
+              {t('cv_es')}
             </a>
           </div>
         </div>
 
         <div className="user-text">
-          <h1>GIS & Smart Cities Project Manager </h1>
-          <h2>20+ Years Delivering Geospatial & Data-Driven Solutions</h2>
+          <h1>{t('title')}</h1>
+          <h2>{t('subtitle')}</h2>
 
-          <p>
-          I am a GIS & Data Specialist with over 20 years of experience delivering geospatial solutions for urban planning, territorial analysis, and decision-making.
-          </p>
-          <p>
-          Throughout my career, I have led and coordinated GIS projects end-to-end for public sector organizations, working closely with multidisciplinary teams and stakeholders.
-          </p>
-
-          <p>
-          My expertise includes spatial analysis, geospatial data infrastructures, and data standardization, ensuring consistency and scalability across complex systems.
-          </p>
-
-          <p>
-          I combine spatial thinking with Python-based data workflows, ETL automation, and interactive dashboards to deliver efficient, data-driven solutions.
-          </p>
-
-          <p>
-          Currently expanding my expertise in Big Data and cloud technologies, with a strong focus on Smart Cities and project management.
-          </p>
+          <p>{t('bio_1')}</p>
+          <p>{t('bio_2')}</p>
+          <p>{t('bio_3')}</p>
+          <p>{t('bio_4')}</p>
+          <p>{t('bio_5')}</p>
 
           {/* VALUE SECTION */}
           <div className="value-points">
-            <p>✔ 20+ years GIS & Project Experience </p>
-            <p>✔ End-to-End Project Management</p>
-            <p>✔ Data Standardization & Governance</p>
-            <p>✔ Smart City & Urban Planning Solutions</p>
-            <p>✔ Python, ETL & Data Workflows</p>
+            <p>{t('value_1')}</p>
+            <p>{t('value_2')}</p>
+            <p>{t('value_3')}</p>
+            <p>{t('value_4')}</p>
+            <p>{t('value_5')}</p>
           </div>
 
           {/* CTA */}
           <div className="hero-cta">
-            <Link to="/projects" className="primary-btn">View Projects</Link>
-            <Link to="/contact" className="secondary-btn">Contact Me</Link>
+            <Link to="/projects" className="primary-btn">{t('cta_projects')}</Link>
+            <Link to="/contact" className="secondary-btn">{t('cta_contact')}</Link>
           </div>
-
         </div>
       </article>
 
       {/* Skills Section */}
       <section className="skills-section">
-        <h2>Skills Overview</h2>
+        <h2>{t('skills_title')}</h2>
 
         <div className="skills-container">
-
-          <div className="skill-card">
-            <h3>GIS & Geospatial</h3>
-            <ul>
-              <li>ArcGIS, QGIS, GEE</li>
-              <li>Spatial Analysis & Remote Sensing</li>
-              <li>Geospatial Data Modeling</li>
-              <li>ArcGIS Enterprise, Web AppBuilder</li>
-              <li>GeoPandas</li>
-            </ul>
-          </div>
-
-          <div className="skill-card">
-            <h3>Project Management</h3>
-            <ul>
-              <li>Project Planning & Delivery</li>
-              <li>Stakeholder Management</li>
-              <li>Team Coordination</li>
-              <li>Requirements Analysis</li>
-              <li>Data Standardization</li>
-            </ul>
-          </div>
-
-          <div className="skill-card">
-            <h3>Data & Programming</h3>
-            <ul>
-              <li>Python (Pandas, NumPy)</li>
-              <li>ETL Automation</li>
-              <li>Power BI</li>
-              <li>SQL</li>
-            </ul>
-          </div>
-
-          <div className="skill-card">
-            <h3>Tools & Technologies</h3>
-            <ul>
-            <li>Git, Docker</li>
-            <li>Notion / Jira (familiarity)</li>
-            <li>Big Data (Spark, Kafka, Hadoop – basic)</li>
-            <li>JavaScript, Streamlit</li>
-          
-            </ul>
-          </div>
-
-
+          {skillCards.map(({ key }) => {
+            const card = t(key, { returnObjects: true });
+            return (
+              <div key={key} className="skill-card">
+                <h3>{card.title}</h3>
+                <ul>
+                  {card.items.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
         </div>
       </section>
 

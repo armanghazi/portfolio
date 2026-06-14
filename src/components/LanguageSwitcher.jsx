@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import { getCurrentLanguage, setLanguage } from '../utils/googleTranslate';
+import { useTranslation } from 'react-i18next';
 import './LanguageSwitcher.css';
 
 const LANGUAGES = [
@@ -10,40 +9,18 @@ const LANGUAGES = [
 ];
 
 const LanguageSwitcher = () => {
-  const [active, setActive] = useState('en');
-
-  useEffect(() => {
-    setActive(getCurrentLanguage());
-
-    const observer = new MutationObserver(() => {
-      setActive(getCurrentLanguage());
-      const lang = document.documentElement.getAttribute('lang');
-      if (lang === 'fa' || lang === 'ar') {
-        document.documentElement.dir = 'rtl';
-        document.body.dir = 'rtl';
-      } else if (lang) {
-        document.documentElement.dir = 'ltr';
-        document.body.dir = 'ltr';
-      }
-    });
-
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ['lang', 'class'],
-    });
-
-    return () => observer.disconnect();
-  }, []);
+  const { t, i18n } = useTranslation('common');
+  const active = i18n.language;
 
   return (
     <div className="language-switcher" role="group" aria-label="Language selection">
-      <span className="language-switcher-label">Language</span>
+      <span className="language-switcher-label">{t('language_label')}</span>
       {LANGUAGES.map(({ code, label }) => (
         <button
           key={code}
           type="button"
           className={`lang-btn${active === code ? ' active' : ''}`}
-          onClick={() => setLanguage(code)}
+          onClick={() => i18n.changeLanguage(code)}
           aria-pressed={active === code}
           aria-label={label}
         >

@@ -1,0 +1,57 @@
+{
+  "cv_en": "CV en inglés",
+  "cv_es": "CV en español",
+  "title": "Director de Proyectos GIS y Smart Cities",
+  "subtitle": "Más de 20 años desarrollando soluciones geoespaciales y basadas en datos",
+  "bio_1": "Soy especialista en GIS y datos con más de 20 años de experiencia desarrollando soluciones geoespaciales para planificación urbana, análisis territorial y toma de decisiones.",
+  "bio_2": "A lo largo de mi carrera, he liderado y coordinado proyectos GIS de principio a fin para organizaciones del sector público, trabajando estrechamente con equipos multidisciplinares y partes interesadas.",
+  "bio_3": "Mi experiencia incluye análisis espacial, infraestructuras de datos geoespaciales y estandarización de datos, garantizando consistencia y escalabilidad en sistemas complejos.",
+  "bio_4": "Combino el pensamiento espacial con flujos de trabajo de datos basados en Python, automatización ETL y paneles interactivos para ofrecer soluciones eficientes basadas en datos.",
+  "bio_5": "Actualmente ampliando mis conocimientos en Big Data y tecnologías en la nube, con especial énfasis en Smart Cities y gestión de proyectos.",
+  "value_1": "✔ Más de 20 años de experiencia en GIS y gestión de proyectos",
+  "value_2": "✔ Gestión integral de proyectos",
+  "value_3": "✔ Estandarización y gobernanza de datos",
+  "value_4": "✔ Soluciones para Smart City y planificación urbana",
+  "value_5": "✔ Python, ETL y flujos de trabajo de datos",
+  "cta_projects": "Ver proyectos",
+  "cta_contact": "Contáctame",
+  "skills_title": "Resumen de habilidades",
+  "skill_gis": {
+    "title": "GIS y geoespacial",
+    "items": [
+      "ArcGIS, QGIS, GEE",
+      "Análisis espacial y teledetección",
+      "Modelado de datos geoespaciales",
+      "ArcGIS Enterprise, Web AppBuilder",
+      "GeoPandas"
+    ]
+  },
+  "skill_pm": {
+    "title": "Gestión de proyectos",
+    "items": [
+      "Planificación y entrega de proyectos",
+      "Gestión de partes interesadas",
+      "Coordinación de equipos",
+      "Análisis de requisitos",
+      "Estandarización de datos"
+    ]
+  },
+  "skill_data": {
+    "title": "Datos y programación",
+    "items": [
+      "Python (Pandas, NumPy)",
+      "Automatización ETL",
+      "Power BI",
+      "SQL"
+    ]
+  },
+  "skill_tools": {
+    "title": "Herramientas y tecnologías",
+    "items": [
+      "Git, Docker",
+      "Notion / Jira (conocimiento básico)",
+      "Big Data (Spark, Kafka, Hadoop – nivel básico)",
+      "JavaScript, Streamlit"
+    ]
+  }
+}

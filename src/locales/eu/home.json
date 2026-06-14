@@ -1,0 +1,71 @@
+{
+  "cv_en": "CV ingelesez",
+  "cv_es": "CV gaztelaniaz",
+
+  "title": "GIS eta Smart City Proiektuen Kudeatzailea",
+
+  "subtitle": "20 urtetik gorako esperientzia GIS, datu eta geoteknologia arloko soluzioetan",
+
+  "bio_1": "GIS eta Datu Espezialista naiz, 20 urtetik gorako esperientziarekin lurralde-plangintzan, analisi espazialean eta erabakiak hartzeko laguntza ematen duten soluzio geoespazialen garapenean.",
+
+  "bio_2": "Nire ibilbide profesionalean zehar, GIS proiektuak gidatu eta koordinatu ditut sektore publikoko erakundeentzat, diziplina anitzeko taldeekin eta interesdun nagusiekin elkarlanean.",
+
+  "bio_3": "Analisi espazialean, datu geoespazialen azpiegituretan eta datuen estandarizazioan espezializatuta nago, sistema konplexuetan koherentzia, kalitatea eta eskalagarritasuna bermatuz.",
+
+  "bio_4": "Pentsamendu espaziala Python bidezko datu-fluxuekin, ETL automatizazioarekin eta bistaratze interaktiboekin uztartzen dut, datuetan oinarritutako irtenbide eraginkorrak eskaintzeko.",
+
+  "bio_5": "Gaur egun, Big Data eta hodeiko teknologietan nire gaitasunak indartzen ari naiz, Smart City ekimenetan eta proiektuen kudeaketan arreta berezia jarriz.",
+
+  "value_1": "✔ 20+ urteko esperientzia GIS eta proiektuen kudeaketan",
+  "value_2": "✔ Proiektuen kudeaketa integrala",
+  "value_3": "✔ Datuen estandarizazioa eta gobernantza",
+  "value_4": "✔ Smart City eta hiri-plangintzako irtenbideak",
+  "value_5": "✔ Python, ETL eta datu-fluxuak",
+
+  "cta_projects": "Proiektuak ikusi",
+  "cta_contact": "Harremanetan jarri",
+
+  "skills_title": "Gaitasunen laburpena",
+
+  "skill_gis": {
+    "title": "GIS eta Geoteknologiak",
+    "items": [
+      "ArcGIS, QGIS, Google Earth Engine",
+      "Analisi espaziala eta teledetekzioa",
+      "Datu geoespazialen modelizazioa",
+      "ArcGIS Enterprise, Web AppBuilder",
+      "GeoPandas"
+    ]
+  },
+
+  "skill_pm": {
+    "title": "Proiektuen kudeaketa",
+    "items": [
+      "Proiektuen plangintza eta entrega",
+      "Interesdunen kudeaketa",
+      "Taldeen koordinazioa",
+      "Eskakizunen analisia",
+      "Datuen estandarizazioa"
+    ]
+  },
+
+  "skill_data": {
+    "title": "Datuak eta Programazioa",
+    "items": [
+      "Python (Pandas, NumPy)",
+      "ETL automatizazioa",
+      "Power BI",
+      "SQL"
+    ]
+  },
+
+  "skill_tools": {
+    "title": "Tresnak eta Teknologiak",
+    "items": [
+      "Git, Docker",
+      "Notion / Jira (oinarrizko ezagutza)",
+      "Big Data (Spark, Kafka, Hadoop – oinarrizko maila)",
+      "JavaScript, Streamlit"
+    ]
+  }
+}

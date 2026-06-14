@@ -35,53 +35,6 @@
         }
       })(window.location);
     </script>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          {
-            pageLanguage: 'en',
-            includedLanguages: 'es,eu,fa',
-            autoDisplay: false,
-          },
-          'google_translate_element'
-        );
-
-        var observer = new MutationObserver(function () {
-          var lang = document.documentElement.getAttribute('lang');
-          if (lang === 'fa' || lang === 'ar') {
-            document.documentElement.dir = 'rtl';
-            document.body.dir = 'rtl';
-          } else if (lang) {
-            document.documentElement.dir = 'ltr';
-            document.body.dir = 'ltr';
-          }
-        });
-
-        observer.observe(document.documentElement, {
-          attributes: true,
-          attributeFilter: ['lang'],
-        });
-      }
-    </script>
-    <script
-      type="text/javascript"
-      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
-    <style>
-      #google_translate_element,
-      .goog-te-banner-frame,
-      iframe.skiptranslate,
-      body > .skiptranslate {
-        display: none !important;
-        visibility: hidden !important;
-        height: 0 !important;
-        overflow: hidden !important;
-      }
-      body {
-        top: 0 !important;
-        position: static !important;
-      }
-    </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQ9PQKD1D8"></script>
     <script>
@@ -94,7 +47,6 @@
     </script>
   </head>
   <body>
-    <div id="google_translate_element" aria-hidden="true"></div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

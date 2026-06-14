@@ -1,0 +1,82 @@
+{
+  "title": "Hezkuntza",
+  "training_title": "Prestakuntza Gehigarria",
+  "education": [
+    {
+      "degree": "Informazio Geografikoko Sistemetan eta Teledetekzioan Masterra",
+      "university": "Shahid Beheshti Unibertsitatea, Teheran, Iran"
+    },
+    {
+      "degree": "Larreen eta Arro Hidrografikoen Kudeaketako Ingeniaritza",
+      "university": "Isfahango Unibertsitate Teknologikoa, Iran"
+    }
+  ],
+  "training": [
+    {
+      "title": "LABORLAN 2026: AI&Data Tech: Adimen Artifiziala eta Proiektu Teknologikoen Kudeaketa",
+      "period": "2026ko apirila - 2026ko uztaila",
+      "provider": "GAIA, DEMA, C2B",
+      "details": "325 ordu"
+    },
+    {
+      "title": "Big Data Espezialista",
+      "period": "2026ko urtarrila - 2026ko martxoa",
+      "provider": "Lanbide, Alfa Formación",
+      "details": "230 ordu"
+    },
+    {
+      "title": "BIM Proiektuen Kudeaketa Integralaren Sarrera",
+      "period": "2026ko otsaila - 2026ko martxoa",
+      "provider": "SEPE, Metodo Consultores",
+      "details": "50 ordu"
+    },
+    {
+      "title": "Nekazaritza-kudeaketarako Informazio Geografikoko Sistemak software librearekin",
+      "period": "2025eko abendua - 2026ko otsaila",
+      "provider": "SEPE, Metodo Consultores",
+      "details": "150 ordu"
+    },
+    {
+      "title": "Adimen Artifizialeko Espezialista",
+      "period": "2025eko ekaina - 2025eko urria",
+      "provider": "Lanbide, EDE Fundazioa",
+      "details": "230 ordu"
+    },
+    {
+      "title": "Web Garapeneko Bootcamp-a (Front-End)",
+      "period": "2025eko otsaila - 2025eko apirila",
+      "provider": "The Bridge Digital Talent (BBK Bootcamps)",
+      "details": "200 ordu"
+    },
+    {
+      "title": "Data Science Bootcamp-a",
+      "period": "2024ko iraila - 2025eko otsaila",
+      "provider": "The Bridge Digital Talent (BBK Bootcamps)",
+      "details": "480 ordu"
+    },
+    {
+      "title": "Mikroordenagailu Sistemen Muntaketa eta Mantentzea (1. maila)",
+      "period": "2024ko maiatza - 2024ko uztaila",
+      "provider": "Lanbide, IFAP (Basauri)",
+      "details": "370 ordu"
+    },
+    {
+      "title": "Business Intelligence: Datuen Modelizazioa eta Bisualizazioa Excel eta Power BI erabiliz",
+      "period": "2023",
+      "provider": "Lanbide, IPARTEK SERVICIOS INFORMÁTICOS, SOC.COOP",
+      "details": "60 ordu"
+    },
+    {
+      "title": "Machine Learning eta Analisi Prediktiboa Business 4.0-rako",
+      "period": "2023",
+      "provider": "Lanbide, C2B",
+      "details": "30 ordu"
+    },
+    {
+      "title": "Web Scraping eta Web Datuen Erauzketa",
+      "period": "2023",
+      "provider": "Lanbide, C2B ",
+      "details": "20 ordu"
+    }
+  ]
+}

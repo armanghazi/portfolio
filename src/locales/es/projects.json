@@ -1,0 +1,119 @@
+{
+  "title": "Proyectos",
+  "geoai_title": "Proyectos GeoAI y Smart City",
+  "gis_gallery_title": "Galería GIS",
+  "ai_title": "Proyectos de IA y automatización",
+  "ds_title": "Proyectos de Data Science y afines",
+  "frontend_title": "Proyectos Front-end y afines",
+  "publications_title": "Publicaciones",
+  "honors_title": "Honores y premios",
+  "gis_works_en": "Trabajos GIS seleccionados (en inglés)",
+  "gis_works_es": "Trabajos GIS seleccionados (en español)",
+  "publications_en_label": "Inglés",
+  "publications_fa_label": "Persa",
+  "image_not_found": "Imagen no encontrada",
+  "geoai": [
+    {
+      "title": "Plataforma GeoAI Smart City para monitoreo y previsión de calidad del aire en el Gran Bilbao (En desarrollo)",
+      "description": "Proyecto de Data Science espacial y GeoAI para el monitoreo y previsión de la calidad del aire en el Gran Bilbao, combinando GIS, Python, Machine Learning, paneles interactivos y herramientas de soporte a la toma de decisiones de Smart City.",
+      "links": ["GitHub", "Panel en vivo"]
+    }
+  ],
+  "ai": [
+    {
+      "title": "Flujo de trabajo con IA y automatización para la búsqueda de propiedades en alquiler",
+      "description": "Desarrollé un flujo de trabajo automatizado de extremo a extremo durante el programa de formación de Especialista en Inteligencia Artificial. El sistema utiliza n8n y Telegram para identificar propiedades en alquiler publicadas en las últimas seis horas en Bilbao y enviar alertas seleccionadas a los suscriptores. Este proyecto demuestra expertise en automatización impulsada por IA, desarrollo de chatbots y orquestación de procesos.",
+      "links": ["GitHub", "Ver en Telegram", "Detalles (español)", "Detalles (inglés)"]
+    }
+  ],
+  "ds": [
+    {
+      "title": "Proyecto de fundamentos de Python, Juego de Hundir la Flota",
+      "description": "Desarrollé un clásico juego de Hundir la Flota como mi primer proyecto en Python, aplicando conceptos básicos de programación como bucles, condicionales, funciones y lógica de juego.",
+      "links": ["GitHub"]
+    },
+    {
+      "title": "ArmanDS — Biblioteca Python para Data Science",
+      "description": "Una biblioteca Python modular e instalable con pip que agiliza el flujo de trabajo completo de data science, desde el análisis exploratorio y la visualización hasta el preprocesamiento y la evaluación de modelos. Incluye más de 15 herramientas listas para usar que cubren análisis de nulos, eliminación de valores atípicos, ingeniería de características, optimización de hiperparámetros y versionado de modelos.",
+      "links": ["GitHub"]
+    },
+    {
+      "title": "Análisis exploratorio de datos de los rankings universitarios mundiales (dataset CWUR)",
+      "description": "Realicé un EDA en profundidad sobre el dataset CWUR, analizando tendencias plurianuales entre las 1000 mejores universidades del mundo y descubriendo patrones clave en los indicadores de rendimiento académico.",
+      "links": ["GitHub"]
+    },
+    {
+      "title": "Análisis y predicción de la contaminación del aire en Irán mediante Machine Learning y Deep Learning.",
+      "description": "Desarrollé modelos predictivos usando técnicas de regresión, clasificación y deep learning para analizar indicadores de contaminación del aire, identificar factores clave y pronosticar tendencias.",
+      "links": ["LinkedIn", "GitHub"]
+    },
+    {
+      "title": "Modelo de clasificación de postres mediante técnicas de Machine Learning",
+      "description": "Desarrollé un modelo de machine learning para predecir categorías de postres basándose en múltiples características de entrada, experimentando con varios algoritmos y evaluando el rendimiento del modelo.",
+      "links": ["GitHub", "Demo en vivo en Streamlit", "Demo en vivo en Hugging Face"]
+    },
+    {
+      "title": "Reto en la plataforma de estadísticas personalizadas Ekhilur: Web Scraping y análisis predictivo",
+      "description": "Colaboré con equipos de seguridad web y desarrollo para completar el reto final: realizar web scraping a gran escala, limpieza de datos, análisis exploratorio y construcción de modelos predictivos para generar información de negocio accionable.",
+      "links": ["LinkedIn"]
+    }
+  ],
+  "frontend": [
+    {
+      "title": "Preguntas interminables sobre países, Quiz interactivo de geografía",
+      "description": "Desarrollé un quiz de geografía interactivo utilizando una REST Countries API, generando preguntas aleatorizadas e interminables sobre capitales, poblaciones, regiones, idiomas y monedas. Tras cada 15 preguntas, la aplicación muestra estadísticas de aciertos/errores y continúa el juego sin interrupciones.",
+      "links": ["GitHub", "Demo en vivo"]
+    },
+    {
+      "title": "Aplicación del tiempo del País Vasco (React, Vite, OpenWeatherMap)",
+      "description": "Desarrollado como proyecto final de un bootcamp de front-end, esta aplicación meteorológica ofrece condiciones en tiempo real para las principales ciudades del País Vasco y ciudades globales seleccionadas. Incluye velocidad del viento, humedad, visibilidad, niveles de contaminación, horarios de amanecer/atardecer y una previsión de 15 días.",
+      "links": ["GitHub", "Demo en vivo"]
+    },
+    {
+      "title": "Food Seeker: Explorador de datos nutricionales y medioambientales (API OpenFoodFacts)",
+      "description": "Creé una aplicación React.js que permite a los usuarios buscar y filtrar productos alimenticios de supermercado mediante la API OpenFoodFacts. Incluye detalles nutricionales y de impacto medioambiental, temas dinámicos mediante variables CSS y un diseño totalmente adaptable con CSS Grid y Flexbox.",
+      "links": ["GitHub", "Demo en vivo"]
+    },
+    {
+      "title": "Buscador de películas (español), búsqueda y filtros con la API TMDb",
+      "description": "Desarrollé una aplicación de búsqueda de películas en español utilizando la API TMDb, con filtros avanzados para fecha de estreno, género, puntuación y certificación cinematográfica española. Incluye pósters, resúmenes e interfaz completamente localizada.",
+      "links": ["GitHub", "Demo en vivo"]
+    },
+    {
+      "title": "Buscador de películas (inglés), búsqueda y filtros con la API TMDb",
+      "description": "Desarrollé una herramienta de búsqueda de películas en inglés basada en la API TMDb, con filtros para fecha de estreno, género, puntuación y certificación cinematográfica de EE.UU., junto con pósters y resúmenes.",
+      "links": ["GitHub", "Demo en vivo"]
+    },
+    {
+      "title": "Mapa meteorológico de Bizkaia, visualización del tiempo en tiempo real",
+      "description": "Desarrollé un mapa interactivo sencillo usando Leaflet.js y la API OpenWeatherMap para mostrar las condiciones meteorológicas en tiempo real en toda Bizkaia.",
+      "links": ["GitHub", "Demo en vivo"]
+    },
+    {
+      "title": "Sitio web de portafolio personal, primera versión (HTML y CSS)",
+      "description": "Mi primer sitio web de portafolio, construido íntegramente con HTML y CSS durante un curso de desarrollo front-end. Este proyecto sienta las bases de mi portafolio actual, más avanzado.",
+      "links": ["Publicación en LinkedIn", "Demo en vivo (inicial)"]
+    }
+  ],
+  "gis_gallery": [
+    "Mapas generales para anuarios estadísticos y planificación territorial",
+    "Cartografía de bloques censales rurales",
+    "Cartografía de bloques censales urbanos",
+    "Mapa de distribución industrial y minera",
+    "Mapa turístico y puntos de interés",
+    "Análisis de aptitud turística (zonas aptas / no aptas)",
+    "Análisis de aptitud agrícola (zonas aptas / no aptas)",
+    "Análisis de aptitud industrial y minera (zonas aptas / no aptas)",
+    "Análisis de aptitud poblacional y potencial de asentamiento (zonas aptas / no aptas)"
+  ],
+  "honors": [
+    {
+      "honor": "Primer puesto en el examen de acceso al Máster",
+      "details": "Clasificado 1.º entre 800 candidatos."
+    },
+    {
+      "honor": "Mejor expediente (1.er lugar) en el Grado",
+      "details": "Departamento de Recursos Naturales, Gestión de Pastos y Cuencas Hidrográficas, Universidad Tecnológica de Isfahan. Clasificado 1.º entre 75 estudiantes."
+    }
+  ]
+}

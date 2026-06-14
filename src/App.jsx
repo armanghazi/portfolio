@@ -11,7 +11,6 @@ import ThankYou from './pages/ThankYou';
 import ThemeToggle from './components/ThemeToggle';
 import './styles/global.css';
 import './styles/rtl.css';
-import './styles/translate.css';
 
 function App() {
   return (

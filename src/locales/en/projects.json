@@ -1,0 +1,119 @@
+{
+  "title": "Projects",
+  "geoai_title": "GeoAI & Smart City Projects",
+  "gis_gallery_title": "GIS Gallery",
+  "ai_title": "AI & Automation Projects",
+  "ds_title": "Data Science and Related Projects",
+  "frontend_title": "Front-end and Related Projects",
+  "publications_title": "Publications",
+  "honors_title": "Honors and Awards",
+  "gis_works_en": "Selected GIS Works (In English)",
+  "gis_works_es": "Selected GIS Works (In Spanish)",
+  "publications_en_label": "English",
+  "publications_fa_label": "Persian",
+  "image_not_found": "Image not found",
+  "geoai": [
+    {
+      "title": "GeoAI Smart City Platform for Air Quality Monitoring and Forecasting in Greater Bilbao (Under Development)",
+      "description": "Spatial Data Science and GeoAI project for air quality monitoring and forecasting in Greater Bilbao, combining GIS, Python, Machine Learning, interactive dashboards, and Smart City decision-support tools.",
+      "links": ["GitHub", "Live Dashboard"]
+    }
+  ],
+  "ai": [
+    {
+      "title": "AI & Automation Workflow for Rental Property Discovery",
+      "description": "Created an end-to-end automated workflow during the Artificial Intelligence Specialist training program. Using n8n and Telegram, the system identifies rental properties published within the last six hours in Bilbao and instantly delivers curated alerts to subscribers. This project showcases expertise in AI-driven automation, chatbot development, and process orchestration.",
+      "links": ["GitHub", "Check it in Telegram", "Details (Spanish)", "Details (English)"]
+    }
+  ],
+  "ds": [
+    {
+      "title": "Python Fundamentals Project, Battleship Game (Hundir la flota)",
+      "description": "Developed a classic Battleship game as my first Python project, applying core programming concepts such as loops, conditionals, functions, and basic game logic.",
+      "links": ["GitHub"]
+    },
+    {
+      "title": "ArmanDS — Python Library for Data Science",
+      "description": "A modular, pip-installable Python library that streamlines the full data science workflow — from exploratory analysis and visualization to preprocessing and model evaluation. Includes 15+ ready-to-use tools covering null analysis, outlier removal, feature engineering, hyperparameter optimization, and model versioning.",
+      "links": ["GitHub"]
+    },
+    {
+      "title": "Exploratory Data Analysis of Global University Rankings (CWUR Dataset)",
+      "description": "Performed an in‑depth EDA on the CWUR dataset, analyzing multi‑year trends among the top 1000 universities worldwide and uncovering key patterns in academic performance indicators.",
+      "links": ["GitHub"]
+    },
+    {
+      "title": "Air Pollution Analysis & Prediction in Iran Using Machine Learning and Deep Learning.",
+      "description": "Built predictive models using regression, classification, and deep learning techniques to analyze air pollution indicators, identify key contributing factors, and forecast pollution trends.",
+      "links": ["LinkedIn", "GitHub"]
+    },
+    {
+      "title": "Dessert Classification Model Using Machine Learning Techniques",
+      "description": "Developed a machine learning model to predict dessert categories based on multiple input features, experimenting with various algorithms and evaluating model performance.",
+      "links": ["GitHub", "Live Demo in Streamlit", "Live Demo in Hugging Face"]
+    },
+    {
+      "title": "Ekhilur Custom Statistics Platform, Web Scraping & Predictive Analytics Challenge",
+      "description": "Collaborated with web security and development teams to complete the final challenge: performing large‑scale web scraping, data cleaning, exploratory analysis, and building predictive models to generate actionable business insights.",
+      "links": ["LinkedIn"]
+    }
+  ],
+  "frontend": [
+    {
+      "title": "Endless Countries Questions, Interactive Geography Quiz",
+      "description": "Built an interactive geography quiz using a REST Countries API, generating endless randomized questions about capitals, populations, regions, languages, and currencies. After every 15 questions, the app displays correct/incorrect statistics and continues the game seamlessly.",
+      "links": ["GitHub", "Live Demo"]
+    },
+    {
+      "title": "Basque Country Weather App (React, Vite, OpenWeatherMap)",
+      "description": "Developed as the final project of a front‑end bootcamp, this weather application provides real‑time conditions for major cities in the Basque Country and selected global cities. Features include wind speed, humidity, visibility, air pollution levels, sunrise/sunset times, and a 15‑day forecast.",
+      "links": ["GitHub", "Live Demo"]
+    },
+    {
+      "title": "Food Seeker Nutritional & Environmental Data Explorer (OpenFoodFacts API)",
+      "description": "Created a React.js application that allows users to search and filter supermarket food products using the OpenFoodFacts API. Includes nutritional and environmental impact details, dynamic themes via CSS variables, and a fully responsive layout using CSS Grid and Flexbox.",
+      "links": ["GitHub", "Live Demo"]
+    },
+    {
+      "title": "Movie Finder (Spanish), TMDb API Search & Filters",
+      "description": "Developed a Spanish‑language movie search application using the TMDb API, featuring advanced filters for release date, genre, rating, and Spanish film certification. Includes posters, summaries, and a fully localized interface.",
+      "links": ["GitHub", "Live Demo"]
+    },
+    {
+      "title": "Movie Finder (English), TMDb API Search & Filters",
+      "description": "Built an English‑language movie search tool powered by the TMDb API, offering filters for release date, genre, rating, and US film certification, along with posters and movie summaries.",
+      "links": ["GitHub", "Live Demo"]
+    },
+    {
+      "title": "Bizkaia Weather Map, Real‑Time Weather Visualization",
+      "description": "Developed a simple interactive map using Leaflet.js and the OpenWeatherMap API to display real‑time weather conditions across Bizkaia.",
+      "links": ["GitHub", "Live Demo"]
+    },
+    {
+      "title": "Personal Portfolio Website, First Version (HTML & CSS)",
+      "description": "My first portfolio website, built entirely with HTML and CSS during a front‑end development course. This project laid the foundation for my current, more advanced portfolio.",
+      "links": ["LinkedIn Post", "Live Demo (Initial)"]
+    }
+  ],
+  "gis_gallery": [
+    "General Maps for Statistical Yearbooks & Territorial Planning",
+    "Rural Census Blocks Mapping",
+    "Urban Census Blocks Mapping",
+    "Industrial & Mining Distribution Map",
+    "Tourism Map & Points of Interest",
+    "Tourism Suitability Analysis (Suitable / Unsuitable Areas)",
+    "Agricultural Suitability Analysis (Suitable / Unsuitable Areas)",
+    "Industrial & Mining Suitability Analysis (Suitable / Unsuitable Areas)",
+    "Population Suitability & Settlement Potential Analysis (Suitable / Unsuitable Areas)"
+  ],
+  "honors": [
+    {
+      "honor": "First Place in the Master's Entrance Exam",
+      "details": "Ranked 1st among 800 applicants."
+    },
+    {
+      "honor": "Top Rank (1st Place) in B.Sc. Program",
+      "details": "Department of Natural Resources, Rangeland and Watershed Management, Isfahan University of Technology. Ranked 1st among 75 students."
+    }
+  ]
+}

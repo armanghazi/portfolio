@@ -1,14 +1,16 @@
 import { useState } from 'react';
 import { FaCheck, FaCopy, FaEnvelope, FaPaperPlane, FaWhatsapp } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 import './Contact.css';
 
 const Contact = () => {
   const email = 'ghaziaskari@gmail.com';
   const whatsappNumber = '34600977125';
   const [copied, setCopied] = useState(false);
+  const { t } = useTranslation('contact');
 
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent('Hi Arman, I would like to discuss my project.');
+    const message = encodeURIComponent(t('whatsapp_message'));
     const digits = String(whatsappNumber).replace(/\D/g, '');
     window.open(`https://wa.me/${digits}?text=${message}`, '_blank', 'noopener,noreferrer');
   };
@@ -28,26 +30,25 @@ const Contact = () => {
       <div className="contact-container">
         {/* HERO CTA */}
         <div className="cta-hero">
-          <h1>Looking for a GIS or Data Specialist?</h1>
-          <p>Let&apos;s discuss your project and turn your data into actionable insights.</p>
+          <h1>{t('hero_title')}</h1>
+          <p>{t('hero_desc')}</p>
         </div>
 
         {/* QUICK CONTACT */}
         <div className="quick-contact">
           {/* WhatsApp */}
           <div className="whatsapp-section">
-            <h2>Fastest Way</h2>
+            <h2>{t('fastest_title')}</h2>
             <button type="button" className="whatsapp-button" onClick={handleWhatsAppClick}>
               <FaWhatsapp />
-              Chat on WhatsApp
+              {t('whatsapp_btn')}
             </button>
-            <p>Get a quick response and discuss your project.</p>
+            <p>{t('whatsapp_desc')}</p>
           </div>
 
           {/* Email */}
           <div className="email-section">
-            <h2>Prefer Email?</h2>
-
+            <h2>{t('email_title')}</h2>
             <div className="contact-item">
               <FaEnvelope />
               <button type="button" className="email-copy" onClick={handleCopyEmail}>
@@ -55,8 +56,7 @@ const Contact = () => {
                 {copied ? <FaCheck /> : <FaCopy />}
               </button>
             </div>
-
-            <p className="response-time">I usually reply within a few hours.</p>
+            <p className="response-time">{t('response_time')}</p>
           </div>
         </div>
       </div>
@@ -65,20 +65,20 @@ const Contact = () => {
       <div className="contact-form">
         <h2 className="section-title">
           <FaEnvelope />
-          Tell Me About Your Project
+          {t('form_title')}
         </h2>
 
         <form action="https://formsubmit.co/02ad2d2441030f69f7107ce3699c230a" method="POST">
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_next" value="https://armanghazi.github.io/portfolio/thank-you" />
 
-          <input type="text" name="name" placeholder="Your name" required />
-          <input type="email" name="email" placeholder="Your email" required />
-          <textarea name="message" placeholder="Describe your project..." required />
+          <input type="text"  name="name"    placeholder={t('placeholder_name')}    required />
+          <input type="email" name="email"   placeholder={t('placeholder_email')}   required />
+          <textarea           name="message" placeholder={t('placeholder_message')} required />
 
           <button type="submit" className="submit-button">
             <FaPaperPlane />
-            Send Message
+            {t('submit_btn')}
           </button>
         </form>
       </div>

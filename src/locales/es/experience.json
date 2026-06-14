@@ -1,0 +1,104 @@
+{
+  "title": "Experiencia",
+  "gis_section_title": "Proyectos GIS y Teledetección",
+  "teaching_section_title": "Docencia",
+  "gis": [
+    {
+      "period": "Consultor GIS independiente (2022–actualidad)",
+      "description": [
+        "Realicé análisis espaciales y ambientales utilizando GIS, teledetección y herramientas basadas en Python.",
+        "Desarrollé paneles interactivos (Power BI, Streamlit) para visualizar información geoespacial y estadística.",
+        "Automaticé flujos de trabajo de datos e implementé procesos ETL para respaldar el análisis y la generación de informes.",
+        "Apliqué técnicas de data science en proyectos geoespaciales académicos, personales y prácticos.",
+        "Colaboré con clientes para desarrollar y entregar soluciones geoespaciales adaptadas a las necesidades del proyecto."
+      ]
+    },
+    {
+      "period": "Experto y Director GIS, Oficina del Gobernador General de la Provincia de Isfahan – Grupo Nacional de Divisiones (2014–2021)",
+      "description": [
+        "Lideré la gestión de datos espaciales y el desarrollo de soluciones de respuesta a crisis y planificación territorial para las autoridades provinciales.",
+        "Diseñé, actualicé y gestioné la base de datos geoespacial oficial de divisiones administrativas (comarcas, distritos, zonas rurales, ciudades, pueblos).",
+        "Elaboré mapas precisos de límites administrativos utilizando imágenes satelitales, mapas topográficos y datos catastrales; realicé análisis temporal de cambios en límites.",
+        "Realicé análisis espaciales y demográficos para proponer la creación/modificación de unidades administrativas; elaboré mapas oficiales y documentación para órganos decisores.",
+        "Coordiné con el Ministerio del Interior, el Centro Cartográfico Nacional y el Centro Estadístico para armonizar códigos y conjuntos de datos administrativos.",
+        "Gestioné grandes conjuntos de datos geoespaciales para planificación regional, gestión territorial y toma de decisiones estratégicas.",
+        "Elaboré propuestas técnicas (metodologías, cronogramas, especificaciones de datos); revisé RFP/RFQ; coordiné equipos multidisciplinares para propuestas geoespaciales competitivas.",
+        "Lideré flujos de trabajo GIS, orienté al personal júnior e introduje metodologías/tecnologías geoespaciales modernas a partir de 2018."
+      ]
+    },
+    {
+      "period": "Experto GIS en Spadana GeoSite, trabajando en la Organización Provincial de Planificación y Gestión de Isfahan (2004–2014)",
+      "description": [
+        "Diseñé y actualicé la cartografía censal y los mapas de uso del suelo en coordinación con las autoridades de planificación provincial y nacional.",
+        "Delimité y digitalicé bloques censales rurales/urbanos; actualicé la cartografía mediante imágenes satelitales y encuestas de campo; integré con bases de datos estadísticas nacionales.",
+        "Realicé análisis espaciales, diagnósticos territoriales y modelado de uso del suelo para la planificación del desarrollo sostenible.",
+        "Desarrollé mapas temáticos y análisis de idoneidad para turismo (zonificación, circuitos), agricultura, industria, minería, recursos hídricos e infraestructura.",
+        "Produje conjuntos de datos y mapas geoespaciales para planificación regional, gestión territorial y toma de decisiones estratégicas.",
+        "Elaboré propuestas técnicas (metodologías, cronogramas, especificaciones de datos); revisé RFP/RFQ; coordiné equipos multidisciplinares para propuestas geoespaciales competitivas."
+      ]
+    },
+    {
+      "period": "Consultor GIS y Director de Proyectos en Spadana Geo Science & Technology Company (2004–2018)",
+      "description": [
+        "Gestioné y contribuí a proyectos GIS para municipios, autoridades regionales y organizaciones del sector privado.",
+        "Lideré y gestioné proyectos de implementación GIS para municipios, supervisando el ciclo de vida completo desde la planificación hasta la entrega.",
+        "Asesoré a municipios y clientes del sector privado en planificación GIS urbana, diseño de sistemas y despliegue operativo.",
+        "Coordiné equipos multidisciplinares, garantizando la alineación entre los requisitos técnicos, los plazos y las expectativas de las partes interesadas.",
+        "Dirigí el desarrollo de bases de datos geoespaciales y soluciones de smart city para apoyar iniciativas de infraestructura y planificación urbana.",
+        "Supervisé equipos técnicos y aseguré la ejecución exitosa de flujos de trabajo GIS, estándares de calidad y entregables del proyecto.",
+        "Elaboré propuestas técnicas (metodologías, cronogramas, especificaciones de datos); revisé RFP/RFQ; coordiné equipos multidisciplinares para propuestas geoespaciales competitivas."
+      ]
+    },
+    {
+      "period": "Colaborador GIS, S4 (Spatial Structures in the Social Sciences), Departamento de Sociología, Brown University, EE.UU. (Feb–Ago 2013)",
+      "description": [
+        "Digitalicé y georreferencié mapas censales históricos (1890–1930) de las principales ciudades de EE.UU. para facilitar la investigación espacio-temporal en ciencias sociales."
+      ]
+    },
+    {
+      "period": "Consultor GIS, Empresa Zistban, Ciudad de Ciencia y Tecnología de Isfahan (2002–2004)",
+      "description": [
+        "Presté asesoría en asuntos relacionados con GIS para diversos proyectos regionales.",
+        "Colaboré con la Autoridad Regional del Agua de Isfahan en proyectos de planificación espacial y cartografía hidrológica."
+      ]
+    },
+    {
+      "period": "Colaborador en proyectos GIS, Universidad Tecnológica de Isfahan (2002–2003)",
+      "description": [
+        "Colaboré en el inicio del proyecto GIS de la Provincia de Isfahan.",
+        "Contribuí a los estudios de viabilidad de fase cero bajo la supervisión de la Organización Provincial de Gestión y Planificación de Isfahan."
+      ]
+    }
+  ],
+  "teaching": [
+    {
+      "institution": "Municipalities Isfahan's University of Applied Sciences (2009 - 2021)",
+      "description": "Impartí a estudiantes de grado en urbanismo los fundamentos de las bases de datos urbanas y las aplicaciones informáticas relevantes.",
+      "courses": ["Bases de datos urbanas", "Aplicaciones informáticas en urbanismo"]
+    },
+    {
+      "institution": "Red Crescent University of Applied Sciences - Isfahan branch (2014 - 2021)",
+      "description": "Impartí a los estudiantes los principios de gestión de desastres naturales y el papel crucial de la Gestión de Información de Desastres (DIM).",
+      "courses": ["Gestión de desastres naturales", "Gestión de Información de Desastres (DIM)"]
+    },
+    {
+      "institution": "Meteorology and Atmospheric Sciences, University of Applied Science (2010 - 2013)",
+      "description": "Impartí instrucción especializada en Meteorología Satelital a estudiantes de ciencias atmosféricas.",
+      "courses": ["Meteorología satelital"]
+    },
+    {
+      "institution": "DaneshPajoohan Institute of Higher Education (2010 - 2012)",
+      "description": "Orienté a los estudiantes en principios GIS, técnicas de cartografía digital con AutoCAD, y supervisé trabajos de fin de grado en campos relacionados.",
+      "courses": ["GIS", "Cartografía digital y AutoCAD (DIM)", "Dirección de TFG"]
+    },
+    {
+      "institution": "Diversas organizaciones",
+      "description": "Impartí formación introductoria y avanzada en GIS y Teledetección para profesionales y educadores de diversas organizaciones.",
+      "courses": [
+        "Curso básico de GIS para expertos técnicos (Gobernación Provincial de Isfahan y Municipio)",
+        "Formación en GIS y software ArcGIS para el personal municipal y organizaciones afiliadas",
+        "Talleres de GIS y Teledetección (RS) para docentes de geografía"
+      ]
+    }
+  ]
+}

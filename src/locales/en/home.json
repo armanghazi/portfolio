@@ -1,0 +1,57 @@
+{
+  "cv_en": "English CV",
+  "cv_es": "Spanish CV",
+  "title": "GIS & Smart Cities Project Manager",
+  "subtitle": "20+ Years Delivering Geospatial & Data-Driven Solutions",
+  "bio_1": "I am a GIS & Data Specialist with over 20 years of experience delivering geospatial solutions for urban planning, territorial analysis, and decision-making.",
+  "bio_2": "Throughout my career, I have led and coordinated GIS projects end-to-end for public sector organizations, working closely with multidisciplinary teams and stakeholders.",
+  "bio_3": "My expertise includes spatial analysis, geospatial data infrastructures, and data standardization, ensuring consistency and scalability across complex systems.",
+  "bio_4": "I combine spatial thinking with Python-based data workflows, ETL automation, and interactive dashboards to deliver efficient, data-driven solutions.",
+  "bio_5": "Currently expanding my expertise in Big Data and cloud technologies, with a strong focus on Smart Cities and project management.",
+  "value_1": "✔ 20+ years GIS & Project Experience",
+  "value_2": "✔ End-to-End Project Management",
+  "value_3": "✔ Data Standardization & Governance",
+  "value_4": "✔ Smart City & Urban Planning Solutions",
+  "value_5": "✔ Python, ETL & Data Workflows",
+  "cta_projects": "View Projects",
+  "cta_contact": "Contact Me",
+  "skills_title": "Skills Overview",
+  "skill_gis": {
+    "title": "GIS & Geospatial",
+    "items": [
+      "ArcGIS, QGIS, GEE",
+      "Spatial Analysis & Remote Sensing",
+      "Geospatial Data Modeling",
+      "ArcGIS Enterprise, Web AppBuilder",
+      "GeoPandas"
+    ]
+  },
+  "skill_pm": {
+    "title": "Project Management",
+    "items": [
+      "Project Planning & Delivery",
+      "Stakeholder Management",
+      "Team Coordination",
+      "Requirements Analysis",
+      "Data Standardization"
+    ]
+  },
+  "skill_data": {
+    "title": "Data & Programming",
+    "items": [
+      "Python (Pandas, NumPy)",
+      "ETL Automation",
+      "Power BI",
+      "SQL"
+    ]
+  },
+  "skill_tools": {
+    "title": "Tools & Technologies",
+    "items": [
+      "Git, Docker",
+      "Notion / Jira (familiarity)",
+      "Big Data (Spark, Kafka, Hadoop – basic)",
+      "JavaScript, Streamlit"
+    ]
+  }
+}

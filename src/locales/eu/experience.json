@@ -1,0 +1,118 @@
+{
+  "title": "Lan Esperientzia",
+  "gis_section_title": "GIS eta Teledetekzio Proiektuak",
+  "teaching_section_title": "Irakaskuntza",
+
+  "gis": [
+    {
+      "period": "GIS Aholkulari Independentea (2022–gaur egun)",
+      "description": [
+        "Analisi espazialak eta ingurumen-analisiak egin ditut GIS, teledetekzio eta Pythonen oinarritutako tresnak erabiliz.",
+        "Panel interaktiboak (Power BI, Streamlit) garatu ditut datu geoespazialak eta estatistikoak bistaratze aldera.",
+        "Datu-fluxuak automatizatu eta ETL prozesuak ezarri ditut analisia eta txostenak egiteko.",
+        "Data Science teknikak aplikatu ditut proiektu akademiko, pertsonal eta geoespazial praktikoetan.",
+        "Bezeroekin elkarlanean aritu naiz proiektuaren beharretara egokitutako irtenbide geoespazialak garatzeko eta entregatzeko."
+      ]
+    },
+    {
+      "period": "GIS Aditua eta Kudeatzailea, Isfahan Probintziako Gobernadore Nagusiaren Bulegoa – National Divisions Group (2014–2021)",
+      "description": [
+        "Datu espazialen kudeaketa zuzendu nuen eta larrialdiei erantzuteko nahiz lurralde-plangintzarako irtenbideak garatu nituen probintziako agintarientzat.",
+        "Banaketa administratiboen datu-base geoespazial ofiziala diseinatu, eguneratu eta kudeatu nuen (konderriak, barrutiak, landa-eremuak, hiriak eta herriak).",
+        "Muga administratiboen mapa zehatzak sortu nituen satelite-irudiak, mapa topografikoak eta katastroko datuak erabiliz; muga-aldaketen denborazko analisia ere egin nuen.",
+        "Analisi espazial eta demografikoak egin nituen administrazio-unitate berriak sortzeko edo lehendik zeudenak aldatzeko proposamenak prestatzeko.",
+        "Barne Ministerioarekin, Kartografia Zentro Nazionalarekin eta Estatistika Zentroarekin koordinatu nintzen kode administratiboak eta datu-multzoak harmonizatzeko.",
+        "Datu geoespazial handiak kudeatu nituen lurralde-plangintzarako, lurzoruaren kudeaketarako eta erabaki estrategikoak hartzeko.",
+        "Proposamen teknikoak prestatu nituen (metodologiak, egutegiak eta datuen zehaztapenak), lizitazio-dokumentuak aztertu eta talde multidiziplinarrak koordinatu nituen.",
+        "GIS workflow-ak zuzendu, langile gazteak trebatu eta 2018tik aurrera metodologia eta teknologia geoespazial modernoak ezarri nituen."
+      ]
+    },
+    {
+      "period": "GIS Aditua, Spadana GeoSite, Isfahan Probintziako Plangintza eta Kudeaketa Erakundean (2004–2014)",
+      "description": [
+        "Errolda-kartografia eta lurzoru-erabileraren mapak diseinatu eta eguneratu nituen probintziako eta estatuko plangintza-erakundeekin koordinatuta.",
+        "Landa eta hiri errolda-blokeak mugatu eta digitalizatu nituen; kartografia eguneratu nuen satelite-irudien eta landa-lanen bidez, eta estatistika-datu-base nazionalekin integratu nuen.",
+        "Analisi espazialak, lurralde-diagnostikoak eta lurzoru-erabileraren modelizazioa egin nituen garapen jasangarriko plangintzarako.",
+        "Mapa tematikoak eta egokitasun-analisiak garatu nituen turismo, nekazaritza, industria, meatzaritza, ur-baliabide eta azpiegituretarako.",
+        "Datu geoespazialak eta mapak sortu nituen lurralde-plangintzarako, lurzoruaren kudeaketarako eta erabaki estrategikoak hartzeko.",
+        "Proposamen teknikoak prestatu, lizitazio-agiriak aztertu eta talde multidiziplinarrak koordinatu nituen."
+      ]
+    },
+    {
+      "period": "GIS Aholkularia eta Proiektu Kudeatzailea, Spadana Geo Science & Technology Company (2004–2018)",
+      "description": [
+        "GIS proiektuetan parte hartu eta haiek kudeatu nituen udalerrientzat, eskualdeko erakundeentzat eta sektore pribatuko bezeroentzat.",
+        "GIS ezarpen-proiektuak zuzendu nituen udalerrietan, plangintzatik entregara arteko bizi-ziklo osoa gainbegiratuz.",
+        "Udalerriei eta sektore pribatuko bezeroei aholkularitza eman nien hiri-GIS plangintzan, sistemen diseinuan eta ezarpenean.",
+        "Talde multidiziplinarrak koordinatu nituen eskakizun teknikoak, epeak eta interesdunen itxaropenak lerrokatuta mantentzeko.",
+        "Azpiegitura eta hiri-plangintzako ekimenak laguntzeko datu-base geoespazialen eta Smart City irtenbideen garapena zuzendu nuen.",
+        "Talde teknikoak gainbegiratu nituen eta GIS workflow-en, kalitate-estandarren eta proiektuen entregagarrien exekuzio arrakastatsua bermatu nuen.",
+        "Proposamen teknikoak prestatu, lizitazio-agiriak berrikusi eta talde multidiziplinarrak koordinatu nituen."
+      ]
+    },
+    {
+      "period": "GIS Kolaboratzailea, S4 (Spatial Structures in the Social Sciences), Brown University, AEB (2013ko otsaila–abuztua)",
+      "description": [
+        "AEBetako hiri nagusietako errolda-mapak (1890–1930) digitalizatu eta georreferentziatu nituen ikerketa sozioespazial eta denborazkoak ahalbidetzeko."
+      ]
+    },
+    {
+      "period": "GIS Aholkularia, Zistban Company, Isfahaneko Zientzia eta Teknologia Hiria (2002–2004)",
+      "description": [
+        "GISarekin lotutako aholkularitza eman nuen hainbat eskualde-proiektutan.",
+        "Isfahaneko Eskualdeko Ur Agintaritzarekin lankidetzan aritu nintzen plangintza espazialeko eta hidrologiako mapaketa-proiektuetan."
+      ]
+    },
+    {
+      "period": "GIS Proiektuetako Kolaboratzailea, Isfahaneko Teknologia Unibertsitatea (2002–2003)",
+      "description": [
+        "Isfahan Probintziako GIS proiektuaren hasierako faseetan lagundu nuen.",
+        "Bideragarritasun-azterketen hasierako faseetan parte hartu nuen Isfahaneko Plangintza eta Kudeaketa Erakundearen gainbegiratzepean."
+      ]
+    }
+  ],
+
+  "teaching": [
+    {
+      "institution": "Isfahango Udalen Zientzia Aplikatuen Unibertsitatea (2009–2021)",
+      "description": "Hiri-plangintzako graduko ikasleei hiri-datu-baseen oinarriak eta aplikazio informatikoak irakatsi nizkien.",
+      "courses": [
+        "Hiri Datu-baseak",
+        "Hiri Plangintzarako Aplikazio Informatikoak"
+      ]
+    },
+    {
+      "institution": "Ilargi Gorriaren Zientzia Aplikatuen Unibertsitatea – Isfahan (2014–2021)",
+      "description": "Hondamendi naturalen kudeaketaren printzipioak eta Disaster Information Management (DIM) sistemaren garrantzia irakatsi nizkien ikasleei.",
+      "courses": [
+        "Hondamendi Naturalen Kudeaketa",
+        "Disaster Information Management (DIM)"
+      ]
+    },
+    {
+      "institution": "Meteorologia eta Atmosfera Zientzien Zientzia Aplikatuen Unibertsitatea (2010–2013)",
+      "description": "Meteorologia satelitalaren arloko prestakuntza espezializatua eman nuen.",
+      "courses": [
+        "Meteorologia Satelitala"
+      ]
+    },
+    {
+      "institution": "DaneshPajoohan Goi Mailako Hezkuntza Institutua (2010–2012)",
+      "description": "GISaren oinarriak eta AutoCAD bidezko kartografia digitala irakatsi nituen, baita gradu-amaierako lanak gainbegiratu ere.",
+      "courses": [
+        "GIS",
+        "Kartografia Digitala eta AutoCAD",
+        "Gradu Amaierako Lanen Zuzendaritza"
+      ]
+    },
+    {
+      "institution": "Hainbat Erakunde",
+      "description": "GIS eta Teledetekzioaren inguruko oinarrizko eta aurreratuko prestakuntza eman nien profesional eta hezitzaileei.",
+      "courses": [
+        "GIS Oinarrizko Ikastaroa Aditu Teknikoentzat (Isfahan Probintziako Gobernazioa eta Udalak)",
+        "GIS eta ArcGIS Softwarearen Prestakuntza Udal Langileentzat eta Erakunde Laguntzaileentzat",
+        "GIS eta Teledetekzio (RS) Tailerrak Geografia Irakasleentzat"
+      ]
+    }
+  ]
+}

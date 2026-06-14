@@ -1,0 +1,125 @@
+{
+  "title": "Proiektuak",
+  "geoai_title": "GeoAI eta Smart City Proiektuak",
+  "gis_gallery_title": "GIS Lanen Galeria",
+  "ai_title": "AA eta Automatizazio Proiektuak",
+  "ds_title": "Data Science eta Lotutako Proiektuak",
+  "frontend_title": "Front-End eta Lotutako Proiektuak",
+  "publications_title": "Argitalpenak",
+  "honors_title": "Ohoreak eta Sariak",
+  "gis_works_en": "Hautatutako GIS Lanak (ingelesez)",
+  "gis_works_es": "Hautatutako GIS Lanak (gaztelaniaz)",
+  "publications_en_label": "Ingelesa",
+  "publications_fa_label": "Persiera",
+  "image_not_found": "Irudia ez da aurkitu",
+
+  "geoai": [
+    {
+      "title": "GeoAI Smart City Plataforma, Bilbo Handiko airearen kalitatea monitorizatzeko eta aurreikusteko (garapen fasean)",
+      "description": "Data Science espazialeko eta GeoAI proiektua, Bilbo Handiko airearen kalitatea monitorizatu eta aurreikusteko. GIS, Python, Machine Learning, panel interaktiboak eta Smart City erabakiak hartzeko laguntza-tresnak uztartzen ditu.",
+      "links": ["GitHub", "Zuzeneko panela"]
+    }
+  ],
+
+  "ai": [
+    {
+      "title": "AA eta automatizazio bidezko workflow-a alokairuko etxebizitzak bilatzeko",
+      "description": "Adimen Artifizialeko Espezialista programan garatutako muturretik muturrerako workflow automatizatua. Sistemak n8n eta Telegram erabiltzen ditu Bilbon azken sei orduetan argitaratutako alokairuko etxebizitzak identifikatzeko eta hautatutako alertak harpidedunei bidaltzeko. Proiektu honek AA bidezko automatizazioa, chatbot garapena eta prozesuen orkestrazioa erakusten ditu.",
+      "links": ["GitHub", "Telegramen ikusi", "Xehetasunak (gaztelaniaz)", "Xehetasunak (ingelesez)"]
+    }
+  ],
+
+  "ds": [
+    {
+      "title": "Python oinarriak: Itsasontziak Hondoratu jokoa",
+      "description": "Pythonen lehen proiektu gisa Itsasontziak Hondoratu joko klasikoa garatu nuen, programazioko oinarrizko kontzeptuak aplikatuz: begiztak, baldintzak, funtzioak eta joko-logika.",
+      "links": ["GitHub"]
+    },
+    {
+      "title": "ArmanDS — Data Sciencerako Python Liburutegia",
+      "description": "pip bidez instalatu daitekeen Python liburutegi modularra, data science workflow osoa errazteko. Datuen esplorazioa, bistaratzea, aurreprozesamendua eta ereduen ebaluazioa barne hartzen ditu. 15 tresna baino gehiago eskaintzen ditu null balioen analisia, outlier-en ezabaketa, feature engineering, hiperparametroen optimizazioa eta ereduen bertsio-kontrolerako.",
+      "links": ["GitHub"]
+    },
+    {
+      "title": "Munduko unibertsitateen ranking-en datuen azterketa esploratzailea (CWUR datu-multzoa)",
+      "description": "CWUR datu-multzoaren EDA sakona egin nuen, munduko 1000 unibertsitate onenen urte anitzeko joerak aztertuz eta errendimendu akademikoaren adierazleetan eredu garrantzitsuak identifikatuz.",
+      "links": ["GitHub"]
+    },
+    {
+      "title": "Irango aire-kutsaduraren analisia eta aurreikuspena Machine Learning eta Deep Learning erabiliz",
+      "description": "Erregresio, sailkapen eta deep learning tekniketan oinarritutako eredu prediktiboak garatu nituen aire-kutsaduraren adierazleak aztertzeko, faktore nagusiak identifikatzeko eta etorkizuneko joerak aurreikusteko.",
+      "links": ["LinkedIn", "GitHub"]
+    },
+    {
+      "title": "Postreen sailkapen-eredua Machine Learning tekniken bidez",
+      "description": "Machine learning eredua garatu nuen postreen kategoriak aurreikusteko hainbat sarrera-ezaugarriren arabera, algoritmo desberdinak probatuz eta emaitzak ebaluatuz.",
+      "links": ["GitHub", "Zuzeneko demoa Streamlit-en", "Zuzeneko demoa Hugging Face-n"]
+    },
+    {
+      "title": "Ekhilur plataformako erronka: Web Scraping eta analisi prediktiboa",
+      "description": "Web segurtasuneko eta garapeneko taldeekin elkarlanean aritu nintzen azken erronka osatzeko: eskala handiko web scraping-a, datuen garbiketa, analisi esploratzailea eta negozio-erabakiak laguntzeko eredu prediktiboen eraikuntza.",
+      "links": ["LinkedIn"]
+    }
+  ],
+
+  "frontend": [
+    {
+      "title": "Herrialdeei buruzko galdera amaigabeak, geografia quiz interaktiboa",
+      "description": "Geografia quiz interaktiboa garatu nuen REST Countries API erabiliz. Hiriburuei, biztanleriari, eskualdeei, hizkuntzei eta monetari buruzko galdera ausazko eta amaigabeak sortzen ditu. 15 galderaren ondoren estatistikak erakusten ditu eta jokoa etenik gabe jarraitzen du.",
+      "links": ["GitHub", "Zuzeneko demoa"]
+    },
+    {
+      "title": "Euskal Herriko eguraldi aplikazioa (React, Vite, OpenWeatherMap)",
+      "description": "Front-end bootcamp baten amaierako proiektu gisa garatua. Euskal Herriko hiri nagusien eta nazioarteko hainbat hiriren eguraldi-baldintzak denbora errealean eskaintzen ditu. Haizearen abiadura, hezetasuna, ikusgarritasuna, kutsadura-mailak, egunsenti eta ilunabar orduak eta 15 eguneko iragarpena barne hartzen ditu.",
+      "links": ["GitHub", "Zuzeneko demoa"]
+    },
+    {
+      "title": "Food Seeker: nutrizio eta ingurumen datuen esploratzailea (OpenFoodFacts API)",
+      "description": "React.js aplikazioa garatu nuen erabiltzaileek elikagai-produktuak bilatu eta iragazteko OpenFoodFacts API erabiliz. Nutrizioari eta ingurumen-inpaktuari buruzko informazioa, CSS aldagaien bidezko gai dinamikoak eta diseinu moldakorra eskaintzen ditu.",
+      "links": ["GitHub", "Zuzeneko demoa"]
+    },
+    {
+      "title": "Film bilatzailea (gaztelaniaz), TMDb API bidezko bilaketa eta iragazkiak",
+      "description": "TMDb API erabiliz gaztelaniazko film bilatzailea garatu nuen. Estreinaldi-data, generoa, puntuazioa eta Espainiako zinema-ziurtagiriaren arabera iragazteko aukera ematen du.",
+      "links": ["GitHub", "Zuzeneko demoa"]
+    },
+    {
+      "title": "Film bilatzailea (ingelesez), TMDb API bidezko bilaketa eta iragazkiak",
+      "description": "TMDb API oinarri duen ingelesezko film bilatzailea garatu nuen. Estreinaldi-data, generoa, puntuazioa eta AEBetako zinema-ziurtagiriaren arabera iragazteko aukera ematen du.",
+      "links": ["GitHub", "Zuzeneko demoa"]
+    },
+    {
+      "title": "Bizkaiko eguraldi mapa, denbora errealeko bistaratzea",
+      "description": "Leaflet.js eta OpenWeatherMap API erabiliz mapa interaktiboa garatu nuen Bizkaia osoko eguraldi-baldintzak denbora errealean erakusteko.",
+      "links": ["GitHub", "Zuzeneko demoa"]
+    },
+    {
+      "title": "Portafolio pertsonalaren webgunea, lehen bertsioa (HTML eta CSS)",
+      "description": "Nire lehen portafolio webgunea, HTML eta CSS erabiliz osorik eraikia front-end garapen ikastaro batean. Egungo portafolio aurreratuagoaren oinarriak ezarri zituen.",
+      "links": ["LinkedIn argitalpena", "Zuzeneko demoa (hasierakoa)"]
+    }
+  ],
+
+  "gis_gallery": [
+    "Urtekari estatistikoetarako eta lurralde-antolamendurako mapa orokorrak",
+    "Landa-errolda blokeen kartografia",
+    "Hiri-errolda blokeen kartografia",
+    "Industria eta meatzaritza banaketaren mapa",
+    "Turismo mapa eta interesguneak",
+    "Turismo-egokitasunaren analisia (egokiak / ez-egokiak diren eremuak)",
+    "Nekazaritza-egokitasunaren analisia (egokiak / ez-egokiak diren eremuak)",
+    "Industria eta meatzaritza-egokitasunaren analisia (egokiak / ez-egokiak diren eremuak)",
+    "Biztanleria eta kokaleku-potentzialaren egokitasun-analisia (egokiak / ez-egokiak diren eremuak)"
+  ],
+
+  "honors": [
+    {
+      "honor": "Masterreko Sarbide Azterketan Lehen Postua",
+      "details": "800 hautagairen artean 1. postuan sailkatua."
+    },
+    {
+      "honor": "Espediente Akademiko Onena Graduan",
+      "details": "Isfahango Unibertsitate Teknologikoko Baliabide Naturalen, Larreen eta Arro Hidrografikoen Kudeaketako Sailean. 75 ikasleren artean 1. postuan sailkatua."
+    }
+  ]
+}

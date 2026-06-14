@@ -1,0 +1,82 @@
+{
+  "title": "تحصیلات",
+  "training_title": "آموزش‌های تکمیلی",
+  "education": [
+    {
+      "degree": "کارشناسی ارشد سیستم‌های اطلاعات جغرافیایی و سنجش از دور",
+      "university": "دانشگاه شهید بهشتی، تهران، ایران"
+    },
+    {
+      "degree": "مهندسی مرتع و آبخیزداری",
+      "university": "دانشگاه صنعتی اصفهان، ایران"
+    }
+  ],
+  "training": [
+    {
+      "title": "LABORLAN 2026: AI&Data Tech: هوش مصنوعی و مدیریت پروژه‌های فناورانه",
+      "period": "Apr 2026 - Jul 2026",
+      "provider": "GAIA, DEMA, C2B",
+      "details": "325 ساعت"
+    },
+    {
+      "title": "متخصص Big Data",
+      "period": "Jan 2026 - Mar 2026",
+      "provider": "Lanbide, Alfa formación",
+      "details": "230 ساعت"
+    },
+    {
+      "title": "مقدمه‌ای بر مدیریت جامع پروژه‌های BIM",
+      "period": "Feb 2026 - Mar 2026",
+      "provider": "SEPE, Metodo Consultores",
+      "details": "50 ساعت"
+    },
+    {
+      "title": "سیستم‌های اطلاعات جغرافیایی کاربردی در مدیریت کشاورزی با نرم‌افزار آزاد",
+      "period": "Dec 2025 - Feb 2026",
+      "provider": "SEPE, Metodo Consultores",
+      "details": "150 ساعت"
+    },
+    {
+      "title": "متخصص هوش مصنوعی",
+      "period": "Jun 2025 - Oct 2025",
+      "provider": "Lanbide, EDE Fundazioa",
+      "details": "230 ساعت"
+    },
+    {
+      "title": "دوره آموزشی توسعه وب (Front-End)",
+      "period": "Feb 2025 - Apr 2025",
+      "provider": "The Bridge Digital Talent (BBK Bootcamps)",
+      "details": "200 ساعت"
+    },
+    {
+      "title": "دوره آموزشی Data Science",
+      "period": "Sep 2024 - Feb 2025",
+      "provider": "The Bridge Digital Talent (BBK Bootcamps)",
+      "details": "480 ساعت"
+    },
+    {
+      "title": "مونتاژ و نگهداری سیستم‌های میکروکامپیوتری (سطح ۱)",
+      "period": "May 2024 - Jul 2024",
+      "provider": "Lanbide, IFAP (Basauri)",
+      "details": "370 ساعت"
+    },
+    {
+      "title": "هوش تجاری: مدل‌سازی و تجسم داده با Excel و Power BI",
+      "period": "2023",
+      "provider": "Lanbide, IPARTEK SERVICIOS INFORMÁTICOS, SOC.COOP",
+      "details": "60 ساعت"
+    },
+    {
+      "title": "یادگیری ماشین و تحلیل پیش‌بینانه برای کسب‌وکار ۴.۰",
+      "period": "2023",
+      "provider": "Lanbide, C2B",
+      "details": "30 ساعت"
+    },
+    {
+      "title": "وب اسکرپینگ، استخراج داده از وب",
+      "period": "2023",
+      "provider": "Lanbide, C2B",
+      "details": "20 ساعت"
+    }
+  ]
+}

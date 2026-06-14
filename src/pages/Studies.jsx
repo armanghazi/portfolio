@@ -1,109 +1,40 @@
 import { FaGraduationCap } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 import './Studies.css';
 
-// Import university images
 import shahidBeheshtiImg from '../assets/img/shahid-beheshti.jpg';
 import isfahanTechImg from '../assets/img/isfahan-tech.jpg';
 
-const Studies = () => {
-  const education = [
-    {
-      degree: "Master's Degree in Geographic Information Systems and Remote Sensing",
-      year: "2004",
-      university: "Shahid Beheshti University, Tehran, Iran",
-      image: shahidBeheshtiImg
-    },
-    {
-      degree: "Bachelor of Engineering in Rangeland and Watershed Management",
-      year: "2000",
-      university: "Isfahan University of Technology, Iran",
-      image: isfahanTechImg
-    }
-  ];
+const EDUCATION_META = [
+  { year: '2004', image: shahidBeheshtiImg },
+  { year: '2000', image: isfahanTechImg },
+];
 
-  const training = [
-    {
-      title: "LABORLAN 2026: AI&Data Tech: Artificial Intelligence and Technological Project Management",
-      period: "Apr 2026 - Jul 2026",
-      provider: "GAIA, DEMA, C2B-Campus to Business",
-      details: "325 hours"
-    },
-    {
-      title: "Big Data Specialist",
-      period: "Jan 2026 - Mar 2026",
-      provider: "Lanbide, Alfa formación",
-      details: "230 hours"
-    },
-    {
-      title: "Introduction to comprehensive BIM project management",
-      period: "Feb 2026 - Mar 2026",
-      provider: "SEPE, Metodo Consultores",
-      details: "50 hours"
-    },
-    {
-      title: "Geographic information systems applied to agricultural management with free software",
-      period: "Dec 2025 - Feb 2026",
-      provider: "SEPE, Metodo Consultores",
-      details: "150 hours"
-    },
-    {
-      title: "Artificial Intelligence Specialist",
-      period: "Jun 2025 - Oct 2025",
-      provider: "Lanbide, EDE Fundazioa",
-      details: "230 hours"
-    },
-    {
-      title: "Web Development Bootcamp (Front-End)",
-      period: "Feb 2025 - Apr 2025",
-      provider: "The Bridge Digital Talent(BBK Bootcamps)",
-      details: "200 hours"
-    },
-    {
-      title: "Data Science Bootcamp",
-      period: "Sep 2024 - Feb 2025",
-      provider: "The Bridge Digital Talent(BBK Bootcamps)",
-      details: "480 hours"
-    },
-    {
-      title: "Microcomputer Systems Assembly and Maintenance (Level 1)",
-      period: "May 2024 - Jul 2024",
-      provider: "Lanbide, IFAP (Basauri)",
-      details: "370 hours"
-    },
-    {
-      title: "Business Intelligence: Data Modeling and Visualization with Excel and Power BI",
-      period: "2023",
-      provider: "Lanbide, IPARTEK SERVICIOS INFORMÁTICOS, SOC.COOP",
-      details: "60 hours"
-    },
-    {
-      title: "Machine Learning and Predictive Analysis for Business 4.0",
-      period: "2023",
-      provider: "Lanbide, C2B-Campus to Business",
-      details: "30 hours"
-    },
-    {
-      title: "Web scraping, website data extraction",
-      period: "2023",
-      provider: "Lanbide, C2B-Campus to Business",
-      details: "20 hours"
-    }
-  ];
+const Studies = () => {
+  const { t } = useTranslation('studies');
+
+  const education = t('education', { returnObjects: true }).map((item, i) => ({
+    ...item,
+    year: EDUCATION_META[i].year,
+    image: EDUCATION_META[i].image,
+  }));
+
+  const training = t('training', { returnObjects: true });
 
   return (
     <section className="studies-section">
       <h1 className="section-title">
         <FaGraduationCap />
-        Education
+        {t('title')}
       </h1>
 
       <div className="education-grid">
         {education.map((edu, index) => (
           <div key={index} className="education-card">
             <div className="education-image-container">
-              <img 
-                src={edu.image} 
-                alt={edu.university} 
+              <img
+                src={edu.image}
+                alt={edu.university}
                 className="education-image"
                 loading="lazy"
               />
@@ -118,10 +49,10 @@ const Studies = () => {
       </div>
 
       <div className="training-section">
-        <h2 className="category-title">Additional Training</h2>
+        <h2 className="category-title">{t('training_title')}</h2>
         <div className="studies-grid">
           {training.map((study, index) => (
-            <article key={index} className="study-card training-card"> {/* Added specific class */}
+            <article key={index} className="study-card training-card">
               <div className="study-content">
                 <h3 className="study-title">{study.title}</h3>
                 <p className="study-subtitle">{study.period}</p>

@@ -1,0 +1,82 @@
+{
+  "title": "Education",
+  "training_title": "Additional Training",
+  "education": [
+    {
+      "degree": "Master's Degree in Geographic Information Systems and Remote Sensing",
+      "university": "Shahid Beheshti University, Tehran, Iran"
+    },
+    {
+      "degree": "Bachelor of Engineering in Rangeland and Watershed Management",
+      "university": "Isfahan University of Technology, Iran"
+    }
+  ],
+  "training": [
+    {
+      "title": "LABORLAN 2026: AI&Data Tech: Artificial Intelligence and Technological Project Management",
+      "period": "Apr 2026 - Jul 2026",
+      "provider": "GAIA, DEMA, C2B",
+      "details": "325 hours"
+    },
+    {
+      "title": "Big Data Specialist",
+      "period": "Jan 2026 - Mar 2026",
+      "provider": "Lanbide, Alfa formación",
+      "details": "230 hours"
+    },
+    {
+      "title": "Introduction to comprehensive BIM project management",
+      "period": "Feb 2026 - Mar 2026",
+      "provider": "SEPE, Metodo Consultores",
+      "details": "50 hours"
+    },
+    {
+      "title": "Geographic information systems applied to agricultural management with free software",
+      "period": "Dec 2025 - Feb 2026",
+      "provider": "SEPE, Metodo Consultores",
+      "details": "150 hours"
+    },
+    {
+      "title": "Artificial Intelligence Specialist",
+      "period": "Jun 2025 - Oct 2025",
+      "provider": "Lanbide, EDE Fundazioa",
+      "details": "230 hours"
+    },
+    {
+      "title": "Web Development Bootcamp (Front-End)",
+      "period": "Feb 2025 - Apr 2025",
+      "provider": "The Bridge Digital Talent (BBK Bootcamps)",
+      "details": "200 hours"
+    },
+    {
+      "title": "Data Science Bootcamp",
+      "period": "Sep 2024 - Feb 2025",
+      "provider": "The Bridge Digital Talent (BBK Bootcamps)",
+      "details": "480 hours"
+    },
+    {
+      "title": "Microcomputer Systems Assembly and Maintenance (Level 1)",
+      "period": "May 2024 - Jul 2024",
+      "provider": "Lanbide, IFAP (Basauri)",
+      "details": "370 hours"
+    },
+    {
+      "title": "Business Intelligence: Data Modeling and Visualization with Excel and Power BI",
+      "period": "2023",
+      "provider": "Lanbide, IPARTEK SERVICIOS INFORMÁTICOS, SOC.COOP",
+      "details": "60 hours"
+    },
+    {
+      "title": "Machine Learning and Predictive Analysis for Business 4.0",
+      "period": "2023",
+      "provider": "Lanbide, C2B",
+      "details": "30 hours"
+    },
+    {
+      "title": "Web scraping, website data extraction",
+      "period": "2023",
+      "provider": "Lanbide, C2B",
+      "details": "20 hours"
+    }
+  ]
+}
