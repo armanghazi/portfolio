@@ -32,7 +32,7 @@ const getLinkIconClass = (link) => {
 
 const GEOAI_URLS = [
   {
-    image: publicAssetUrl('img/smart.jpg'),
+    image: publicAssetUrl('img/geoai_bilbao.svg'),
     links: [
       { icon: 'linkedin',   url: 'https://www.linkedin.com/feed/update/urn:li:activity:7474883706089046017/' },
       { icon: 'github',     url: 'https://github.com/armanghazi/AI-Based-Smart-City-Air-Quality-Monitoring-and-Forecasting-System-for-Greater-Bilbao' },
