@@ -63,7 +63,7 @@
   max-width: 220px;
   padding: 0.85rem;
   background-color: var(--primary-color);
-  color: var(--white);
+  color: var(--surface-color);
   text-align: center;
   border-radius: 8px;
   font-weight: 600;
@@ -172,6 +172,102 @@
 }
 
 /* ---------------------- */
+/*   FEATURED PROJECT     */
+/* ---------------------- */
+
+.featured-section {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.featured-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.featured-card {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 3rem;
+  align-items: center;
+  background: var(--surface-color);
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  text-align: start;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.featured-image img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.featured-content h3 {
+  font-size: 1.35rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.featured-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-color);
+  margin-bottom: 1.8rem;
+}
+
+.featured-cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+[data-theme="dark"] .featured-card {
+  background: #243447;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .featured-content h3 {
+  color: #f1f5f9;
+}
+
+[data-theme="dark"] .featured-content p {
+  color: #d1d5db;
+}
+
+@media (max-width: 768px) {
+  .featured-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .featured-cta {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featured-cta .primary-btn,
+  .featured-cta .secondary-btn {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+}
+
+/* ---------------------- */
 /*     SKILLS SECTION     */
 /* ---------------------- */
 
@@ -194,11 +290,11 @@
 }
 
 .skill-card {
-  background: var(--white);
+  background: var(--surface-color);
   border-radius: 14px;
   padding: 1.8rem;
   width: 260px;
-  text-align: left;
+  text-align: start;
   border: 1px solid rgba(0, 0, 0, 0.06);
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   transition: 0.3s ease;

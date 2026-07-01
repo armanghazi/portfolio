@@ -1,9 +1,11 @@
 import { FaMapMarkedAlt, FaGraduationCap } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
+import usePageMeta from '../hooks/usePageMeta';
 import './Experience.css';
 
 const Experience = () => {
   const { t } = useTranslation('experience');
+  usePageMeta('experience');
 
   const gisExperience  = t('gis',      { returnObjects: true });
   const teachingExperience = t('teaching', { returnObjects: true });

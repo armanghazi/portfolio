@@ -59,7 +59,7 @@
   content: '▾';
   color: var(--secondary-color);
   font-size: 1rem;
-  margin-left: 0.5rem;
+  margin-inline-start: 0.5rem;
   transition: transform 0.2s ease;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .project-card {
-  background-color: var(--white);
+  background-color: var(--surface-color);
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -188,7 +188,7 @@
 }
 
 .gis-gallery-card {
-  background-color: var(--white);
+  background-color: var(--surface-color);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -197,6 +197,7 @@
 
 .gis-gallery-media {
   position: relative;
+  cursor: pointer;
 }
 
 .gis-gallery-image {
@@ -204,35 +205,6 @@
   height: 230px;
   object-fit: cover;
   display: block;
-}
-
-.gis-image-size-badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: rgba(0, 0, 0, 0.75);
-  color: #fff;
-  padding: 0.25rem 0.55rem;
-  border-radius: 6px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  opacity: 0;
-  transform: translateY(-4px);
-  transition: opacity 0.2s ease, transform 0.2s ease;
-  pointer-events: none;
-}
-
-.gis-gallery-card:hover .gis-image-size-badge {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.gis-preview-size {
-  text-align: center;
-  color: var(--primary-color);
-  font-weight: 600;
-  margin-top: 0.75rem;
-  font-size: 0.9rem;
 }
 
 .gis-hover-preview {
@@ -253,9 +225,11 @@
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.gis-gallery-media:hover .gis-hover-preview {
+.gis-gallery-media:hover .gis-hover-preview,
+.gis-hover-preview.is-open {
   opacity: 1;
   transform: scale(1);
+  pointer-events: auto;
 }
 
 .gis-gallery-image-full {
@@ -268,12 +242,6 @@
   border-radius: 10px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
   background: #fff;
-}
-
-@media (max-width: 768px) {
-  .gis-hover-preview {
-    display: none;
-  }
 }
 
 .gis-gallery-caption {
@@ -308,7 +276,7 @@
   padding: 0.85rem 1.5rem;
   border-radius: 8px;
   background-color: var(--primary-color);
-  color: var(--white);
+  color: var(--surface-color);
   text-decoration: none;
   font-weight: 600;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -344,8 +312,8 @@
 
 .experience-item {
   margin-bottom: 2rem;
-  padding-left: 1.5rem;
-  border-left: 3px solid var(--secondary-color);
+  padding-inline-start: 1.5rem;
+  border-inline-start: 3px solid var(--secondary-color);
 }
 
 .experience-item h3 {
@@ -398,8 +366,8 @@
 
 .teaching-item {
   margin-bottom: 2rem;
-  padding-left: 1.5rem;
-  border-left: 3px solid var(--secondary-color);
+  padding-inline-start: 1.5rem;
+  border-inline-start: 3px solid var(--secondary-color);
 }
 
 .teaching-item h3 {
@@ -452,8 +420,8 @@
 
 .publications-item {
   margin-bottom: 2rem;
-  padding-left: 1.5rem;
-  border-left: 3px solid var(--secondary-color);
+  padding-inline-start: 1.5rem;
+  border-inline-start: 3px solid var(--secondary-color);
 }
 
 .publications-item h3 {
@@ -506,8 +474,8 @@
 
 .honors-item {
   margin-bottom: 2rem;
-  padding-left: 1.5rem;
-  border-left: 3px solid var(--secondary-color);
+  padding-inline-start: 1.5rem;
+  border-inline-start: 3px solid var(--secondary-color);
 }
 
 .honors-item h3 {
@@ -679,7 +647,7 @@
   .publications-item,
   .honors-item {
     margin-bottom: 1.5rem;
-    padding-left: 1rem;
+    padding-inline-start: 1rem;
   }
 
   .experience-item h3,

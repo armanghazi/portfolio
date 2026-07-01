@@ -1,4 +1,6 @@
 {
+  "page_title": "Arman Ghaziaskari Naeini | GIS eta Datu Zientzia",
+  "page_desc": "Arman Ghaziaskari Naeini-ren portfolioa — GIS eta Smart City Proiektuen Kudeatzailea, 20 urtetik gorako esperientziarekin.",
   "cv_en": "CV ingelesez",
   "cv_es": "CV gaztelaniaz",
 
@@ -24,6 +26,11 @@
 
   "cta_projects": "Proiektuak ikusi",
   "cta_contact": "Harremanetan jarri",
+  "featured_title": "Proiektu Nabarmena",
+  "featured_project_title": "GeoAI Smart City Plataforma Bilbo Handiko airearen kalitaterako",
+  "featured_project_desc": "Datu Science espazial eta GeoAI plataforma, Bilbo Handiko airearen kalitatea monitorizatu eta aurreikusteko, GIS, Python, Machine Learning eta Smart City panel interaktiboak uztartuz.",
+  "featured_cta_demo": "Zuzeneko panela",
+  "featured_cta_details": "Xehetasun gehiago",
 
   "skills_title": "Gaitasunen laburpena",
 

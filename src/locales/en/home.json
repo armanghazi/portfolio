@@ -1,4 +1,6 @@
 {
+  "page_title": "Arman Ghaziaskari Naeini | GIS & Data Science",
+  "page_desc": "Portfolio of Arman Ghaziaskari Naeini — GIS & Smart City Project Manager with 20+ years delivering geospatial and data-driven solutions.",
   "cv_en": "English CV",
   "cv_es": "Spanish CV",
   "title": "GIS & Smart Cities Project Manager",
@@ -15,6 +17,11 @@
   "value_5": "✔ Python, ETL & Data Workflows",
   "cta_projects": "View Projects",
   "cta_contact": "Contact Me",
+  "featured_title": "Featured Project",
+  "featured_project_title": "GeoAI Smart City Platform for Air Quality in Greater Bilbao",
+  "featured_project_desc": "A Spatial Data Science and GeoAI platform for monitoring and forecasting air quality across Greater Bilbao, integrating GIS, Python, Machine Learning, and interactive Smart City dashboards.",
+  "featured_cta_demo": "Live Dashboard",
+  "featured_cta_details": "More Details",
   "skills_title": "Skills Overview",
   "skill_gis": {
     "title": "GIS & Geospatial",

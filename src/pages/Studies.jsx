@@ -1,5 +1,6 @@
 import { FaGraduationCap } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
+import usePageMeta from '../hooks/usePageMeta';
 import './Studies.css';
 
 import shahidBeheshtiImg from '../assets/img/shahid-beheshti.jpg';
@@ -12,6 +13,7 @@ const EDUCATION_META = [
 
 const Studies = () => {
   const { t } = useTranslation('studies');
+  usePageMeta('studies');
 
   const education = t('education', { returnObjects: true }).map((item, i) => ({
     ...item,
@@ -37,6 +39,8 @@ const Studies = () => {
                 alt={edu.university}
                 className="education-image"
                 loading="lazy"
+                width="400"
+                height="300"
               />
             </div>
             <div className="education-content">

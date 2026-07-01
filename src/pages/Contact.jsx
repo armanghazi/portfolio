@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FaCheck, FaCopy, FaEnvelope, FaPaperPlane, FaWhatsapp } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
+import usePageMeta from '../hooks/usePageMeta';
 import './Contact.css';
 
 const Contact = () => {
@@ -8,6 +9,7 @@ const Contact = () => {
   const whatsappNumber = '34600977125';
   const [copied, setCopied] = useState(false);
   const { t } = useTranslation('contact');
+  usePageMeta('contact');
 
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent(t('whatsapp_message'));

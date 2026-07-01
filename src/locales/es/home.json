@@ -1,4 +1,6 @@
 {
+  "page_title": "Arman Ghaziaskari Naeini | GIS y Ciencia de Datos",
+  "page_desc": "Portfolio de Arman Ghaziaskari Naeini — Director de Proyectos GIS y Smart Cities con más de 20 años de experiencia en soluciones geoespaciales.",
   "cv_en": "CV en inglés",
   "cv_es": "CV en español",
   "title": "Director de Proyectos GIS y Smart Cities",
@@ -15,6 +17,11 @@
   "value_5": "✔ Python, ETL y flujos de trabajo de datos",
   "cta_projects": "Ver proyectos",
   "cta_contact": "Contáctame",
+  "featured_title": "Proyecto Destacado",
+  "featured_project_title": "Plataforma GeoAI Smart City para la calidad del aire en el Gran Bilbao",
+  "featured_project_desc": "Una plataforma de Data Science espacial y GeoAI para el monitoreo y previsión de la calidad del aire en el Gran Bilbao, integrando GIS, Python, Machine Learning y paneles interactivos de Smart City.",
+  "featured_cta_demo": "Dashboard en vivo",
+  "featured_cta_details": "Más detalles",
   "skills_title": "Resumen de habilidades",
   "skill_gis": {
     "title": "GIS y geoespacial",

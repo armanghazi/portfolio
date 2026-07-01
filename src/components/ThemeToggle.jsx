@@ -7,16 +7,14 @@ const ThemeToggle = () => {
   const { t } = useTranslation('common');
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      setIsDark(true);
-      document.documentElement.setAttribute('data-theme', 'dark');
-    }
+    // Read the attribute already set by the inline script in index.html
+    setIsDark(document.documentElement.getAttribute('data-theme') === 'dark');
   }, []);
 
   const toggleTheme = () => {
-    setIsDark(!isDark);
-    if (!isDark) {
+    const next = !isDark;
+    setIsDark(next);
+    if (next) {
       document.documentElement.setAttribute('data-theme', 'dark');
       localStorage.setItem('theme', 'dark');
     } else {

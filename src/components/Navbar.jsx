@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
 import './Navbar.css';
@@ -23,10 +22,17 @@ const Navbar = () => {
     <nav className="nav">
       <div className="nav-container">
         <Link to="/" className="logo">Arman Ghaziaskari Naeini</Link>
-        <button className="menu-button" type="button" onClick={() => setIsOpen(!isOpen)}>
-          <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
+        <button
+          className="menu-button"
+          type="button"
+          aria-label={t('menu_toggle')}
+          aria-expanded={isOpen}
+          aria-controls="nav-list"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <FaTimes /> : <FaBars />}
         </button>
-        <ul className={`nav-list ${isOpen ? 'open' : ''}`}>
+        <ul id="nav-list" className={`nav-list ${isOpen ? 'open' : ''}`}>
           {navItems.map((item) => (
             <li key={item.path} className="nav-item">
               <Link

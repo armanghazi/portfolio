@@ -1,11 +1,14 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import usePageMeta from '../hooks/usePageMeta';
+import geoAiBilbao from '../assets/img/geoai_bilbao.svg';
 import './Home.css';
 
 const base = import.meta.env.BASE_URL;
 
 const Home = () => {
   const { t } = useTranslation('home');
+  usePageMeta('home');
 
   const skillCards = [
     { key: 'skill_gis' },
@@ -20,7 +23,7 @@ const Home = () => {
       {/* Introduction + Image + CV Buttons */}
       <article className="user-info">
         <div className="user-image">
-          <img src={`${base}img/arman.jpg`} alt="Arman Ghaziaskari Naeini" />
+          <img src={`${base}img/arman.webp`} alt="Arman Ghaziaskari Naeini" loading="eager" width="280" height="320" />
 
           <div className="cv-buttons-vertical">
             <a
@@ -68,6 +71,33 @@ const Home = () => {
           </div>
         </div>
       </article>
+
+      {/* Featured Project Section */}
+      <section className="featured-section">
+        <h2>{t('featured_title')}</h2>
+        <div className="featured-card">
+          <div className="featured-image">
+            <img src={geoAiBilbao} alt={t('featured_project_title')} />
+          </div>
+          <div className="featured-content">
+            <h3>{t('featured_project_title')}</h3>
+            <p>{t('featured_project_desc')}</p>
+            <div className="featured-cta">
+              <a
+                href="https://geoai-dashboard.streamlit.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="primary-btn"
+              >
+                {t('featured_cta_demo')}
+              </a>
+              <Link to="/projects" className="secondary-btn">
+                {t('featured_cta_details')}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Skills Section */}
       <section className="skills-section">

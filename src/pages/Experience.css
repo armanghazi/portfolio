@@ -62,18 +62,19 @@
 .experience-item,
 .teaching-item {
   margin-bottom: 1.1rem;
-  padding: 1rem 1rem 1rem 1.2rem;
-  border-left: 4px solid var(--secondary-color);
+  padding: 1rem;
+  padding-inline-start: 1.2rem;
+  border-inline-start: 4px solid var(--secondary-color);
   background-color: rgba(255, 255, 255, 0.72);
   border-radius: 10px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-inline-start-color 0.2s ease;
 }
 
 .experience-item:hover,
 .teaching-item:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  border-left-color: #2ecc71;
+  border-inline-start-color: #2ecc71;
 }
 
 .experience-item h3,
@@ -168,7 +169,7 @@
 [data-theme="dark"] .experience-item,
 [data-theme="dark"] .teaching-item {
   background-color: rgba(30, 41, 59, 0.75);
-  border-left-color: #60a5fa;
+  border-inline-start-color: #60a5fa;
 }
 
 [data-theme="dark"] .experience-item h3,
@@ -219,6 +220,7 @@
 
   .experience-item,
   .teaching-item {
-    padding: 0.85rem 0.8rem 0.85rem 0.95rem;
+    padding: 0.85rem 0.8rem;
+    padding-inline-start: 0.95rem;
   }
 }

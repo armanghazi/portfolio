@@ -1,31 +1,43 @@
 import React from 'react';
-import { FaCode, FaDatabase, FaMapMarkedAlt, FaBook, FaTrophy, FaRobot, FaCity } from 'react-icons/fa';
+import {
+  FaCode, FaDatabase, FaMapMarkedAlt, FaBook, FaTrophy, FaRobot, FaCity,
+  FaLinkedin, FaGithub, FaChartLine, FaTelegramPlane, FaFilePdf,
+  FaGlobe, FaLink, FaFileAlt, FaExternalLinkAlt,
+} from 'react-icons/fa';
+import { SiHuggingface } from 'react-icons/si';
 import { useTranslation } from 'react-i18next';
+import usePageMeta from '../hooks/usePageMeta';
 import './Projects.css';
 
 // Image imports
-import portfolioImg        from '../assets/img/portfolio.png';
-import weatherMapImg       from '../assets/img/weather-map.png';
+import portfolioImg        from '../assets/img/portfolio.webp';
+import weatherMapImg       from '../assets/img/weather-map.webp';
 import usaImg              from '../assets/img/usa.png';
-import foodImg             from '../assets/img/food.png';
+import foodImg             from '../assets/img/food.webp';
 import forecastImg         from '../assets/img/forecast.png';
-import hundirImg           from '../assets/img/hundir.png';
+import hundirImg           from '../assets/img/hundir.webp';
 import universityImg       from '../assets/img/university.png';
 import airImg              from '../assets/img/air.png';
-import desertImg           from '../assets/img/desert.png';
+import desertImg           from '../assets/img/desert.webp';
 import ekhilurImg          from '../assets/img/ekhilur.svg';
 import countryImg          from '../assets/img/country.png';
 import armanDsLibraryBanner from '../assets/img/arman_ds_library_banner.svg';
-import n8nFlowchart        from '../assets/img/n8n_flowchart.png';
+import n8nFlowchart        from '../assets/img/n8n_flowchart.webp';
 
 const baseUrl = import.meta.env.BASE_URL || '/';
 const publicAssetUrl = (path) => `${baseUrl}${path.split('/').map(encodeURIComponent).join('/')}`;
 
-const SOLID_ICONS = new Set(['file-pdf', 'file-alt', 'chart-line', 'map-marked-alt', 'external-link-alt']);
-const getLinkIconClass = (link) => {
-  if (link.iconClass) return link.iconClass;
-  const icon = link.icon || 'link';
-  return SOLID_ICONS.has(icon) ? `fas fa-${icon}` : `fab fa-${icon}`;
+const LINK_ICONS = {
+  linkedin:            FaLinkedin,
+  github:              FaGithub,
+  'chart-line':        FaChartLine,
+  telegram:            FaTelegramPlane,
+  'file-pdf':          FaFilePdf,
+  globe:               FaGlobe,
+  huggingface:         SiHuggingface,
+  link:                FaLink,
+  'file-alt':          FaFileAlt,
+  'external-link-alt': FaExternalLinkAlt,
 };
 
 // ── Non-translatable data (URLs, icons, images) ─────────────────────────────
@@ -104,15 +116,15 @@ const FRONTEND_URLS = [
 
 // File names for GIS gallery (order must match locale gis_gallery array)
 const GIS_FILES = [
-  'General Maps for Statistical Yearbooks & Territorial Planning.png',
-  'Rural Census Blocks Mapping.png',
-  'Urban Census Blocks Mapping.png',
-  'Industrial & Mining Distribution Map.png',
-  'Tourism Map & Points of Interest.png',
-  'Tourism Suitability Analysis (Suitable  Unsuitable Areas).png',
-  'Agricultural Suitability Analysis (Suitable  Unsuitable Areas).png',
-  'Industrial & Mining Suitability Analysis (Suitable  Unsuitable Areas).png',
-  'Population Suitability & Settlement Potential Analysis (Suitable  Unsuitable Areas).png',
+  'General Maps for Statistical Yearbooks & Territorial Planning.webp',
+  'Rural Census Blocks Mapping.webp',
+  'Urban Census Blocks Mapping.webp',
+  'Industrial & Mining Distribution Map.webp',
+  'Tourism Map & Points of Interest.webp',
+  'Tourism Suitability Analysis (Suitable  Unsuitable Areas).webp',
+  'Agricultural Suitability Analysis (Suitable  Unsuitable Areas).webp',
+  'Industrial & Mining Suitability Analysis (Suitable  Unsuitable Areas).webp',
+  'Population Suitability & Settlement Potential Analysis (Suitable  Unsuitable Areas).webp',
 ];
 
 // Hardcoded publication content (bibliographic data — not translated)
@@ -157,31 +169,50 @@ const publications = {
 // ── Sub-components ───────────────────────────────────────────────────────────
 
 const GISGalleryImage = ({ file, alt, imageNotFound }) => {
-  const [imageSize, setImageSize] = React.useState(null);
+  const [isOpen, setIsOpen] = React.useState(false);
   const [hasError, setHasError] = React.useState(false);
   const imageSrc = publicAssetUrl(`img/${file}`);
+
+  React.useEffect(() => {
+    if (!isOpen) return;
+    const onKey = (e) => { if (e.key === 'Escape') setIsOpen(false); };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, [isOpen]);
 
   if (hasError) {
     return <div className="gis-gallery-missing">{imageNotFound}</div>;
   }
 
   return (
-    <div className="gis-gallery-media">
+    <div
+      className="gis-gallery-media"
+      role="button"
+      tabIndex={0}
+      aria-expanded={isOpen}
+      aria-label={alt}
+      onClick={() => setIsOpen((o) => !o)}
+      onBlur={() => setIsOpen(false)}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setIsOpen((o) => !o); }
+        if (e.key === 'Escape') setIsOpen(false);
+      }}
+    >
       <img
         src={imageSrc}
         alt={alt}
         className="gis-gallery-image"
         loading="lazy"
-        onLoad={(event) => {
-          const { naturalWidth, naturalHeight } = event.currentTarget;
-          setImageSize(`${naturalWidth} × ${naturalHeight}`);
-        }}
+        width="1000"
+        height="700"
         onError={() => setHasError(true)}
       />
-      {imageSize && <span className="gis-image-size-badge">{imageSize}</span>}
-      <div className="gis-hover-preview" aria-hidden="true">
-        <img src={imageSrc} alt="" className="gis-gallery-image-full" />
-        {imageSize && <p className="gis-preview-size">{imageSize}</p>}
+      <div
+        className={`gis-hover-preview${isOpen ? ' is-open' : ''}`}
+        aria-hidden={!isOpen}
+        onClick={(e) => { e.stopPropagation(); setIsOpen(false); }}
+      >
+        <img src={imageSrc} alt={alt} className="gis-gallery-image-full" />
       </div>
     </div>
   );
@@ -198,6 +229,8 @@ const ProjectGrid = ({ projects }) => (
               alt={project.title}
               className="project-image"
               loading="lazy"
+              width="800"
+              height="450"
             />
           </div>
         )}
@@ -205,18 +238,21 @@ const ProjectGrid = ({ projects }) => (
           <h3 className="project-title">{project.title}</h3>
           <p className="project-description">{project.description}</p>
           <div className="project-links">
-            {project.links.map((link, linkIndex) => (
-              <a
-                key={linkIndex}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
-                <i className={getLinkIconClass(link)} aria-hidden="true"></i>
-                {link.text}
-              </a>
-            ))}
+            {project.links.map((link, linkIndex) => {
+              const LinkIcon = LINK_ICONS[link.icon] ?? FaLink;
+              return (
+                <a
+                  key={linkIndex}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-link"
+                >
+                  <LinkIcon aria-hidden={true} />
+                  {link.text}
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -241,6 +277,7 @@ function mergeProjects(translatedItems, urlData) {
 
 const Projects = () => {
   const { t } = useTranslation('projects');
+  usePageMeta('projects');
 
   const geoAiSmartCityProjects = mergeProjects(t('geoai',    { returnObjects: true }), GEOAI_URLS);
   const aiAutomationProjects   = mergeProjects(t('ai',       { returnObjects: true }), AI_URLS);
@@ -260,7 +297,7 @@ const Projects = () => {
       </h1>
 
       <article>
-        <details className="section-accordion">
+        <details className="section-accordion" open>
           <summary className="category-title">
             <FaCity />
             {t('geoai_title')}

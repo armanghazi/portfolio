@@ -1,4 +1,6 @@
 {
+  "page_title": "Projects | Arman Ghaziaskari Naeini",
+  "page_desc": "Explore GeoAI, GIS, Data Science, and Front-end projects by Arman Ghaziaskari Naeini.",
   "title": "Projects",
   "geoai_title": "GeoAI & Smart City Projects",
   "gis_gallery_title": "GIS Gallery",
@@ -14,7 +16,7 @@
   "image_not_found": "Image not found",
   "geoai": [
     {
-      "title": "GeoAI Smart City Platform for Air Quality Monitoring and Forecasting in Greater Bilbao (Under Development)",
+      "title": "GeoAI Smart City Platform for Air Quality Monitoring and Forecasting in Greater Bilbao",
       "description": "Spatial Data Science and GeoAI project for air quality monitoring and forecasting in Greater Bilbao, combining GIS, Python, Machine Learning, interactive dashboards, and Smart City decision-support tools.",
       "links": ["LinkedIn Post","GitHub", "Live Dashboard"]
     }
