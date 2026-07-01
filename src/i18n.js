@@ -50,9 +50,7 @@ function detectLanguage() {
   if (saved && SUPPORTED.includes(saved)) return saved;
   const raw = navigator.language || (navigator.languages && navigator.languages[0]) || 'en';
   const code = raw.split('-')[0].toLowerCase();
-  const detected = BROWSER_LANG_MAP[code] || 'en';
-  localStorage.setItem(STORAGE_KEY, detected);
-  return detected;
+  return BROWSER_LANG_MAP[code] || 'en';
 }
 
 function applyDocumentMeta(lang) {
