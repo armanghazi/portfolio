@@ -1,0 +1,1 @@
+import{A as e,O as t,k as n}from"./index-Cx3g56Xn.js";var r=e(n(),1),i=e=>{let{t:n}=t(e);(0,r.useEffect)(()=>{document.title=n(`page_title`);let e=document.querySelector(`meta[name="description"]`);e||(e=document.createElement(`meta`),e.name=`description`,document.head.appendChild(e)),e.setAttribute(`content`,n(`page_desc`))},[n])};export{i as t};
