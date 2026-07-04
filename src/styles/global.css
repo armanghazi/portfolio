@@ -122,35 +122,6 @@ section {
   margin-top: 2rem;
 }
 
-/* Theme toggle button */
-.theme-toggle {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background-color: var(--primary-color);
-  color: var(--surface-color);
-  border: none;
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 2px 8px var(--shadow-color);
-  transition: all 0.3s ease;
-  z-index: 1000;
-}
-
-.theme-toggle:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 12px var(--shadow-color);
-}
-
-.theme-toggle i {
-  font-size: 1.5rem;
-}
-
 /* Responsive breakpoints */
 @media (min-width: 1440px) {
   main {
@@ -220,11 +191,6 @@ section {
   .teaching-item,
   .publications-item {
     padding-left: 1rem;
-  }
-
-  .theme-toggle {
-    bottom: 1rem;
-    right: 1rem;
   }
 }
 

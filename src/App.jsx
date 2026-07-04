@@ -2,7 +2,6 @@ import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import ThemeToggle from './components/ThemeToggle';
 import ScrollToTop from './components/ScrollToTop';
 import SkipLink from './components/SkipLink';
 import './styles/global.css';
@@ -35,7 +34,6 @@ function App() {
           </Suspense>
         </main>
         <Footer />
-        <ThemeToggle />
       </div>
     </Router>
   );

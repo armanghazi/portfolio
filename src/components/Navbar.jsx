@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
+import ThemeToggle from './ThemeToggle';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -21,7 +22,10 @@ const Navbar = () => {
   return (
     <nav className="nav">
       <div className="nav-container">
-        <Link to="/" className="logo">Arman Ghaziaskari Naeini</Link>
+        <Link to="/" className="logo">
+          <span className="logo-full">Arman Ghaziaskari Naeini</span>
+          <span className="logo-short">Arman G.</span>
+        </Link>
         <button
           className="menu-button"
           type="button"
@@ -45,7 +49,10 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <LanguageSwitcher />
+        <div className="nav-controls">
+          <LanguageSwitcher />
+          <ThemeToggle />
+        </div>
       </div>
     </nav>
   );
