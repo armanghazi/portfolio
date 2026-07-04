@@ -1,1 +1,0 @@
-import{D as e,E as t,T as n}from"./index-CgOtQjQ0.js";var r=e(t(),1),i=e=>{let{t}=n(e);(0,r.useEffect)(()=>{document.title=t(`page_title`);let e=document.querySelector(`meta[name="description"]`);e||(e=document.createElement(`meta`),e.name=`description`,document.head.appendChild(e)),e.setAttribute(`content`,t(`page_desc`))},[t])};export{i as t};
