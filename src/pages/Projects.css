@@ -141,7 +141,7 @@
 }
 
 .flagship-metric .value {
-  color: var(--accent);
+  color: var(--accent-text);
   font-weight: 700;
   margin-inline-end: 0.35rem;
 }

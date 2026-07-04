@@ -41,7 +41,7 @@
   font-family: var(--font-mono);
   font-size: var(--text-sm);
   letter-spacing: 0.08em;
-  color: var(--accent);
+  color: var(--accent-text);
   margin-bottom: var(--space-3);
 }
 

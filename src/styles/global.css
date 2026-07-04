@@ -3,6 +3,9 @@
   --brand: #0F5E68;
   --brand-strong: #0A4A52;
   --accent: #C7811F;
+  /* Darker amber for small/regular-size accent text — #C7811F only clears
+     WCAG AA (4.5:1) at large/bold sizes (e.g. hero metric numbers) */
+  --accent-text: #8A5A15;
   --on-brand: #FFFFFF;
 
   /* Semantic, theme-dependent */
@@ -38,6 +41,7 @@
   --brand: #3FA7B5;
   --brand-strong: #6BC3CF;
   --accent: #E0B15C;
+  --accent-text: #E0B15C;
   --on-brand: #0B1418;
   --bg: #10181D;
   --surface: #18232A;
