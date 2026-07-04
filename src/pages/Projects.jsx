@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  FaCode, FaDatabase, FaMapMarkedAlt, FaBook, FaTrophy, FaRobot, FaCity,
+  FaMapMarkedAlt, FaBook, FaTrophy, FaArchive,
   FaLinkedin, FaGithub, FaChartLine, FaTelegramPlane, FaFilePdf,
   FaGlobe, FaLink, FaFileAlt, FaExternalLinkAlt,
 } from 'react-icons/fa';
@@ -114,6 +114,19 @@ const FRONTEND_URLS = [
   ]},
 ];
 
+// Tech tags for the Tier 3 "earlier & learning" compact cards (not translated)
+const ARCHIVE_TAGS = {
+  hundir: ['Python'],
+  countries: ['JavaScript', 'REST API'],
+  food: ['React', 'API'],
+  movieEs: ['JavaScript', 'TMDb API'],
+  movieEn: ['JavaScript', 'TMDb API'],
+  weatherMap: ['Leaflet.js', 'API'],
+  portfolio: ['HTML', 'CSS'],
+};
+
+const FILTERS = ['all', 'geoai', 'ai', 'data', 'frontend', 'gis'];
+
 // File names for GIS gallery (order must match locale gis_gallery array)
 const GIS_FILES = [
   'General Maps for Statistical Yearbooks & Territorial Planning.webp',
@@ -218,6 +231,22 @@ const GISGalleryImage = ({ file, alt, imageNotFound }) => {
   );
 };
 
+const ProjectLinks = ({ links, className = 'project-link', liveIcon, liveLabel }) => (
+  <>
+    {links.map((link, linkIndex) => {
+      const LinkIcon = LINK_ICONS[link.icon] ?? FaLink;
+      const isLive = liveIcon && link.icon === liveIcon;
+      return (
+        <a key={linkIndex} href={link.url} target="_blank" rel="noopener noreferrer" className={className}>
+          <LinkIcon aria-hidden={true} />
+          {link.text}
+          {isLive && <span className="live-badge">{liveLabel}</span>}
+        </a>
+      );
+    })}
+  </>
+);
+
 const ProjectGrid = ({ projects }) => (
   <div className="projects-grid">
     {projects.map((project, index) => (
@@ -236,27 +265,57 @@ const ProjectGrid = ({ projects }) => (
         )}
         <div className="project-content">
           <h3 className="project-title">{project.title}</h3>
+          {project.outcome && <p className="project-outcome">{project.outcome}</p>}
           <p className="project-description">{project.description}</p>
           <div className="project-links">
-            {project.links.map((link, linkIndex) => {
-              const LinkIcon = LINK_ICONS[link.icon] ?? FaLink;
-              return (
-                <a
-                  key={linkIndex}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  <LinkIcon aria-hidden={true} />
-                  {link.text}
-                </a>
-              );
-            })}
+            <ProjectLinks links={project.links} />
           </div>
         </div>
       </div>
     ))}
+  </div>
+);
+
+const FlagshipCard = ({ project, metrics, liveIcon, liveLabel }) => (
+  <div className="flagship-card">
+    {project.image && (
+      <div className="flagship-image">
+        <img src={project.image} alt={project.title} loading="lazy" />
+      </div>
+    )}
+    <div className="flagship-content">
+      <h3>{project.title}</h3>
+      <p>{project.description}</p>
+      {metrics && metrics.length > 0 && (
+        <div className="flagship-metrics">
+          {metrics.map((m, i) => (
+            <span className="flagship-metric" key={i}>
+              {m.value && <span className="value">{m.value}</span>}
+              {m.label}
+            </span>
+          ))}
+        </div>
+      )}
+      <div className="flagship-cta">
+        <ProjectLinks links={project.links} liveIcon={liveIcon} liveLabel={liveLabel} />
+      </div>
+    </div>
+  </div>
+);
+
+const ArchiveCard = ({ project }) => (
+  <div className="archive-card">
+    <h4>{project.title}</h4>
+    {project.tags && (
+      <div className="archive-tags">
+        {project.tags.map((tag) => (
+          <span key={tag} className="archive-tag">{tag}</span>
+        ))}
+      </div>
+    )}
+    <div className="archive-links">
+      <ProjectLinks links={project.links} className="archive-link" />
+    </div>
   </div>
 );
 
@@ -278,17 +337,58 @@ function mergeProjects(translatedItems, urlData) {
 const Projects = () => {
   const { t } = useTranslation('projects');
   usePageMeta('projects');
+  const [filter, setFilter] = React.useState('all');
 
-  const geoAiSmartCityProjects = mergeProjects(t('geoai',    { returnObjects: true }), GEOAI_URLS);
-  const aiAutomationProjects   = mergeProjects(t('ai',       { returnObjects: true }), AI_URLS);
-  const dataScienceProjects    = mergeProjects(t('ds',       { returnObjects: true }), DS_URLS);
-  const frontendProjects       = mergeProjects(t('frontend', { returnObjects: true }), FRONTEND_URLS);
+  const geoAiProjects   = mergeProjects(t('geoai',    { returnObjects: true }), GEOAI_URLS);
+  const aiProjects      = mergeProjects(t('ai',       { returnObjects: true }), AI_URLS);
+  const dsProjects      = mergeProjects(t('ds',       { returnObjects: true }), DS_URLS);
+  const frontendProjects = mergeProjects(t('frontend', { returnObjects: true }), FRONTEND_URLS);
 
   const gisGalleryTitles = t('gis_gallery', { returnObjects: true });
   const GIS = GIS_FILES.map((file, i) => ({ file, title: gisGalleryTitles[i] }));
 
   const honors = t('honors', { returnObjects: true });
   const imageNotFound = t('image_not_found');
+  const liveLabel = t('live_badge');
+
+  // Tier 1 — Flagship
+  const flagshipProjects = [
+    { ...geoAiProjects[0], category: 'geoai', liveIcon: 'chart-line' },
+    { ...aiProjects[0], category: 'ai' },
+  ];
+
+  const geoAiMetrics = [1, 2, 3].map((n) => ({
+    value: t(`flagship_geoai_metric_${n}_value`),
+    label: t(`flagship_geoai_metric_${n}_label`),
+  })).concat([{ value: '', label: t('flagship_geoai_metric_4_label') }]);
+
+  // Tier 2 — Projects grid (cross-category picks, each with a headline outcome)
+  const gridProjects = [
+    { ...dsProjects[1], category: 'data', outcome: t('ds_outcome_1') },        // ArmanDS
+    { ...frontendProjects[1], category: 'frontend', outcome: t('frontend_outcome_1') }, // Tiempo Euskadi
+    { ...dsProjects[3], category: 'data', outcome: t('ds_outcome_3') },        // Air pollution Iran
+    { ...dsProjects[2], category: 'data', outcome: t('ds_outcome_2') },        // University Rankings
+    { ...dsProjects[5], category: 'data', outcome: t('ds_outcome_5') },        // Ekhilur
+    { ...dsProjects[4], category: 'data', outcome: t('ds_outcome_4') },        // Dessert
+  ];
+
+  // Tier 3 — Earlier & learning projects (compact, no images)
+  const archiveProjects = [
+    { ...dsProjects[0], category: 'data', tags: ARCHIVE_TAGS.hundir },
+    { ...frontendProjects[0], category: 'frontend', tags: ARCHIVE_TAGS.countries },
+    { ...frontendProjects[2], category: 'frontend', tags: ARCHIVE_TAGS.food },
+    { ...frontendProjects[3], category: 'frontend', tags: ARCHIVE_TAGS.movieEs },
+    { ...frontendProjects[4], category: 'frontend', tags: ARCHIVE_TAGS.movieEn },
+    { ...frontendProjects[5], category: 'frontend', tags: ARCHIVE_TAGS.weatherMap },
+    { ...frontendProjects[6], category: 'frontend', tags: ARCHIVE_TAGS.portfolio },
+  ];
+
+  const matches = (category) => filter === 'all' || filter === category;
+  const visibleFlagship = flagshipProjects.filter((p) => matches(p.category));
+  const visibleGrid = gridProjects.filter((p) => matches(p.category));
+  const visibleArchive = archiveProjects.filter((p) => matches(p.category));
+  const showGisGallery = filter === 'all' || filter === 'gis';
+  const showArchiveSection = visibleArchive.length > 0;
 
   return (
     <section className="projects-section">
@@ -296,80 +396,96 @@ const Projects = () => {
         {t('title')}
       </h1>
 
-      <article>
-        <details className="section-accordion" open>
-          <summary className="category-title">
-            <FaCity />
-            {t('geoai_title')}
-          </summary>
-          <ProjectGrid projects={geoAiSmartCityProjects} />
-        </details>
-      </article>
+      <div className="filter-chips" role="group" aria-label={t('filters_label')}>
+        {FILTERS.map((f) => (
+          <button
+            key={f}
+            type="button"
+            className="filter-chip"
+            aria-pressed={filter === f}
+            onClick={() => setFilter(f)}
+          >
+            {t(`filter_${f}`)}
+          </button>
+        ))}
+      </div>
 
-      <article>
-        <details className="section-accordion">
-          <summary className="category-title">
-            <FaMapMarkedAlt />
-            {t('gis_gallery_title')}
-          </summary>
-          <div className="gis-gallery-grid">
-            {GIS.map(({ title, file }) => (
-              <figure key={file} className="gis-gallery-card">
-                <GISGalleryImage file={file} alt={title} imageNotFound={imageNotFound} />
-                <figcaption className="gis-gallery-caption">{title}</figcaption>
-              </figure>
+      {visibleFlagship.length > 0 && (
+        <article>
+          <h2 className="tier-title">{t('flagship_section_title')}</h2>
+          <div className="flagship-list">
+            {visibleFlagship.map((project, i) => (
+              <FlagshipCard
+                key={i}
+                project={project}
+                metrics={project.category === 'geoai' ? geoAiMetrics : null}
+                liveIcon={project.liveIcon}
+                liveLabel={liveLabel}
+              />
             ))}
           </div>
-          <div className="gis-gallery-actions">
-            <a
-              href={publicAssetUrl('pdfs/mymaps.pdf')}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="gis-gallery-button"
-            >
-              {t('gis_works_en')}
-            </a>
-            <a
-              href={publicAssetUrl('pdfs/mismapas.pdf')}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="gis-gallery-button"
-            >
-              {t('gis_works_es')}
-            </a>
-          </div>
-        </details>
-      </article>
+        </article>
+      )}
 
-      <article>
-        <details className="section-accordion">
-          <summary className="category-title">
-            <FaRobot />
-            {t('ai_title')}
-          </summary>
-          <ProjectGrid projects={aiAutomationProjects} />
-        </details>
-      </article>
+      {visibleGrid.length > 0 && (
+        <article>
+          <h2 className="tier-title">{t('grid_section_title')}</h2>
+          <ProjectGrid projects={visibleGrid} />
+        </article>
+      )}
 
-      <article>
-        <details className="section-accordion">
-          <summary className="category-title">
-            <FaDatabase />
-            {t('ds_title')}
-          </summary>
-          <ProjectGrid projects={dataScienceProjects} />
-        </details>
-      </article>
+      {showArchiveSection && (
+        <article>
+          <details className="section-accordion">
+            <summary className="category-title">
+              <FaArchive />
+              {t('archive_title')}
+            </summary>
+            <div className="archive-grid">
+              {visibleArchive.map((project, i) => (
+                <ArchiveCard key={i} project={project} />
+              ))}
+            </div>
+          </details>
+        </article>
+      )}
 
-      <article>
-        <details className="section-accordion">
-          <summary className="category-title">
-            <FaCode />
-            {t('frontend_title')}
-          </summary>
-          <ProjectGrid projects={frontendProjects} />
-        </details>
-      </article>
+      {showGisGallery && (
+        <article>
+          <details className="section-accordion">
+            <summary className="category-title">
+              <FaMapMarkedAlt />
+              {t('gis_gallery_title')}
+            </summary>
+            <div className="gis-gallery-grid">
+              {GIS.map(({ title, file }) => (
+                <figure key={file} className="gis-gallery-card">
+                  <GISGalleryImage file={file} alt={title} imageNotFound={imageNotFound} />
+                  <figcaption className="gis-gallery-caption">{title}</figcaption>
+                </figure>
+              ))}
+            </div>
+            <div className="gis-gallery-actions">
+              <a
+                href={publicAssetUrl('pdfs/mymaps.pdf')}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="gis-gallery-button"
+              >
+                {t('gis_works_en')}
+              </a>
+              <a
+                href={publicAssetUrl('pdfs/mismapas.pdf')}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="gis-gallery-button"
+              >
+                {t('gis_works_es')}
+              </a>
+            </div>
+          </details>
+        </article>
+      )}
 
       <article className="publications-section">
         <details className="section-accordion">

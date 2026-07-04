@@ -263,6 +263,17 @@ section {
   }
 }
 
+/* Live badge — used on flagship/featured project demo links */
+.live-badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+}
+
 /* Skip to main content */
 .skip-link {
   position: absolute;
