@@ -2,3 +2,11 @@
 [dir="rtl"] {
   direction: rtl;
 }
+
+/* Coordinates and metric numbers stay LTR even in RTL layouts */
+[dir="rtl"] .hero-eyebrow,
+[dir="rtl"] .metric-value {
+  direction: ltr;
+  unicode-bidi: isolate;
+  text-align: end;
+}

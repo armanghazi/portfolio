@@ -20,56 +20,52 @@ const Home = () => {
   return (
     <section className="about-section">
 
-      {/* Introduction + Image + CV Buttons */}
-      <article className="user-info">
-        <div className="user-image">
-          <img src={`${base}img/arman.webp`} alt="Arman Ghaziaskari Naeini" loading="eager" width="280" height="320" />
-
-          <div className="cv-buttons-vertical">
-            <a
-              href={`${base}pdfs/English_Arman Ghaziaskari naeini_june.pdf`}
-              className="cv-button-vertical"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t('cv_en')}
-            </a>
-            <a
-              href={`${base}pdfs/espanol_Arman Ghaziaskari naeini_junio.pdf`}
-              className="cv-button-vertical"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t('cv_es')}
-            </a>
-          </div>
-        </div>
-
-        <div className="user-text">
+      {/* Hero */}
+      <article className="hero">
+        <div className="hero-text">
+          <p className="hero-eyebrow">{t('eyebrow')}</p>
           <h1>{t('title')}</h1>
-          <h2>{t('subtitle')}</h2>
-
+          <p className="hero-subtitle">{t('subtitle')}</p>
           <p>{t('bio_1')}</p>
           <p>{t('bio_2')}</p>
-          <p>{t('bio_3')}</p>
-          <p>{t('bio_4')}</p>
-          <p>{t('bio_5')}</p>
-
-          {/* VALUE SECTION */}
-          <div className="value-points">
-            <p>{t('value_1')}</p>
-            <p>{t('value_2')}</p>
-            <p>{t('value_3')}</p>
-            <p>{t('value_4')}</p>
-            <p>{t('value_5')}</p>
+          <div className="hero-metrics" role="list">
+            {[1, 2, 3].map((n) => (
+              <div className="metric" role="listitem" key={n}>
+                <span className="metric-value">{t(`metric_${n}_value`)}</span>
+                <span className="metric-label">{t(`metric_${n}_label`)}</span>
+              </div>
+            ))}
           </div>
-
-          {/* CTA */}
           <div className="hero-cta">
             <Link to="/projects" className="primary-btn">{t('cta_projects')}</Link>
             <Link to="/contact" className="secondary-btn">{t('cta_contact')}</Link>
           </div>
         </div>
+
+        <aside className="hero-photo">
+          <div className="user-image">
+            <img src={`${base}img/arman.webp`} alt="Arman Ghaziaskari Naeini" loading="eager" width="280" height="320" />
+
+            <div className="cv-buttons-vertical">
+              <a
+                href={`${base}pdfs/English_Arman Ghaziaskari naeini_june.pdf`}
+                className="cv-button-vertical"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t('cv_en')}
+              </a>
+              <a
+                href={`${base}pdfs/espanol_Arman Ghaziaskari naeini_junio.pdf`}
+                className="cv-button-vertical"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t('cv_es')}
+              </a>
+            </div>
+          </div>
+        </aside>
       </article>
 
       {/* Featured Project Section */}
@@ -90,6 +86,7 @@ const Home = () => {
                 className="primary-btn"
               >
                 {t('featured_cta_demo')}
+                <span className="live-badge">{t('live_badge')}</span>
               </a>
               <Link to="/projects" className="secondary-btn">
                 {t('featured_cta_details')}
