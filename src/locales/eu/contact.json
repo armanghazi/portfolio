@@ -13,8 +13,12 @@
 
   "form_title": "Konta iezadazu zure proiektuari buruz",
 
-  "placeholder_name": "Zure izena",
-  "placeholder_email": "Zure posta elektronikoa",
+  "label_name": "Izena",
+  "label_email": "Posta elektronikoa",
+  "label_message": "Mezua",
+
+  "placeholder_name": "Adib. Jane Doe",
+  "placeholder_email": "Adib. jane@enpresa.com",
   "placeholder_message": "Deskribatu zure proiektua...",
 
   "submit_btn": "Bidali mezua",

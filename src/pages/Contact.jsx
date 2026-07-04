@@ -36,7 +36,35 @@ const Contact = () => {
           <p>{t('hero_desc')}</p>
         </div>
 
-        {/* QUICK CONTACT */}
+        {/* FORM — primary path */}
+        <div className="contact-form">
+          <h2 className="section-title">
+            <FaEnvelope />
+            {t('form_title')}
+          </h2>
+
+          <form action="https://formsubmit.co/02ad2d2441030f69f7107ce3699c230a" method="POST">
+            <input type="hidden" name="_captcha" value="true" />
+            <input type="hidden" name="_next" value="https://armanghazi.github.io/portfolio/thank-you" />
+            <input type="text" name="_honey" style={{ display: 'none' }} tabIndex="-1" autoComplete="off" />
+
+            <label htmlFor="contact-name">{t('label_name')}</label>
+            <input id="contact-name" type="text" name="name" placeholder={t('placeholder_name')} required />
+
+            <label htmlFor="contact-email">{t('label_email')}</label>
+            <input id="contact-email" type="email" name="email" placeholder={t('placeholder_email')} required />
+
+            <label htmlFor="contact-message">{t('label_message')}</label>
+            <textarea id="contact-message" name="message" placeholder={t('placeholder_message')} required />
+
+            <button type="submit" className="submit-button">
+              <FaPaperPlane />
+              {t('submit_btn')}
+            </button>
+          </form>
+        </div>
+
+        {/* QUICK CONTACT — secondary options */}
         <div className="quick-contact">
           {/* WhatsApp */}
           <div className="whatsapp-section">
@@ -61,29 +89,6 @@ const Contact = () => {
             <p className="response-time">{t('response_time')}</p>
           </div>
         </div>
-      </div>
-
-      {/* FORM */}
-      <div className="contact-form">
-        <h2 className="section-title">
-          <FaEnvelope />
-          {t('form_title')}
-        </h2>
-
-        <form action="https://formsubmit.co/02ad2d2441030f69f7107ce3699c230a" method="POST">
-          <input type="hidden" name="_captcha" value="true" />
-          <input type="hidden" name="_next" value="https://armanghazi.github.io/portfolio/thank-you" />
-          <input type="text" name="_honey" style={{ display: 'none' }} tabIndex="-1" autoComplete="off" />
-
-          <input type="text"  name="name"    placeholder={t('placeholder_name')}    required />
-          <input type="email" name="email"   placeholder={t('placeholder_email')}   required />
-          <textarea           name="message" placeholder={t('placeholder_message')} required />
-
-          <button type="submit" className="submit-button">
-            <FaPaperPlane />
-            {t('submit_btn')}
-          </button>
-        </form>
       </div>
     </section>
   );

@@ -9,8 +9,11 @@
   "email_title": "ترجیح می‌دهید ایمیل بزنید؟",
   "response_time": "معمولاً در عرض چند ساعت پاسخ می‌دهم.",
   "form_title": "درباره پروژه‌تان بگویید",
-  "placeholder_name": "نام شما",
-  "placeholder_email": "ایمیل شما",
+  "label_name": "نام",
+  "label_email": "ایمیل",
+  "label_message": "پیام",
+  "placeholder_name": "مثلاً جین دو",
+  "placeholder_email": "مثلاً jane@company.com",
   "placeholder_message": "پروژه‌تان را توصیف کنید...",
   "submit_btn": "ارسال پیام",
   "whatsapp_message": "سلام آرمان، می‌خواهم درباره پروژه‌ام صحبت کنیم."

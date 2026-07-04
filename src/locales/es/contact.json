@@ -9,8 +9,11 @@
   "email_title": "¿Prefiere el correo electrónico?",
   "response_time": "Normalmente respondo en pocas horas.",
   "form_title": "Cuénteme su proyecto",
-  "placeholder_name": "Su nombre",
-  "placeholder_email": "Su correo electrónico",
+  "label_name": "Nombre",
+  "label_email": "Correo electrónico",
+  "label_message": "Mensaje",
+  "placeholder_name": "Ej. Jane Doe",
+  "placeholder_email": "Ej. jane@empresa.com",
   "placeholder_message": "Describa su proyecto...",
   "submit_btn": "Enviar mensaje",
   "whatsapp_message": "Hola Arman, me gustaría hablar sobre mi proyecto."
