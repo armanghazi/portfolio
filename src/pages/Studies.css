@@ -43,13 +43,14 @@
   background-color: var(--surface-color);
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 20px var(--shadow-color);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .education-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 30px var(--shadow-color);
 }
 
 .education-image-container {
@@ -103,8 +104,8 @@
   background-color: var(--surface-color);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 16px var(--shadow-color);
+  border: 1px solid var(--border);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -143,26 +144,6 @@
   color: var(--text-color);
   font-size: 0.85rem;
   opacity: 0.75;
-}
-
-/* Dark mode */
-
-[data-theme="dark"] .education-card,
-[data-theme="dark"] .study-card {
-  background-color: #1e293b;
-  border-color: rgba(148, 163, 184, 0.2);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-
-[data-theme="dark"] .education-degree,
-[data-theme="dark"] .study-title {
-  color: #f1f5f9;
-}
-
-[data-theme="dark"] .education-university,
-[data-theme="dark"] .study-description,
-[data-theme="dark"] .study-details {
-  color: #cbd5e1;
 }
 
 /* Responsive — Tablet */
