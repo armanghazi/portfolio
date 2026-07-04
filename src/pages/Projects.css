@@ -404,7 +404,6 @@
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.gis-gallery-media:hover .gis-hover-preview,
 .gis-hover-preview.is-open {
   opacity: 1;
   transform: scale(1);

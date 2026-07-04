@@ -15,11 +15,11 @@
   "bio_2": "20 urtetik gorako esperientzia GIS proiektuak hasieratik amaieraraino zuzentzen sektore publikoan, orain Python, ETL automatizazioa eta produkzioko Machine Learning panelekin uztartuta.",
 
   "metric_1_value": "20+",
-  "metric_1_label": "urte GIS eta teledetekzioan",
-  "metric_2_value": "29K",
-  "metric_2_label": "eguneroko erregistro nire GeoAI aire-kalitate plataforman",
-  "metric_3_value": "4",
-  "metric_3_label": "ML eredu Smart City dashboard batean martxan",
+  "metric_1_label": "urte · GIS eta datu espazialak",
+  "metric_2_value": "8+",
+  "metric_2_label": "urte · Python stack geoespaziala",
+  "metric_3_value": "Zuzenean",
+  "metric_3_label": "GeoAI plataforma · aurreikuspena + IA espaziala",
 
   "cta_projects": "Proiektuak ikusi",
   "cta_contact": "Harremanetan jarri",
