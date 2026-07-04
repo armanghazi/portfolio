@@ -56,8 +56,6 @@
     "title": "Herramientas y tecnologías",
     "items": [
       "Git, Docker",
-      "Notion / Jira (conocimiento básico)",
-      "Big Data (Spark, Kafka, Hadoop – nivel básico)",
       "JavaScript, Streamlit"
     ]
   }

@@ -56,8 +56,6 @@
     "title": "ابزارها و فناوری‌ها",
     "items": [
       "Git, Docker",
-      "Notion / Jira (آشنایی)",
-      "Big Data (Spark, Kafka, Hadoop – پایه)",
       "JavaScript, Streamlit"
     ]
   }

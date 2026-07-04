@@ -12,15 +12,15 @@ import './Projects.css';
 // Image imports
 import portfolioImg        from '../assets/img/portfolio.webp';
 import weatherMapImg       from '../assets/img/weather-map.webp';
-import usaImg              from '../assets/img/usa.png';
+import usaImg              from '../assets/img/usa.webp';
 import foodImg             from '../assets/img/food.webp';
-import forecastImg         from '../assets/img/forecast.png';
+import forecastImg         from '../assets/img/forecast.webp';
 import hundirImg           from '../assets/img/hundir.webp';
-import universityImg       from '../assets/img/university.png';
-import airImg              from '../assets/img/air.png';
+import universityImg       from '../assets/img/university.webp';
+import airImg              from '../assets/img/air.webp';
 import desertImg           from '../assets/img/desert.webp';
 import ekhilurImg          from '../assets/img/ekhilur.svg';
-import countryImg          from '../assets/img/country.png';
+import countryImg          from '../assets/img/country.webp';
 import armanDsLibraryBanner from '../assets/img/arman_ds_library_banner.svg';
 import n8nFlowchart        from '../assets/img/n8n_flowchart.webp';
 

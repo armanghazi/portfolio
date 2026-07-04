@@ -27,35 +27,18 @@ async function convert(inputPath, outputPath) {
 // ── src/assets/img/ imports ──────────────────────────────────────────────────
 const srcDir = join(root, 'src/assets/img');
 const srcConvert = [
-  'hundir.png',
-  'weather-map.png',
-  'food.png',
-  'desert.png',
-  'portfolio.png',
-  'n8n_flowchart.png',
+  'air.png',
+  'forecast.png',
+  'university.png',
+  'usa.png',
+  'country.png',
 ];
 for (const f of srcConvert) {
   const base = f.replace(/\.(png|jpg|jpeg)$/i, '.webp');
   await convert(join(srcDir, f), join(srcDir, base));
 }
 
-// ── public/img/ static files ──────────────────────────────────────────────────
-const pubDir = join(root, 'public/img');
-const pubConvert = [
-  'arman.jpg',
-  'General Maps for Statistical Yearbooks & Territorial Planning.png',
-  'Rural Census Blocks Mapping.png',
-  'Urban Census Blocks Mapping.png',
-  'Industrial & Mining Distribution Map.png',
-  'Tourism Map & Points of Interest.png',
-  'Tourism Suitability Analysis (Suitable  Unsuitable Areas).png',
-  'Agricultural Suitability Analysis (Suitable  Unsuitable Areas).png',
-  'Industrial & Mining Suitability Analysis (Suitable  Unsuitable Areas).png',
-  'Population Suitability & Settlement Potential Analysis (Suitable  Unsuitable Areas).png',
-];
-for (const f of pubConvert) {
-  const base = f.replace(/\.(png|jpg|jpeg)$/i, '.webp');
-  await convert(join(pubDir, f), join(pubDir, base));
-}
+// ── public/ static files ──────────────────────────────────────────────────
+await convert(join(root, 'public/Arman.png'), join(root, 'public/Arman.webp'));
 
 console.log('\nAll conversions done.');

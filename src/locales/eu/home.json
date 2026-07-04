@@ -68,8 +68,6 @@
     "title": "Tresnak eta Teknologiak",
     "items": [
       "Git, Docker",
-      "Notion / Jira (oinarrizko ezagutza)",
-      "Big Data (Spark, Kafka, Hadoop – oinarrizko maila)",
       "JavaScript, Streamlit"
     ]
   }
