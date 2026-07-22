@@ -48,7 +48,7 @@ const Home = () => {
 
             <div className="cv-buttons-vertical">
               <a
-                href={`${base}pdfs/English_Arman Ghaziaskari naeini_june.pdf`}
+                href={`${base}pdfs/English_Arman Ghaziaskari naeini.pdf`}
                 className="cv-button-vertical"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -56,7 +56,7 @@ const Home = () => {
                 {t('cv_en')}
               </a>
               <a
-                href={`${base}pdfs/espanol_Arman Ghaziaskari naeini_junio.pdf`}
+                href={`${base}pdfs/espanol_Arman Ghaziaskari naeini.pdf`}
                 className="cv-button-vertical"
                 target="_blank"
                 rel="noopener noreferrer"
