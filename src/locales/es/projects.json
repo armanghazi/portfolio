@@ -42,7 +42,7 @@
     {
       "title": "Plataforma GeoAI Smart City para monitoreo y previsión de calidad del aire en el Gran Bilbao",
       "description": "Proyecto de Data Science espacial y GeoAI para el monitoreo y previsión de la calidad del aire en el Gran Bilbao, combinando GIS, Python, Machine Learning, paneles interactivos y herramientas de soporte a la toma de decisiones de Smart City.",
-      "links": ["LinkedIn Post","GitHub", "Live Dashboard"]
+      "links": ["LinkedIn Post", "GitHub", "White paper", "Live Dashboard"]
     }
   ],
   "ai": [
